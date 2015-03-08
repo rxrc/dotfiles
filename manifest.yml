@@ -1,0 +1,3 @@
+defaults:
+  fmode: 0640
+  dmode: 0750
