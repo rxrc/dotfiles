@@ -29,13 +29,13 @@ a very minimal configuration.
 Bootstrap with
 
 ````bash
-$ ./bootstrap.sh
+$ ./bootstrap.zsh
 ````
 
 Install dependencies with
 
 ````bash
-$ bower install
+$ bower update
 $ bundle update
 ````
 
@@ -48,7 +48,21 @@ $ curate
 Update external applications with
 
 ````bash
-$ ./update.sh
+$ ./update.zsh
+````
+
+Run everything above with
+
+````bash
+$ ./install.zsh
+````
+
+Update managed plugins independently with
+
+````bash
+$ zshupg
+$ tmuxupg
+$ vimupg
 ````
 
 ## Contributing
