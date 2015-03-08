@@ -1,0 +1,7 @@
+# Tab commands on mouse left / right scoll
+
+"xte 'keydown Control_L' 'keydown Shift_L' 'key Tab' 'keyup Control_L' 'keyup Shift_L'"
+   b:6
+
+"xte 'keydown Control_L' 'key Tab' 'keyup Control_L'"
+   b:7

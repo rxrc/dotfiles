@@ -2,3 +2,49 @@
 defaults:
   fmode: 0640
   dmode: 0750
+
+components:
+  - src: bower_components/tmuxinator-profiles
+    dst: .tmuxinator
+    packages: [ tmux ]
+
+  - src: bower_components/awesome-copycats
+    dst: .config/awesome
+    packages: [ awesome ]
+
+  - src: bower_components/awesome-copycats-settings/settings
+    dst: .config/awesome/settings
+    packages: [ awesome ]
+
+config_files:
+  - src: bower_components/ssh-config/config
+    dst: .ssh/config
+
+  - src: .gitconfig
+  - src: .gitignore_global
+
+  - src: .gemrc
+  - src: .bundle/config
+  - src: .irbrc
+  - src: .rspec
+
+  - src: .xbindkeysrc
+    hosts: [ Mimir ]
+
+  - src: .Xmodmap
+  - src: .config/gtk-3.0/settings.ini
+    hosts: [ Gungnir ]
+
+  - src: .config/terminator/config
+    packages: [ terminator ]
+
+symlinks:
+  - src: ~/.config/awesome/rc.lua.multicolor
+    dst: .config/awesome/rc.lua
+    hosts: [ Gungnir ]
+    packages: [ awesome ]
+
+  - src: ~/Wallpaper/wallhaven-83639-4x3.jpg
+    dst: .config/awesome/themes/multicolor/wall.png
+    hosts: [ Gungnir ]
+    packages: [ awesome ]

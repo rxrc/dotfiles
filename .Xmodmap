@@ -1,0 +1,3 @@
+! set CapsLock off and remap it to Escape
+remove Lock = Caps_Lock
+keysym Caps_Lock = Escape

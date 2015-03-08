@@ -1,0 +1,34 @@
+[core]
+	editor = vim
+	excludesfile = /home/razorx/.gitignore_global
+[user]
+	name = Evan Sosenko
+	email = razorx@evansosenko.com
+[ui]
+	color = auto
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+[github]
+	user = razor-x
+[diff]
+	tool = kdiff3
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = kdiff3
+	keepBackup = false
+	trustExitCode = false
+[difftool "kdiff3"]
+	path = kdiff3
+	keepBackup = false
+	trustExitCode = false
+[push]
+	default = simple
+[filter "local_tabs_repo_spaces"]
+	smudge = unexpand --tabs=2 --first-only
+	clean = expand --tabs=2 --initial
+[filter "local_spaces_repo_tabs"]
+	clean = unexpand --tabs=2 --first-only
+	smudge = expand --tabs=2 --initial

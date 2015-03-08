@@ -18,5 +18,9 @@
     "bower_components"
   ],
   "dependencies": {
+    "awesome-copycats": "razor-x/awesome-copycats#razor-x",
+    "awesome-copycats-settings": "razor-x/awesome-copycats-settings",
+    "tmuxinator-profiles": "git@bitbucket.org:razorx/tmuxinator-profiles.git",
+    "ssh-config": "git@bitbucket.org:razorx/ssh-config.git"
   }
 }
