@@ -2,9 +2,17 @@
 
 [![MIT License](https://img.shields.io/badge/license-MIT-red.svg)](./LICENSE.txt)
 
-My dotfiles managed with [Config Curator].
+My dotfiles managed with
+
+- [Config Curator]
+- [zshrc]
+- [tmuxrc]
+- [vimrc]
 
 [Config Curator]: https://github.com/razor-x/config_curator
+[tmuxrc]: https://github.com/razor-x/tmuxrc
+[vimrc]: https://github.com/razor-x/vimrc
+[zshrc]: https://github.com/razor-x/zshrc
 
 ## Requirements
 
