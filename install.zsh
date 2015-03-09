@@ -3,5 +3,5 @@
 ./bootstrap.zsh && \
 bower update    && \
 bundle update   && \
-curate          && \
+curate -v       && \
 ./update.zsh
