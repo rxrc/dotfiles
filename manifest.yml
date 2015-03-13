@@ -28,10 +28,14 @@ config_files:
   - src: .irbrc
   - src: .rspec
 
+  - src: .xinitrc
+    hosts: [ Gungnir ]
+
   - src: .xbindkeysrc
     hosts: [ Mimir ]
 
   - src: .Xmodmap
+
   - src: .config/gtk-3.0/settings.ini
     hosts: [ Gungnir ]
 
