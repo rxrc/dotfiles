@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 function puts () {
-  echo "-- [$1] $2"
+  echo "\n-- [$1] $2"
 }
 
 if [[ -d ~/.zgen.zsh ]]; then
