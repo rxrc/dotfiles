@@ -35,6 +35,7 @@ config_files:
     hosts: [ Mimir ]
 
   - src: .Xmodmap
+    packages: [ xorg-server ]
 
   - src: .config/gtk-3.0/settings.ini
     hosts: [ Gungnir ]
