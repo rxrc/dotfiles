@@ -48,6 +48,11 @@ $ bower update
 $ bundle update
 ```
 
+Note that some bower dependencies on this branch
+may point to private repositories.
+You will either need to replace or remove these.
+Otherwise you can start with the minimal branch.
+
 Install the dotfiles with
 
 ```bash
