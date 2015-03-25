@@ -36,42 +36,42 @@ a very minimal configuration.
 
 Bootstrap with
 
-````bash
+```bash
 $ ./bootstrap.zsh
-````
+```
 
 Install dependencies with
 
-````bash
+```bash
 $ bower update
 $ bundle update
-````
+```
 
 Install the dotfiles with
 
-````bash
+```bash
 $ curate
-````
+```
 
 Update external applications with
 
-````bash
+```bash
 $ ./update.zsh
-````
+```
 
 Run everything above with
 
-````bash
+```bash
 $ ./install.zsh
-````
+```
 
 Update managed plugins independently with
 
-````bash
+```bash
 $ zshupg
 $ tmuxupg
 $ vimupg
-````
+```
 
 ## Contributing
 
