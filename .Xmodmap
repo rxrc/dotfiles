@@ -2,8 +2,8 @@
 remove Lock = Caps_Lock
 keysym Caps_Lock = Escape
 
-! Remap Right-Alt to Super.
-remove mod1 = Alt_R
+! Remap Left-Alt to Super.
+remove mod1 = Alt_L
 clear mod4
-keycode 108 = Super_R
+keycode 64 = Super_R
 add mod4 = Super_R
