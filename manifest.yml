@@ -4,6 +4,9 @@ defaults:
   dmode: 0750
 
 components:
+  - src: bower_components/systemd-user/user
+    dst: .config/systemd/user
+
   - src: bower_components/tmuxinator-profiles
     dst: .tmuxinator
     packages: [ tmux ]

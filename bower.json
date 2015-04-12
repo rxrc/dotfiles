@@ -20,7 +20,8 @@
   "dependencies": {
     "awesome-copycats": "razor-x/awesome-copycats#razor-x",
     "awesome-copycats-settings": "razor-x/awesome-copycats-settings",
-    "tmuxinator-profiles": "git@bitbucket.org:razorx/tmuxinator-profiles.git",
-    "ssh-config": "git@bitbucket.org:razorx/ssh-config.git"
+    "ssh-config": "git@bitbucket.org:razorx/ssh-config.git",
+    "systemd-user": "git@bitbucket.org:razorx/systemd-user.git",
+    "tmuxinator-profiles": "git@bitbucket.org:razorx/tmuxinator-profiles.git"
   }
 }
