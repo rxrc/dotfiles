@@ -16,3 +16,6 @@ curate -v
 
 echo '\n$ ./update.zsh'
 ./update.zsh
+
+echo '\n$ ./units.zsh'
+./units.zsh

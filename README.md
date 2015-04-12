@@ -60,6 +60,12 @@ Update external applications with
 $ ./update.zsh
 ```
 
+Setup systemd/User units with
+
+```bash
+$ ./units.zsh
+```
+
 Run everything above with
 
 ```bash
