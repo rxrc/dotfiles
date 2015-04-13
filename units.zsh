@@ -3,11 +3,11 @@
 enabled=()
 disabled=()
 
-enabled+=( 'awesome.service' )
-enabled+=( 'dbus.service' )
-enabled+=( 'insync.service' )
-enabled+=( 'keymap.service' )
-enabled+=( 'NetworkManager-applet.service' )
+enabled+=( 'awesome' )
+enabled+=( 'dbus' )
+enabled+=( 'insync' )
+enabled+=( 'keymap' )
+enabled+=( 'NetworkManager-applet' )
 
 for unit in $enabled; do
   echo "[Enable] $unit"
