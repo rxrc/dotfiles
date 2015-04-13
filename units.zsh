@@ -3,6 +3,7 @@
 enabled=()
 disabled=()
 
+enabled+=( 'dbus.service' )
 enabled+=( 'awesome.service' )
 
 for unit in $enabled; do
