@@ -31,9 +31,6 @@ config_files:
   - src: .irbrc
   - src: .rspec
 
-  - src: .xinitrc
-    hosts: [ Gungnir ]
-
   - src: .xbindkeysrc
     hosts: [ Mimir ]
 
