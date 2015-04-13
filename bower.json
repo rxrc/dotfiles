@@ -21,7 +21,7 @@
     "awesome-copycats": "razor-x/awesome-copycats#razor-x",
     "awesome-copycats-settings": "razor-x/awesome-copycats-settings",
     "ssh-config": "git@bitbucket.org:razorx/ssh-config.git",
-    "systemd-user-units": "git@bitbucket.org:razorx/systemd-user-units.git",
+    "systemd-user-units": "razor-x/systemd-user-units",
     "tmuxinator-profiles": "git@bitbucket.org:razorx/tmuxinator-profiles.git"
   }
 }
