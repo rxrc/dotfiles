@@ -38,7 +38,6 @@ config_files:
     packages: [ xorg-server ]
 
   - src: .config/gtk-3.0/settings.ini
-    hosts: [ Gungnir ]
 
   - src: .config/terminator/config
     packages: [ terminator ]
