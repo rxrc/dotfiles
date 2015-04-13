@@ -42,6 +42,9 @@ config_files:
   - src: .config/terminator/config
     packages: [ terminator ]
 
+  - src: .zprofile
+  - src: .xinitrc
+
 symlinks:
   - src: ~/.config/awesome/rc.lua.powerarrow-darker
     dst: .config/awesome/rc.lua

@@ -5,7 +5,7 @@ disabled=()
 
 enabled+=( 'app@nm-applet' )
 enabled+=( 'app@unclutter' )
-enabled+=( 'awesome' )
+enabled+=( 'xinit.target' )
 enabled+=( 'dbus' )
 enabled+=( 'insync' )
 enabled+=( 'keymap' )
