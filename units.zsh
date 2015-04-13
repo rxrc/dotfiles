@@ -3,6 +3,8 @@
 enabled=()
 disabled=()
 
+enabled+=( 'awesome.service' )
+
 for unit in $enabled; do
   echo "Enable: $unit"
   systemctl --user enable $unit
