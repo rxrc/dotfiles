@@ -9,6 +9,7 @@ enabled+=( 'awesome' )
 enabled+=( 'dbus' )
 enabled+=( 'insync' )
 enabled+=( 'keymap' )
+enabled+=( 'redshift-gtk' )
 
 for unit in $enabled; do
   echo "[Enable] $unit"
