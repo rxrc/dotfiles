@@ -45,10 +45,14 @@ config_files:
 symlinks:
   - src: ~/.config/awesome/rc.lua.powerarrow-darker
     dst: .config/awesome/rc.lua
-    hosts: [ Gungnir ]
     packages: [ awesome ]
 
   - src: ~/Wallpaper/wallhaven-83639-4x3.jpg
     dst: .config/awesome/themes/powerarrow-darker/wall.png
     hosts: [ Gungnir ]
+    packages: [ awesome ]
+
+  - src: ~/Public/Wallpaper/Devices/Sleipnir/wallbase/General/1200.1920/wallpaper-1445485.jpg
+    dst: .config/awesome/themes/powerarrow-darker/wall.png
+    hosts: [ Mimir ]
     packages: [ awesome ]
