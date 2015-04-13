@@ -3,11 +3,12 @@
 enabled=()
 disabled=()
 
+enabled+=( 'app@nm-applet' )
+enabled+=( 'app@unclutter' )
 enabled+=( 'awesome' )
 enabled+=( 'dbus' )
 enabled+=( 'insync' )
 enabled+=( 'keymap' )
-enabled+=( 'NetworkManager-applet' )
 
 for unit in $enabled; do
   echo "[Enable] $unit"
