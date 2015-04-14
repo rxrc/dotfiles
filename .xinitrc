@@ -1,2 +1,2 @@
-systemctl --user start display-server.target
+systemctl --user restart display-server.target
 exec awesome
