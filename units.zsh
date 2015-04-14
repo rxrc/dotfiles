@@ -3,17 +3,16 @@
 enabled=()
 disabled=()
 
-enabled+=( 'app@nm-applet' )
-enabled+=( 'app@unclutter' )
-enabled+=( 'xinit.target' )
-enabled+=( 'dbus' )
-enabled+=( 'insync' )
-enabled+=( 'keymap' )
-enabled+=( 'redshift-gtk' )
+enabled+=('app@nm-applet')
+enabled+=('app@unclutter')
+enabled+=('xinit.target')
+enabled+=('dbus')
+enabled+=('insync')
+enabled+=('keymap')
+enabled+=('redshift-gtk')
 
 if [[ -e ~/.xbindkeysrc ]]; then
-  echo "HEY"
-  enabled+=( 'xbindkeys' )
+  enabled+=('xbindkeys')
 fi
 
 for unit in $enabled; do
