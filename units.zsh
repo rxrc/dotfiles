@@ -5,7 +5,6 @@ disabled=()
 
 enabled+=( 'app@nm-applet' )
 enabled+=( 'app@unclutter' )
-enabled+=( 'app@xbindkeys' )
 enabled+=( 'xinit.target' )
 enabled+=( 'dbus' )
 enabled+=( 'insync' )
@@ -13,6 +12,7 @@ enabled+=( 'keymap' )
 enabled+=( 'redshift-gtk' )
 
 if [[ -e ~/.xbindkeysrc ]]; then
+  echo "HEY"
   enabled+=( 'xbindkeys' )
 fi
 
