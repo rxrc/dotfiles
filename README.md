@@ -18,12 +18,30 @@ My dotfiles managed with
 
 * [Bower]
 * [Ruby]
+* [Bundler]
 * [Zsh]
 * [tmux (optional)][tmux]
 * [Vim (optional)][Vim]
 
+### Initial Bootstrap
+
+Note: the only requirement for the initial bootstrap is Zsh.
+
+Because this installs a new `.zshrc`,
+you should restart your shell before proceeding.
+
+After bootstrapping, you can choose to install Ruby
+under [rbenv] using [ruby-build].
+These two tools are installed during the bootstrap.
+Once Ruby is setup, install the `bundler` gem.
+Bower should be installed manually using [npm].
+
 [Bower]: http://bower.io/
+[Bundler]: http://bundler.io/
+[npm]: https://www.npmjs.com/
+[rbenv]: https://github.com/sstephenson/rbenv
 [Ruby]: https://www.ruby-lang.org/
+[ruby-build]: https://github.com/sstephenson/ruby-build
 [tmux]: http://tmux.sourceforge.net/
 [Vim]: http://www.vim.org/
 [Zsh]: http://www.zsh.org/
