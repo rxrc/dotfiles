@@ -17,8 +17,7 @@ My dotfiles managed with
 ## Requirements
 
 * [Bower]
-* [Ruby]
-* [Bundler]
+* [Ruby] with [Bundler]
 * [Zsh]
 * [tmux (optional)][tmux]
 * [Vim (optional)][Vim]
