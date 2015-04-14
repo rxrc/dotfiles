@@ -32,7 +32,7 @@ you should restart your shell before proceeding.
 After bootstrapping, you can choose to install Ruby
 under [rbenv] using [ruby-build].
 These two tools are installed during the bootstrap.
-Once Ruby is setup, install the `bundler` gem.
+Once Ruby is setup, install the bundler gem.
 Bower should be installed manually using [npm].
 
 [Bower]: http://bower.io/
