@@ -6,6 +6,7 @@ defaults:
 components:
   - src: bower_components/systemd-user-units/user
     dst: .config/systemd/user
+    packages: [ systemd ]
 
   - src: bower_components/tmuxinator-profiles
     dst: .tmuxinator
@@ -38,12 +39,16 @@ config_files:
     packages: [ xorg-server ]
 
   - src: .config/gtk-3.0/settings.ini
+    packages: [ gtk3 ]
 
   - src: .config/terminator/config
     packages: [ terminator ]
 
   - src: .zprofile
+    packages: [ zsh ]
+
   - src: .xinitrc
+    packages: [ xorg-server ]
 
 symlinks:
   - src: ~/.config/awesome/rc.lua.powerarrow-darker
