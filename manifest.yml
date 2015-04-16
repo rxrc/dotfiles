@@ -35,7 +35,7 @@ config_files:
   - src: .xbindkeysrc
     hosts: [ Mimir ]
 
-  - src: .Xmodmap
+  - src: .Xkeymap
     packages: [ xorg-server ]
 
   - src: .gtkrc-2.0
