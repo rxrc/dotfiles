@@ -102,6 +102,9 @@ $ tmuxupg
 $ vimupg
 ```
 
+Additional manual configuration is documented in
+[NOTES.md](./NOTES.md).
+
 ## Contributing
 
 Please submit and comment on bug reports and feature requests.
