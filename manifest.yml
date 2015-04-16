@@ -57,7 +57,9 @@ config_files:
 symlinks:
   - src: ~/.config/xkb/keymap/samus.xkb
     dst: .config/xkb/Gungnir
-    hosts: [ Gungnir ]
+
+  - src: ~/.config/xkb/keymap/x60t-custom.xkb
+    dst: .config/xkb/Gungnir-x60
 
   - src: ~/.config/awesome/rc.lua.powerarrow-darker
     dst: .config/awesome/rc.lua
