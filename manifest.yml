@@ -8,6 +8,10 @@ components:
     dst: .config/systemd/user
     packages: [ systemd ]
 
+  - src: bower_components/keymaps/xkb
+    dst: .config/xkb
+    packages: [ xorg-server ]
+
   - src: bower_components/tmuxinator-profiles
     dst: .tmuxinator
     packages: [ tmux ]
@@ -35,9 +39,6 @@ config_files:
   - src: .xbindkeysrc
     hosts: [ Mimir ]
 
-  - src: .Xmodmap
-    packages: [ xorg-server ]
-
   - src: .gtkrc-2.0
     packages: [ gtk2 ]
 
@@ -54,6 +55,10 @@ config_files:
     packages: [ xorg-server ]
 
 symlinks:
+  - src: ~/.config/xkb/keymap/samus.xkb
+    dst: .config/xkb/Gungnir
+    hosts: [ Gungnir ]
+
   - src: ~/.config/awesome/rc.lua.powerarrow-darker
     dst: .config/awesome/rc.lua
     packages: [ awesome ]

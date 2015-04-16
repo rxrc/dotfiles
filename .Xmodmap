@@ -1,9 +1,0 @@
-! Remap CapsLock to Escape.
-remove Lock = Caps_Lock
-keysym Caps_Lock = Escape
-
-! Remap Left-Alt to Super.
-remove mod1 = Alt_L
-clear mod4
-keycode 64 = Super_R
-add mod4 = Super_R

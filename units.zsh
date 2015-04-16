@@ -8,7 +8,7 @@ enabled+=('app@unclutter')
 enabled+=('xinit.target')
 enabled+=('dbus')
 enabled+=('insync')
-enabled+=('keymap')
+enabled+=("keymap@$(hostname)")
 enabled+=('redshift-gtk')
 
 if [[ -e ~/.xbindkeysrc ]]; then
