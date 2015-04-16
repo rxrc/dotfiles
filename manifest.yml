@@ -8,6 +8,10 @@ components:
     dst: .config/systemd/user
     packages: [ systemd ]
 
+  - src: bower_components/keymaps/xkb
+    dst: .config/xkb
+    packages: [ xorg-server ]
+
   - src: bower_components/tmuxinator-profiles
     dst: .tmuxinator
     packages: [ tmux ]
@@ -34,9 +38,6 @@ config_files:
 
   - src: .xbindkeysrc
     hosts: [ Mimir ]
-
-  - src: .Xkeymap
-    packages: [ xorg-server ]
 
   - src: .gtkrc-2.0
     packages: [ gtk2 ]
