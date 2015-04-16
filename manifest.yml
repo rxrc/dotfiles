@@ -58,7 +58,7 @@ symlinks:
   - src: ~/.config/xkb/keymap/samus.xkb
     dst: .config/xkb/Gungnir
 
-  - src: ~/.config/xkb/keymap/x60t-custom.xkb
+  - src: ~/.config/xkb/keymap/x60t.xkb
     dst: .config/xkb/Gungnir-x60
 
   - src: ~/.config/awesome/rc.lua.powerarrow-darker
