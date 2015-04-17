@@ -65,7 +65,7 @@ symlinks:
     dst: .config/awesome/rc.lua
     packages: [ awesome ]
 
-  - src: ~/Wallpaper/wallhaven-85529-3x2.jpg
+  - src: ~/drive/Wallpaper/wallhaven/wallhaven-85529-3x2.jpg
     dst: .config/awesome/themes/powerarrow-darker/wall.png
     hosts: [ Gungnir ]
     packages: [ awesome ]
