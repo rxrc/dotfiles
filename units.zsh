@@ -5,12 +5,13 @@ disabled=()
 
 enabled+=('app@nm-applet')
 enabled+=('app@unclutter')
-enabled+=('xinit.target')
 enabled+=('dbus')
 enabled+=('insync')
 enabled+=("keymap@$(hostname)")
+enabled+=('numlock')
 enabled+=('pulseaudio.socket')
 enabled+=('redshift-gtk')
+enabled+=('xinit.target')
 
 if [[ -e ~/.xbindkeysrc ]]; then
   enabled+=('xbindkeys')
