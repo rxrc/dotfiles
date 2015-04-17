@@ -19,7 +19,6 @@
   ],
   "dependencies": {
     "awesome-copycats": "razor-x/awesome-copycats#razor-x",
-    "awesome-copycats-settings": "razor-x/awesome-copycats-settings",
     "keymaps": "razor-x/keymaps",
     "ssh-config": "git@bitbucket.org:razorx/ssh-config.git",
     "systemd-user-units": "razor-x/systemd-user-units",
