@@ -9,6 +9,7 @@ enabled+=('xinit.target')
 enabled+=('dbus')
 enabled+=('insync')
 enabled+=("keymap@$(hostname)")
+enabled+=('pulseaudio.socket')
 enabled+=('redshift-gtk')
 
 if [[ -e ~/.xbindkeysrc ]]; then
