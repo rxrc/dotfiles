@@ -24,6 +24,10 @@ components:
     dst: .config/awesome/settings
     packages: [ awesome ]
 
+  - src: bower_components/apw
+    dst: .config/awesome/apw
+    packages: [ awesome ]
+
 config_files:
   - src: bower_components/ssh-config/config
     dst: .ssh/config
