@@ -21,7 +21,7 @@ enabled+=('xresources@urxvt')
 enabled+=('xresources@urxvt.interface')
 enabled+=('xresources@urxvt.theme')
 
-if [[ -e ~/.xbindkeysrc ]]; then
+if [[ -e ~/.config/xbindkeys/xbindkeysrc ]]; then
   enabled+=('xbindkeys')
 fi
 

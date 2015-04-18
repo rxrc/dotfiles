@@ -44,7 +44,7 @@ config_files:
   - src: .irbrc
   - src: .rspec
 
-  - src: .xbindkeysrc
+  - src: .config/xbindkeys/xbindkeysrc
     hosts: [ Gungnir, Mimir ]
 
   - src: .gtkrc-2.0
