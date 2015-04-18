@@ -42,16 +42,24 @@ config_files:
   - src: config/git/ignore
     dst: .config/git/ignore
 
-  - src: .gemrc
-  - src: .bundle/config
-  - src: .irbrc
-  - src: .rspec
+  - src: dotfiles/gemrc
+    dst: .gemrc
+
+  - src: dotfiles/bundle/config
+    dst: .bundle/config
+
+  - src: dotfiles/irbrc
+    dst: .irbrc
+
+  - src: dotfiles/rspec
+    dst: .rspec
 
   - src: config/xbindkeys/xbindkeysrc
     dst: .config/xbindkeys/xbindkeysrc
     hosts: [ Gungnir, Mimir ]
 
-  - src: .gtkrc-2.0
+  - src: dotfiles/gtkrc-2.0
+    dst: .gtkrc-2.0
     packages: [ gtk2 ]
 
   - src: config/gtk-3.0/settings.ini
@@ -66,10 +74,12 @@ config_files:
     dst: .config/hangups/hangups.conf
     packages: [ hangups-git ]
 
-  - src: .zprofile
+  - src: dotfiles/zprofile
+    dst: .zprofile
     packages: [ zsh ]
 
-  - src: .xinitrc
+  - src: dotfiles/xinitrc
+    dst: .xinitrc
     packages: [ xorg-server ]
 
 symlinks:
