@@ -1,3 +1,3 @@
 ! Fonts
-urxvt*font:                 xft:Inconsolata\-g:pixelsize=12:antialias=true:hinting=full,xft:Inconsolata\ for\ Powerline:pixelsize=12:antialias=true:hinting=full
-urxvt*boldFont:             xft:Inconsolata\-g:style=bold:pixelsize=12:antialias=true:hinting=full,xft:Inconsolata\ for\ Powerline:style=bold:pixelsize=12:antialias=true:hinting=full
+urxvt*font: xft:Inconsolata\-g:pixelsize=12:antialias=true:hinting=full,xft:Inconsolata\ for\ Powerline:pixelsize=12:antialias=true:hinting=full,xft:Segoe\ UI\ Symbol:pixelsize=12:antialias=true:hinting=full
+urxvt*boldFont: xft:Inconsolata\-g:style=bold:pixelsize=12:antialias=true:hinting=full,xft:Inconsolata\ for\ Powerline:style=bold:pixelsize=12:antialias=true:hinting=full,xft:Segoe\ UI\ Symbol:pixelsize=12:antialias=true:hinting=full
