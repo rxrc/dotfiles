@@ -13,3 +13,5 @@ browser.urlbar.trimURLs = false
 ```
 layout.css.devPixelsPerPx = 2
 ```
+
+Set this in Thunderbird too.
