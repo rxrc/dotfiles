@@ -41,7 +41,7 @@ config_files:
   - src: .rspec
 
   - src: .xbindkeysrc
-    hosts: [ Mimir ]
+    hosts: [ Gungnir, Mimir ]
 
   - src: .gtkrc-2.0
     packages: [ gtk2 ]
