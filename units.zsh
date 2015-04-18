@@ -17,6 +17,7 @@ enabled+=('tmuxinator@hangups')
 enabled+=('xinit.target')
 enabled+=('xresources')
 enabled+=('xresources@urxvt')
+enabled+=('xresources@urxvt.solarized')
 
 if [[ -e ~/.xbindkeysrc ]]; then
   enabled+=('xbindkeys')
