@@ -15,3 +15,31 @@
 "sudo /usr/local/bin/chromeos-kbd_backlight --increase"
   m:0x8 + c:73
   XF86MonBrightnessUp
+
+# Media keys.
+"xte 'key XF86AudioPrev'"
+  m:0x8 + c:67
+  Alt + XF86Back
+
+"xte 'key XF86AudioNext'"
+  m:0x8 + c:68
+  Alt + XF86Foward
+
+"xte 'key XF86AudioPlay'"
+  m:0x8 + c:69
+  Alt + XF86Refresh
+
+# Toggle touchpad.
+"touchpad-toggle"
+  m:0x0 + c:70
+  F11
+
+# Toggle speakers and headphones.
+"chromeos-sound-output-toggle"
+  m:0x8 + c:74
+  Alt + XF86AudioMute
+
+# Bind power off.
+"sudo /usr/bin/poweroff"
+  m:0x8 + c:124
+  Alt + XF86PowerOff
