@@ -16,6 +16,10 @@ components:
     dst: .tmuxinator
     packages: [ tmux ]
 
+  - src: .config/Xresources
+    dst: .config/Xresources
+    packages: [ xorg-server ]
+
   - src: bower_components/awesome-copycats
     dst: .config/awesome
     packages: [ awesome ]
@@ -42,9 +46,6 @@ config_files:
 
   - src: .xbindkeysrc
     hosts: [ Gungnir, Mimir ]
-
-  - src: .Xresources
-    hosts: [ Gungnir ]
 
   - src: .gtkrc-2.0
     packages: [ gtk2 ]
@@ -73,6 +74,14 @@ symlinks:
 
   - src: ~/.config/xkb/keymap/x60t.xkb
     dst: .config/xkb/Gungnir-x60
+
+  - src: ~/.config/Xresources/default.hidpi
+    dst: .config/Xresources/default
+    packages: [ linux-samus ]
+
+  - src: ~/.config/Xresources/urxvt.hidpi
+    dst: .config/Xresources/urxvt
+    packages: [ linux-samus ]
 
   - src: ~/.config/awesome/rc.lua.powerarrow-darker
     dst: .config/awesome/rc.lua
