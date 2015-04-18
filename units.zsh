@@ -13,6 +13,7 @@ enabled+=('numlock')
 enabled+=('pulseaudio.socket')
 enabled+=('redshift-gtk')
 enabled+=('xinit.target')
+enabled+=('xresources')
 
 if [[ -e ~/.xbindkeysrc ]]; then
   enabled+=('xbindkeys')
