@@ -1,0 +1,3 @@
+! Fonts
+urxvt*font:                 xft:Inconsolata\-g:pixelsize=25:antialias=true:hinting=full,xft:Inconsolata\ for\ Powerline:pixelsize=25:antialias=true:hinting=full
+urxvt*boldFont:             xft:Inconsolata\-g:style=bold:pixelsize=25:antialias=true:hinting=full,xft:Inconsolata\ for\ Powerline:style=bold:pixelsize=25:antialias=true:hinting=full
