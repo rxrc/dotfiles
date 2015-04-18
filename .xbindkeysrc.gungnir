@@ -1,17 +1,17 @@
 # Control backlights.
-"xbacklight -inc 10"
-  m:0x0 + c:73
-  XF86MonBrightnessUp
-
 "xbacklight -dec 10"
   m:0x0 + c:72
   XF86MonBrightnessDown
 
-# Control keyboard backlights.
-"sudo /usr/local/bin/chromeos-kbd_backlight --increase"
-  m:0x8 + c:73
+"xbacklight -inc 10"
+  m:0x0 + c:73
   XF86MonBrightnessUp
 
+# Control keyboard backlights.
 "sudo /usr/local/bin/chromeos-kbd_backlight --decrease"
   m:0x8 + c:72
   XF86MonBrightnessDown
+
+"sudo /usr/local/bin/chromeos-kbd_backlight --increase"
+  m:0x8 + c:73
+  XF86MonBrightnessUp
