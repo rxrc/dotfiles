@@ -1,5 +1,9 @@
 # Manual Configuration Notes
 
+## Qt
+
+Use `qtconfig-qt4` to customize Qt apps.
+
 ## Firefox
 
 ### about:config
