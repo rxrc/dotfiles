@@ -16,7 +16,7 @@ components:
     dst: .tmuxinator
     packages: [ tmux ]
 
-  - src: .config/Xresources
+  - src: config/Xresources
     dst: .config/Xresources
     packages: [ xorg-server ]
 
@@ -36,27 +36,34 @@ config_files:
   - src: bower_components/ssh-config/config
     dst: .ssh/config
 
-  - src: .gitconfig
-  - src: .gitignore_global
+  - src: config/git/config
+    dst: .config/git/config
+
+  - src: config/git/ignore
+    dst: .config/git/ignore
 
   - src: .gemrc
   - src: .bundle/config
   - src: .irbrc
   - src: .rspec
 
-  - src: .config/xbindkeys/xbindkeysrc
+  - src: config/xbindkeys/xbindkeysrc
+    dst: .config/xbindkeys/xbindkeysrc
     hosts: [ Gungnir, Mimir ]
 
   - src: .gtkrc-2.0
     packages: [ gtk2 ]
 
-  - src: .config/gtk-3.0/settings.ini
+  - src: config/gtk-3.0/settings.ini
+    dst: .config/gtk-3.0/settings.ini
     packages: [ gtk3 ]
 
-  - src: .config/terminator/config
+  - src: config/terminator/config
+    dst: .config/terminator/config
     packages: [ terminator ]
 
-  - src: .config/hangups/hangups.conf
+  - src: config/hangups/hangups.conf
+    dst: .config/hangups/hangups.conf
     packages: [ hangups-git ]
 
   - src: .zprofile
