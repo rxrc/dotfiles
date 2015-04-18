@@ -1,5 +1,4 @@
-# Tab commands on mouse left / right scoll
-
+# Tab commands on mouse left and right scroll.
 "xte 'keydown Control_L' 'keydown Shift_L' 'key Tab' 'keyup Control_L' 'keyup Shift_L'"
    b:6
 
