@@ -43,6 +43,9 @@ config_files:
   - src: .xbindkeysrc
     hosts: [ Gungnir, Mimir ]
 
+  - src: .Xresources
+    hosts: [ Gungnir ]
+
   - src: .gtkrc-2.0
     packages: [ gtk2 ]
 
