@@ -3,6 +3,8 @@
   focus = mouse
   title_transmit_bg_color = "#d33682"
 [keybindings]
+  next_tab = <Primary>Right
+  prev_tab = <Primary>Left
 [profiles]
   [[default]]
     font = Inconsolata-g for Powerline Medium 18
