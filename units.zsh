@@ -19,7 +19,7 @@ enabled+=('xinit.target')
 enabled+=('xresources')
 enabled+=('xresources@urxvt')
 enabled+=('xresources@urxvt.interface')
-enabled+=('xresources@urxvt.solarized')
+enabled+=('xresources@urxvt.theme')
 
 if [[ -e ~/.xbindkeysrc ]]; then
   enabled+=('xbindkeys')

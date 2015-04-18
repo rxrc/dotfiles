@@ -83,6 +83,9 @@ symlinks:
     dst: .config/Xresources/urxvt
     packages: [ linux-samus ]
 
+  - src: ~/.config/Xresources/urxvt.solarized
+    dst: .config/Xresources/urxvt.theme
+
   - src: ~/.config/awesome/rc.lua.powerarrow-darker
     dst: .config/awesome/rc.lua
     packages: [ awesome ]
