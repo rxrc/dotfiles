@@ -4,7 +4,6 @@ enabled=()
 disabled=()
 
 enabled+=('app@nm-applet')
-enabled+=('app@qhangups')
 enabled+=('app@unclutter')
 enabled+=('dbus')
 enabled+=('insync')

@@ -55,6 +55,9 @@ config_files:
   - src: .config/terminator/config
     packages: [ terminator ]
 
+  - src: .config/hangups/config
+    packages: [ hangups-git ]
+
   - src: .zprofile
     packages: [ zsh ]
 
