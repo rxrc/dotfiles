@@ -1,3 +1,8 @@
+# Bind screen locker.
+"slimlock"
+  m:0x8 + c:49
+  Alt + grave
+
 # Tab commands on mouse left and right scroll.
 "xte 'keydown Control_L' 'keydown Shift_L' 'key Tab' 'keyup Control_L' 'keyup Shift_L'"
   b:6
