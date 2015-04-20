@@ -6,6 +6,11 @@ function puts () {
   echo "\n-- [$1] $2"
 }
 
+if ! [[ -d ~/.cache/ssh/sockets ]]; then
+  puts 'Creating' '~/.cache/ssh/sockets'
+  mkdir -p ~/.cache/ssh/sockets
+fi
+
 if ! [[ -d ~/.zgen.zsh ]]; then
   puts 'Installing' 'zshrc'
   curl -L https://io.evansosenko.com/zshrc/install.sh | sh
