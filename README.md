@@ -61,6 +61,7 @@ $ ./bootstrap.zsh
 Install dependencies with
 
 ```bash
+$ pip install --user --upgrade -r requirements.txt
 $ bower update
 $ bundle update
 ```

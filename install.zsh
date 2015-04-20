@@ -5,6 +5,9 @@ set -e
 echo '$ ./bootstrap.zsh'
 ./bootstrap.zsh
 
+echo '\n$ pip install --user --upgrade -r requirements.txt'
+pip install --user --upgrade -r requirements.txt
+
 echo '\n$ bower update\n'
 bower update
 
