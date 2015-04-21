@@ -1,0 +1,4 @@
+# Bind screen locker.
+"slimlock"
+  m:0x8 + c:49
+  Alt + grave
