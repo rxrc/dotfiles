@@ -86,6 +86,10 @@ config_files:
     dst: .xinitrc
     packages: [ xorg-server ]
 
+  - src: config/Xresources/default
+    dst: .config/Xresources/default
+    packages: [ xorg-server ]
+
 symlinks:
   - src: ~/.config/xkb/keymap/steelseries-6gv2.xkb
     dst: .config/xkb/Mimir
@@ -95,21 +99,6 @@ symlinks:
 
   - src: ~/.config/xkb/keymap/x60t.xkb
     dst: .config/xkb/Gungnir-x60
-
-  - src: ~/.config/Xresources/default.vert
-    dst: .config/Xresources/default
-    hosts: [ Mimir ]
-
-  - src: ~/.config/Xresources/default.hidpi
-    dst: .config/Xresources/default
-    packages: [ linux-samus ]
-
-  - src: ~/.config/Xresources/urxvt.hidpi
-    dst: .config/Xresources/urxvt
-    packages: [ linux-samus ]
-
-  - src: ~/.config/Xresources/urxvt.solarized
-    dst: .config/Xresources/urxvt.theme
 
   - src: ~/.config/awesome/rc.lua.powerarrow-darker
     dst: .config/awesome/rc.lua

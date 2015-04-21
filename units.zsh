@@ -17,9 +17,6 @@ enabled+=('tmuxinator@hangups')
 enabled+=('urxvtd')
 enabled+=('xinit.target')
 enabled+=('xresources')
-enabled+=('xresources@urxvt')
-enabled+=('xresources@urxvt.interface')
-enabled+=('xresources@urxvt.theme')
 
 if [[ -e ~/.config/xbindkeys/xbindkeysrc ]]; then
   enabled+=('xbindkeys')
