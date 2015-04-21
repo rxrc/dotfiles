@@ -16,8 +16,8 @@ components:
     dst: .tmuxinator
     packages: [ tmux ]
 
-  - src: config/Xresources
-    dst: .config/Xresources
+  - src: bower_components/xresources/Xresources.d
+    dst: .config/Xresources/Xresources.d
     packages: [ xorg-server ]
 
   - src: bower_components/awesome-copycats

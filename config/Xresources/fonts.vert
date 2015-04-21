@@ -1,1 +1,0 @@
-Xft.rgba: v-rgb
