@@ -92,6 +92,10 @@ symlinks:
   - src: ~/.config/xkb/keymap/x60t.xkb
     dst: .config/xkb/Gungnir-x60
 
+  - src: ~/.config/Xresources/default.vert
+    dst: .config/Xresources/default
+    hosts: [ Mimir ]
+
   - src: ~/.config/Xresources/default.hidpi
     dst: .config/Xresources/default
     packages: [ linux-samus ]

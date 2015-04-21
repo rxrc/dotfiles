@@ -3,4 +3,4 @@ Xft.autohint: false
 Xft.hinting: true
 Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
-Xft.rgba: rgb
+Xft.rgba: v-rgb
