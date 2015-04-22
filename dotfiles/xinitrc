@@ -1,2 +1,10 @@
 systemctl --user restart display-server.target
+
+if (pacman -Q xkeyboard-config-chromebook >/dev/null); then
+  xset r 111
+  xset r 113
+  xset r 114
+  xset r 116
+fi
+
 exec awesome
