@@ -58,6 +58,10 @@ config_files:
   - src: dotfiles/rspec
     dst: .rspec
 
+  - src: config/hangups/hangups.conf
+    dst: .config/hangups/hangups.conf
+    packages: [ hangups-git ]
+
   - src: config/Xresources/default
     dst: .config/Xresources/default
     packages: [ xorg-server ]
@@ -77,10 +81,6 @@ config_files:
   - src: config/terminator/config
     dst: .config/terminator/config
     packages: [ terminator ]
-
-  - src: config/hangups/hangups.conf
-    dst: .config/hangups/hangups.conf
-    packages: [ hangups-git ]
 
   - src: dotfiles/zprofile
     dst: .zprofile
