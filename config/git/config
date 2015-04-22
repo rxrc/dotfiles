@@ -1,6 +1,5 @@
 [core]
 	editor = vim
-	excludesfile = /home/razorx/.gitignore_global
 [user]
 	name = Evan Sosenko
 	email = razorx@evansosenko.com
@@ -13,17 +12,11 @@
 [github]
 	user = razor-x
 [diff]
-	tool = kdiff3
+	tool = vimdiff
 [merge]
-	tool = kdiff3
-[mergetool "kdiff3"]
-	path = kdiff3
-	keepBackup = false
-	trustExitCode = false
-[difftool "kdiff3"]
-	path = kdiff3
-	keepBackup = false
-	trustExitCode = false
+	tool = vimdiff
+  conflictstyle = diff3
+  prompt = false
 [push]
 	default = simple
 [filter "local_tabs_repo_spaces"]
