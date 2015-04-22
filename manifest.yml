@@ -82,6 +82,10 @@ config_files:
     dst: .config/terminator/config
     packages: [ terminator ]
 
+  - src: config/zathura/zathurarc
+    dst: .config/zathura/zathurarc
+    packages: [ zathura ]
+
   - src: dotfiles/zprofile
     dst: .zprofile
     packages: [ zsh ]
