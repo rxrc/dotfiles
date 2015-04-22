@@ -48,3 +48,8 @@
 "slimlock"
   m:0x8 + c:49
   Alt + grave
+
+# Bind delete.
+"xdotool getwindowfocus key Delete"
+  m:0x18 + c:22
+  Alt+Mod2 + BackSpace
