@@ -58,6 +58,10 @@ config_files:
   - src: dotfiles/rspec
     dst: .rspec
 
+  - src: config/Xresources/default
+    dst: .config/Xresources/default
+    packages: [ xorg-server ]
+
   - src: config/xbindkeys/xbindkeysrc
     dst: .config/xbindkeys/xbindkeysrc
     hosts: [ Gungnir, Gungnir-x60, Mimir ]
@@ -84,10 +88,6 @@ config_files:
 
   - src: dotfiles/xinitrc
     dst: .xinitrc
-    packages: [ xorg-server ]
-
-  - src: config/Xresources/default
-    dst: .config/Xresources/default
     packages: [ xorg-server ]
 
 symlinks:
