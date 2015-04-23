@@ -62,6 +62,10 @@ config_files:
     dst: .config/hangups/hangups.conf
     packages: [ hangups-git ]
 
+  - src: config/pulse/default.pa
+    dst: .config/pulse/default.pa
+    packages: [ pulseaudio ]
+
   - src: config/Xresources/default
     dst: .config/Xresources/default
     packages: [ xorg-server ]
