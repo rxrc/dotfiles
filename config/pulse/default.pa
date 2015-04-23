@@ -60,9 +60,3 @@ load-module module-position-event-sounds
 load-module module-role-cork
 load-module module-filter-heuristics
 load-module module-filter-apply
-
-# Custom configuration.
-
-# Load the integrated PulseAudio equalizer and D-Bus module.
-load-module module-equalizer-sink
-load-module module-dbus-protocol
