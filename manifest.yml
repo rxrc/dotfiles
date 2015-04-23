@@ -38,7 +38,7 @@ config_files:
 
   - src: bower_components/ssh-config/authorized_keys
     dst: .ssh/authorized_keys
-    fmode: 0640
+    fmode: 0600
 
   - src: config/git/config
     dst: .config/git/config
