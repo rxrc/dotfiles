@@ -15,6 +15,7 @@ enabled+=('tmuxinator@default')
 enabled+=('tmuxinator@glances')
 enabled+=('tmuxinator@hangups')
 enabled+=('urxvtd')
+enabled+=('wm.target')
 enabled+=('xinit.target')
 enabled+=('xresources')
 
