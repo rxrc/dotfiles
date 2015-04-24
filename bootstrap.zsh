@@ -11,6 +11,11 @@ if ! [[ -d ~/.cache/ssh/sockets ]]; then
   mkdir -p ~/.cache/ssh/sockets
 fi
 
+if ! [[ -e ~/.gemrc ]]; then
+  echo 'gem: --no-document' > ~/.gemrc
+  puts 'Created' '~/.gemrc'
+fi
+
 if ! [[ -d ~/.zgen.zsh ]]; then
   puts 'Installing' 'zshrc'
   curl -L https://io.evansosenko.com/zshrc/install.sh | sh
