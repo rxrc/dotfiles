@@ -19,6 +19,10 @@ enabled+=('wm.target')
 enabled+=('xinit.target')
 enabled+=('xresources')
 
+if [[ -e /usr/local/bin/mntxd ]]; then
+  enabled+=('rbenv-ruby@mntxd')
+fi
+
 if [[ -e ~/.config/xbindkeys/xbindkeysrc ]]; then
   enabled+=('xbindkeys')
 fi
