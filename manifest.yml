@@ -97,12 +97,15 @@ config_files:
 symlinks:
   - src: ~/.config/xkb/keymap/steelseries-6gv2.xkb
     dst: .config/xkb/Mimir
+    packages: [ xorg-server ]
 
   - src: ~/.config/xkb/keymap/samus.xkb
     dst: .config/xkb/Gungnir
+    packages: [ xorg-server ]
 
   - src: ~/.config/xkb/keymap/x60t.xkb
     dst: .config/xkb/Gungnir-x60
+    packages: [ xorg-server ]
 
   - src: ~/.config/awesome/rc.lua.powerarrow-darker
     dst: .config/awesome/rc.lua
