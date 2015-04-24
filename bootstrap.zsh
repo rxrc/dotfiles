@@ -7,8 +7,8 @@ function puts () {
 }
 
 if ! [[ -d ~/.cache/ssh/sockets ]]; then
-  puts 'Creating' '~/.cache/ssh/sockets'
   mkdir -p ~/.cache/ssh/sockets
+  puts 'Created' '~/.cache/ssh/sockets'
 fi
 
 if ! [[ -e ~/.gemrc ]]; then
