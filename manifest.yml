@@ -95,6 +95,10 @@ config_files:
     packages: [ xorg-server ]
 
 symlinks:
+  - src: /usr/share/doc/ranger/config/scope.sh
+    dst: .config/ranger/scope.sh
+    packages: [ ranger ]
+
   - src: ~/.config/xkb/keymap/steelseries-6gv2.xkb
     dst: .config/xkb/Mimir
     packages: [ xorg-server ]
