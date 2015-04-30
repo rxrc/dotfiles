@@ -60,7 +60,6 @@ config_files:
 
   - src: config/hangups/hangups.conf
     dst: .config/hangups/hangups.conf
-    packages: [ hangups-git ]
 
   - src: config/Xresources/default
     dst: .config/Xresources/default
