@@ -58,6 +58,10 @@ config_files:
   - src: dotfiles/rspec
     dst: .rspec
 
+  - src: config/ranger/rc.conf
+    dst: .config/ranger/rc.conf
+    packages: [ ranger ]
+
   - src: config/hangups/hangups.conf
     dst: .config/hangups/hangups.conf
 
