@@ -62,6 +62,10 @@ config_files:
     dst: .config/ranger/rc.conf
     packages: [ ranger ]
 
+  - src: dotfiles/vagrant.d/Vagrantfile
+    dst: .vagrant.d/Vagrantfile
+    packages: [ vagrant ]
+
   - src: config/hangups/hangups.conf
     dst: .config/hangups/hangups.conf
 
