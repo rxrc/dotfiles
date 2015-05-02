@@ -16,6 +16,16 @@ if ! [[ -e ~/.gemrc ]]; then
   puts 'Created' '~/.gemrc'
 fi
 
+if ! [[ -e ~/.irssi/scripts/autorun/scriptassist.pl ]]; then
+  puts 'Installing' 'scriptassist'
+  curl -L http://scripts.irssi.org/scripts/scriptassist.pl \
+    -o ~/.irssi/scripts/autorun/scriptassist.pl
+fi
+
+if [[ -e ~/.irssi/scripts/autorun/scriptassist.pl ]]; then
+  puts 'Installed' 'scriptassist'
+fi
+
 if ! [[ -d ~/.zgen.zsh ]]; then
   puts 'Installing' 'zshrc'
   curl -L https://io.evansosenko.com/zshrc/install.sh | sh
