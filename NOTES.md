@@ -1,5 +1,16 @@
 # Manual Configuration Notes
 
+## Vagrant
+
+Install these Vagrant plugins:
+
+```
+vagrant-berkshelf
+vagrant-cachier
+vagrant-ohai
+vagrant-omnibus
+```
+
 ## Qt
 
 Use `qtconfig-qt4` to customize Qt apps.
