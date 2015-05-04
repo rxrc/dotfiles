@@ -18,6 +18,7 @@ fi
 
 if ! [[ -e ~/.irssi/scripts/autorun/scriptassist.pl ]]; then
   puts 'Installing' 'scriptassist'
+  mkdir -p ~/.irssi/scripts/autorun
   curl -L http://scripts.irssi.org/scripts/scriptassist.pl \
     -o ~/.irssi/scripts/autorun/scriptassist.pl
 fi
