@@ -18,7 +18,7 @@ fi
 
 if ! [[ -d ~/.zgen.zsh ]]; then
   puts 'Installing' 'zshrc'
-  curl -L https://io.evansosenko.com/zshrc/install.sh | sh
+  curl -L https://rc.evansosenko.com/zshrc/install.sh | sh
 fi
 
 if [[ -d ~/.zgen.zsh ]]; then
@@ -45,7 +45,7 @@ fi
 
 if ! [[ -d ~/.vim/bundle/vimrc ]]; then
   puts 'Installing' 'vimrc'
-  curl -L https://io.evansosenko.com/vimrc/install.sh | sh
+  curl -L https://rc.evansosenko.com/vimrc/install.sh | sh
 fi
 
 if [[ -d ~/.vim/bundle/vimrc ]]; then
@@ -55,7 +55,7 @@ fi
 if ! [[ -d ~/.tmux/plugins/tmuxrc ]]; then
   if [[ -n "$TMUX" ]]; then
     puts 'Installing' 'tmuxrc'
-    curl -L https://io.evansosenko.com/tmuxrc/install.sh | sh
+    curl -L https://rc.evansosenko.com/tmuxrc/install.sh | sh
     puts 'Installed' 'tmux plugins'
   else
     puts 'Info' 'Run in a tmux session to install tmuxrc.'
