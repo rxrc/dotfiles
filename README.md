@@ -1,6 +1,6 @@
 # Dotfiles
 
-[![MIT License](https://img.shields.io/badge/license-MIT-red.svg)](./LICENSE.txt)
+[![MIT License](https://img.shields.io/github/license/rxrc/dotfiles.svg)](./LICENSE.txt)
 
 My dotfiles managed with
 
