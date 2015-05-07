@@ -11,7 +11,7 @@
     "config"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/razor-x/dotfiles",
+  "homepage": "https://github.com/rxrc/dotfiles",
   "private": true,
   "ignore": [
     "**/.*",

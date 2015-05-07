@@ -10,9 +10,9 @@ My dotfiles managed with
 - [vimrc]
 
 [Config Curator]: https://github.com/razor-x/config_curator
-[tmuxrc]: https://github.com/razor-x/tmuxrc
-[vimrc]: https://github.com/razor-x/vimrc
-[zshrc]: https://github.com/razor-x/zshrc
+[tmuxrc]: https://github.com/rxrc/tmuxrc
+[vimrc]: https://github.com/rxrc/vimrc
+[zshrc]: https://github.com/rxrc/zshrc
 
 ## Requirements
 
@@ -103,7 +103,7 @@ Please submit and comment on bug reports and feature requests.
 
 To submit a patch:
 
-1. Fork it (https://github.com/razor-x/dotfiles/fork).
+1. Fork it (https://github.com/rxrc/dotfiles/fork).
 2. Create your feature branch (`git checkout -b my-new-feature`).
 3. Make changes.
 4. Commit your changes (`git commit -am 'Add some feature'`).
