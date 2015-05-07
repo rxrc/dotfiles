@@ -11,18 +11,18 @@
     "config"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/razor-x/dotfiles",
+  "homepage": "https://github.com/rxrc/dotfiles",
   "private": true,
   "ignore": [
     "**/.*",
     "bower_components"
   ],
   "dependencies": {
-    "awesome-copycats": "razor-x/awesome-copycats#razor-x",
-    "keymaps": "razor-x/keymaps",
+    "awesome-copycats": "rxrc/awesome-copycats#razor-x",
+    "keymaps": "rxrc/keymaps",
     "ssh-config": "git@bitbucket.org:razorx/ssh-config.git",
-    "systemd-user-units": "razor-x/systemd-user-units",
+    "systemd-user-units": "rxrc/systemd-user-units",
     "tmuxinator-profiles": "git@bitbucket.org:razorx/tmuxinator-profiles.git",
-    "xresources": "razor-x/xresources"
+    "xresources": "rxrc/xresources"
   }
 }
