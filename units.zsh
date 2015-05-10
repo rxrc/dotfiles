@@ -3,6 +3,8 @@
 enabled=()
 disabled=()
 
+command -v systemctl >/dev/null 2>&1 || exit 0
+
 for unit in $enabled; do
   echo "[Enable] $unit"
   systemctl --user enable $unit
