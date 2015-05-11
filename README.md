@@ -96,14 +96,6 @@ Run everything above with
 $ ./install.zsh
 ```
 
-Update managed plugins independently with
-
-```bash
-$ zshupg
-$ tmuxupg
-$ vimupg
-```
-
 Additional manual configuration is documented in
 [NOTES.md](./NOTES.md).
 
