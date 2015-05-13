@@ -6,30 +6,30 @@ function puts () {
   echo "\n-- [$1] $2"
 }
 
-if [[ -d ~/.zgen.zsh ]]; then
+if [[ -d $HOME/.zgen.zsh ]]; then
   puts 'Updating' 'zgen'
-  cd ~/.zgen.zsh
+  cd $HOME/.zgen.zsh
   git pull
 fi
 
-if [[ -d ~/.rbenv ]]; then
+if [[ -d $HOME/.rbenv ]]; then
   puts 'Updating' 'rbenv'
-  cd ~/.rbenv
+  cd $HOME/.rbenv
   git pull
 fi
 
-if [[ -d ~/.rbenv/plugins/ruby-build ]]; then
+if [[ -d $HOME/.rbenv/plugins/ruby-build ]]; then
   puts 'Updating' 'ruby-build'
-  cd ~/.rbenv/plugins/ruby-build
+  cd $HOME/.rbenv/plugins/ruby-build
   git pull
 fi
 
-if [[ -e ~/.promptline.zsh ]]; then
+if [[ -e $HOME/.promptline.zsh ]]; then
   puts 'Note' 'To update promptline, open vim and run:'
   echo ":PromptlineSnapshot! ~/.promptline.zsh"
 fi
 
-if [[ -e ~/.tmuxline.conf ]]; then
+if [[ -e $HOME/.tmuxline.conf ]]; then
   puts 'Note' 'To update tmuxline, while in a tmux session open vim and run:'
   echo ":TmuxlineSnapshot! ~/.tmuxline.conf"
 fi
