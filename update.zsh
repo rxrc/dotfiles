@@ -34,4 +34,9 @@ if [[ -e $HOME/.tmuxline.conf ]]; then
   echo ":TmuxlineSnapshot! ~/.tmuxline.conf"
 fi
 
+if [[ -e $HOME/.xmonad/xmonad.hs ]]; then
+  puts 'Updating' 'xmonad'
+  xmonad --recompile
+fi
+
 exit 0

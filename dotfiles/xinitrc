@@ -7,4 +7,4 @@ if (pacman -Q xkeyboard-config-chromebook &>/dev/null); then
   xset r 116
 fi
 
-exec awesome
+exec xmonad
