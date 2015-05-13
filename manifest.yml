@@ -20,17 +20,9 @@ components:
     dst: .config/Xresources/Xresources.d
     packages: [ xorg-server ]
 
-  - src: bower_components/awesome-copycats
-    dst: .config/awesome
-    packages: [ awesome ]
-
-  - src: bower_components/awesome-copycats-settings/settings
-    dst: .config/awesome/settings
-    packages: [ awesome ]
-
-  - src: bower_components/apw
-    dst: .config/awesome/apw
-    packages: [ awesome ]
+  - src: bower_components/xmonad-config/xmonad
+    dst: .xmonad
+    packages: [ xmonad ]
 
 config_files:
   - src: bower_components/ssh-config/config
@@ -117,22 +109,3 @@ symlinks:
   - src: ~/.config/xkb/keymap/x60t.xkb
     dst: .config/xkb/Gungnir-x60
     packages: [ xorg-server ]
-
-  - src: ~/.config/awesome/rc.lua.powerarrow-darker
-    dst: .config/awesome/rc.lua
-    packages: [ awesome ]
-
-  - src: ~/drive/wallpaper/sort/gungnir/wallhaven-85529-3x2.jpg
-    dst: .config/awesome/themes/powerarrow-darker/wall.png
-    hosts: [ Gungnir ]
-    packages: [ awesome ]
-
-  - src: ~/Wallpaper/wallhaven-83639-4x3.jpg
-    dst: .config/awesome/themes/powerarrow-darker/wall.png
-    hosts: [ Gungnir-x60 ]
-    packages: [ awesome ]
-
-  - src: ~/drive/wallpaper/wallbase/general/1200.1920/wallpaper-1445485.jpg
-    dst: .config/awesome/themes/powerarrow-darker/wall.png
-    hosts: [ Mimir ]
-    packages: [ awesome ]

@@ -18,11 +18,11 @@
     "bower_components"
   ],
   "dependencies": {
-    "awesome-copycats": "rxrc/awesome-copycats#razor-x",
     "keymaps": "rxrc/keymaps",
     "ssh-config": "git@bitbucket.org:razorx/ssh-config.git",
     "systemd-user-units": "rxrc/systemd-user-units",
     "tmuxinator-profiles": "git@bitbucket.org:razorx/tmuxinator-profiles.git",
+    "xmonad-config": "rxrc/xmonad-config",
     "xresources": "rxrc/xresources"
   }
 }
