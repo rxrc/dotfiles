@@ -26,3 +26,6 @@ echo '\n$ ./update.zsh'
 
 echo '\n$ ./units.zsh'
 ./units.zsh
+
+echo '\n$ ./vagrant_plugins.zsh'
+./vagrant_plugins.zsh
