@@ -20,7 +20,7 @@ components:
     dst: .config/Xresources/Xresources.d
     packages: [ xorg-server ]
 
-  - src: bower_components/hexchat-icons/icons-white
+  - src: bower_components/hexchat-material-design-icons/icons-white
     dst: .config/hexchat/icons
     packages: [ hexchat ]
 

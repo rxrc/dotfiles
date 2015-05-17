@@ -19,7 +19,7 @@
   ],
   "dependencies": {
     "awesome-copycats": "rxrc/awesome-copycats#razor-x",
-    "hexchat-icons": "rxrc/hexchat-material-design-icons",
+    "hexchat-material-design-icons": "~1.0.1",
     "keymaps": "rxrc/keymaps#v1.0.0",
     "ssh-config": "git@bitbucket.org:razorx/ssh-config.git",
     "systemd-user-units": "rxrc/systemd-user-units#v1.1.0",
