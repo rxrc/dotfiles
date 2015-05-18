@@ -34,6 +34,15 @@
   m:0x0 + c:70
   F11
 
+# Previous and next tab.
+"sleep 0.2 && xdotool key --clearmodifiers Ctrl+Shift+Tab"
+  m:0x50 + c:67
+  Mod2+Mod4 + XF86Back
+
+"sleep 0.2 && xdotool key --clearmodifiers ctrl+Tab"
+  m:0x50 + c:68
+  Mod2+Mod4 + XF86Foward
+
 # Toggle speakers and headphones.
 "chromeos-sound-output-toggle"
   m:0x8 + c:74
