@@ -16,6 +16,7 @@ command -v bower && bower update
 command -v bower || $HOME/.npm/bin/bower update
 
 echo '\n$ bundle update\n'
+command -v bundle || gem install bundler
 bundle update
 
 echo '\n$ curate -v\n'
