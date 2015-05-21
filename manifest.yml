@@ -77,7 +77,7 @@ config_files:
     dst: .config/hangups/hangups.conf
 
   - src: config/mimeapps.list
-    dst: ./config/mimeapps.list
+    dst: .config/mimeapps.list
 
   - src: config/Xresources/default
     dst: .config/Xresources/default
