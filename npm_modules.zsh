@@ -11,8 +11,10 @@ npm_modules+=('grunt-cli')
 npm_modules+=('gulp')
 
 for module in $npm_modules; do
-  npm install -g $module
-  npm update -g $module
+  npm list -g $module || npm install -g $module
+  if [[ "$1" == 'update' ]]; then
+    npm update -g $module
+  fi
 done
 
 exit 0

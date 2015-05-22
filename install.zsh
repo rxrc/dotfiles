@@ -2,22 +2,28 @@
 
 set -e
 
+if [[ "$1" == 'update' ]]; then
+  cmd='update'
+else
+  cmd='install'
+fi
+
 echo '$ ./bootstrap.zsh'
 ./bootstrap.zsh
 
 echo '\n$ pip install --user --upgrade -r requirements.txt'
 pip install --user --upgrade -r requirements.txt
 
-echo '\n$ ./npm_modules.zsh'
-./npm_modules.zsh
+echo "\n$ ./npm_modules.zsh ${cmd}"
+./npm_modules.zsh $cmd
 
-echo '\n$ bower update\n'
-command -v bower && bower update
-command -v bower || $HOME/.npm/bin/bower update
+echo "\n$ bower ${cmd}\n"
+command -v bower && bower $cmd
+command -v bower || $HOME/.npm/bin/bower $cmd
 
-echo '\n$ bundle update\n'
+echo "\n$ bundle ${cmd}\n"
 command -v bundle || gem install bundler
-bundle update
+bundle $cmd
 
 echo '\n$ curate -v\n'
 curate -v
