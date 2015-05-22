@@ -24,6 +24,12 @@ enabled+=('wm.target')
 enabled+=('xinit.target')
 enabled+=('xresources')
 
+if [[ $(hostname) == 'Sleipnir' ]]; then
+  enabled+=('deluge')
+else
+  enabled+=('transmission-gtk')
+fi
+
 if [[ -e /usr/local/bin/mntxd ]]; then
   enabled+=('rbenv-ruby@mntxd')
 fi
