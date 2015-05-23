@@ -16,11 +16,6 @@ if ! [[ -e $HOME/.gemrc ]]; then
   puts 'Created' '~/.gemrc'
 fi
 
-if ! [[ -e $HOME/.npmrc ]]; then
-  echo 'prefix = ~/.npm' > $HOME/.npmrc
-  puts 'Created' '~/.npmrc'
-fi
-
 if ! [[ -d $HOME/.zgen.zsh ]]; then
   puts 'Installing' 'zshrc'
   curl -L https://rc.evansosenko.com/zshrc/install.sh | sh
