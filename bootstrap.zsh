@@ -33,6 +33,8 @@ if ! [[ -d $HOME/.rbenv/plugins/ruby-build ]]; then
   puts 'Installing' 'ruby-build'
   git clone https://github.com/sstephenson/ruby-build.git \
     $HOME/.rbenv/plugins/ruby-build
+  cd $HOME/.rbenv/plugins/ruby-build
+  git checkout $(git describe --abbrev=0 --tags)
 fi
 
 if [[ -d $HOME/.rbenv/plugins/ruby-build ]]; then
