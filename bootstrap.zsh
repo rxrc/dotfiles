@@ -56,6 +56,17 @@ if [[ -d $HOME/.rbenv/plugins/rbenv-gem-rehash ]]; then
   puts 'Installed' 'rbenv-gem-rehash'
 fi
 
+if ! [[ -d $HOME/.pyenv ]]; then
+  puts 'Installing' 'pyenv'
+  git clone https://github.com/yyuu/pyenv.git $HOME/.pyenv
+  cd $HOME/.pyenv
+  git checkout $(git describe --abbrev=0 --tags)
+fi
+
+if [[ -d $HOME/.pyenv ]]; then
+  puts 'Installed' 'pyenv'
+fi
+
 if ! [[ -d $HOME/.nvm ]]; then
   puts 'Installing' 'nvm'
   git clone https://github.com/creationix/nvm.git $HOME/.nvm

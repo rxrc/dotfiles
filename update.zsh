@@ -31,6 +31,13 @@ if [[ -d $HOME/.rbenv/plugins/rbenv-gem-rehash ]]; then
   git pull
 fi
 
+if [[ -d $HOME/.pyenv ]]; then
+  puts 'Updating' 'pyenv'
+  cd $HOME/.pyenv
+  git fetch
+  git checkout $(git describe --abbrev=0 --tags)
+fi
+
 if [[ -d $HOME/.nvm ]]; then
   puts 'Updating' 'nvm'
   cd $HOME/.nvm
