@@ -24,6 +24,12 @@ if [[ -d $HOME/.rbenv/plugins/ruby-build ]]; then
   git pull
 fi
 
+if [[ -d $HOME/.rbenv/plugins/rbenv-gem-rehash ]]; then
+  puts 'Updating' 'rbenv-gem-rehash'
+  cd $HOME/.rbenv/plugins/rbenv-gem-rehash
+  git pull
+fi
+
 if [[ -e $HOME/.promptline.zsh ]]; then
   puts 'Note' 'To update promptline, open vim and run:'
   echo ":PromptlineSnapshot! ~/.promptline.zsh"

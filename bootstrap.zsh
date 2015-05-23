@@ -48,6 +48,15 @@ if [[ -d $HOME/.rbenv/plugins/ruby-build ]]; then
   puts 'Installed' 'ruby-build'
 fi
 
+if ! [[ -d $HOME/.rbenv/plugins/rbenv-gem-rehash ]]; then
+  puts 'Installing' 'ruby-build'
+  git clone https://github.com/sstephenson/rbenv-gem-rehash.git $HOME/.rbenv/plugins/rbenv-gem-rehash
+fi
+
+if [[ -d $HOME/.rbenv/plugins/rbenv-gem-rehash ]]; then
+  puts 'Installed' 'rbenv-gem-rehash'
+fi
+
 if ! [[ -d $HOME/.vim/bundle/vimrc ]]; then
   puts 'Installing' 'vimrc'
   curl -L https://rc.evansosenko.com/vimrc/install.sh | sh
