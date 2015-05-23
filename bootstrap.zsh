@@ -41,7 +41,8 @@ fi
 
 if ! [[ -d $HOME/.rbenv/plugins/ruby-build ]]; then
   puts 'Installing' 'ruby-build'
-  git clone https://github.com/sstephenson/ruby-build.git $HOME/.rbenv/plugins/ruby-build
+  git clone https://github.com/sstephenson/ruby-build.git \
+    $HOME/.rbenv/plugins/ruby-build
 fi
 
 if [[ -d $HOME/.rbenv/plugins/ruby-build ]]; then
@@ -50,11 +51,23 @@ fi
 
 if ! [[ -d $HOME/.rbenv/plugins/rbenv-gem-rehash ]]; then
   puts 'Installing' 'ruby-build'
-  git clone https://github.com/sstephenson/rbenv-gem-rehash.git $HOME/.rbenv/plugins/rbenv-gem-rehash
+  git clone https://github.com/sstephenson/rbenv-gem-rehash.git \
+    $HOME/.rbenv/plugins/rbenv-gem-rehash
 fi
 
 if [[ -d $HOME/.rbenv/plugins/rbenv-gem-rehash ]]; then
   puts 'Installed' 'rbenv-gem-rehash'
+fi
+
+if ! [[ -d $HOME/.nvm ]]; then
+  puts 'Installing' 'nvm'
+  git clone https://github.com/creationix/nvm.git $HOME/.nvm
+  cd $HOME/.nvm
+  git checkout $(git describe --abbrev=0 --tags)
+fi
+
+if [[ -d $HOME/.nvm ]]; then
+  puts 'Installed' 'nvm'
 fi
 
 if ! [[ -d $HOME/.vim/bundle/vimrc ]]; then
