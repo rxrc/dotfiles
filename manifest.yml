@@ -53,6 +53,10 @@ config_files:
   - src: dotfiles/gemrc
     dst: .gemrc
 
+  - src: dotfiles/lein/profiles.clj
+    dst: .lein/profiles.clj
+    packages: [ leiningen ]
+
   - src: dotfiles/bundle/config
     dst: .bundle/config
 
