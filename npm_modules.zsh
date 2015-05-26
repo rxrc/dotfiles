@@ -7,6 +7,7 @@ npm_modules=()
 command -v npm >/dev/null 2>&1 || exit 0
 
 npm_modules+=('bower')
+npm_modules+=('ember-cli')
 npm_modules+=('grunt-cli')
 npm_modules+=('gulp')
 
