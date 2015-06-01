@@ -62,7 +62,6 @@ $ ./bootstrap.zsh
 Install dependencies with
 
 ```bash
-$ pip install --user --upgrade -r requirements.txt
 $ bower update
 $ bundle update
 ```
@@ -88,6 +87,14 @@ Setup systemd/User units with
 
 ```bash
 $ ./units.zsh
+```
+
+Install external packages and plugins with
+
+```bash
+$ pip install --user --upgrade -r requirements.txt
+$ ./npm_modules.zsh
+$ ./vagrant_plugins.zsh
 ```
 
 Run everything above with
