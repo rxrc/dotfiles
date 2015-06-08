@@ -1,3 +1,2 @@
 hangups
-livestreamer
 pip
