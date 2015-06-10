@@ -1,2 +1,2 @@
-hangups
 pip
+virtualenvwrapper
