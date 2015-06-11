@@ -22,7 +22,7 @@
     "hexchat-material-design-icons": "~1.0.1",
     "keymaps": "rxrc/keymaps#v1.0.0",
     "ssh-config": "git@bitbucket.org:razorx/ssh-config.git",
-    "systemd-user-units": "rxrc/systemd-user-units#v1.2.0",
+    "systemd-user-units": "rxrc/systemd-user-units#v1.3.0",
     "tmuxinator-profiles": "git@bitbucket.org:razorx/tmuxinator-profiles.git",
     "xresources": "rxrc/xresources#v1.0.0"
   }
