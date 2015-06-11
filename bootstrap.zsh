@@ -113,8 +113,10 @@ if [[ -e $HOME/.promptline.zsh ]]; then
 fi
 
 if ! [[ -e $HOME/.tmuxline.conf ]] then
-  puts 'Note' 'To install tmuxline, while in a tmux session open vim and run:'
-  echo ":TmuxlineSnapshot ~/.tmuxline.conf"
+  if [[ -d $HOME/.vim/plugged/tmuxline.vim ]]; then
+    puts 'Note' 'To install tmuxline, while in a tmux session open vim and run:'
+    echo ":TmuxlineSnapshot ~/.tmuxline.conf"
+  fi
 fi
 
 if [[ -e $HOME/.tmuxline.conf ]]; then
