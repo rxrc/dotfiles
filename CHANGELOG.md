@@ -2,6 +2,7 @@
 
 ## HEAD
 
+- Update vimrc in bootstrap script to use vim-plug.
 - Use latest rbenv-build release.
 
 ## 1.0.1

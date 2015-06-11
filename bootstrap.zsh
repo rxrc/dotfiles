@@ -41,12 +41,12 @@ if [[ -d $HOME/.rbenv/plugins/ruby-build ]]; then
   puts 'Installed' 'ruby-build'
 fi
 
-if ! [[ -d $HOME/.vim/bundle/vimrc ]]; then
+if ! [[ -d $HOME/.vim/plugged/vimrc ]]; then
   puts 'Installing' 'vimrc'
   curl -L https://rc.evansosenko.com/vimrc/install.sh | sh
 fi
 
-if [[ -d $HOME/.vim/bundle/vimrc ]]; then
+if [[ -d $HOME/.vim/plugged/vimrc ]]; then
   puts 'Installed' 'vimrc'
 fi
 
@@ -65,7 +65,7 @@ if [[ -d $HOME/.tmux/plugins/tmuxrc ]]; then
 fi
 
 if ! [[ -e $HOME/.promptline.zsh ]]; then
-  if [[ -d $HOME/.vim/bundle/promptline.vim ]]; then
+  if [[ -d $HOME/.vim/plugged/promptline.vim ]]; then
     puts 'Note' 'To install promptline, open vim and run:'
     echo ":PromptlineSnapshot ~/.promptline.zsh"
   fi
