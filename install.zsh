@@ -11,9 +11,6 @@ fi
 echo '$ ./bootstrap.zsh'
 ./bootstrap.zsh
 
-echo '\n$ pip install --user --upgrade -r requirements.txt'
-pip install --user --upgrade -r requirements.txt
-
 echo "\n$ ./npm_modules.zsh ${cmd}"
 ./npm_modules.zsh $cmd
 

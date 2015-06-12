@@ -6,6 +6,11 @@ function puts () {
   echo "\n-- [$1] $2"
 }
 
+if [[ $(command -v pyenv) ]]; then
+  puts 'Updating' 'pip'
+  pyenv exec pip install --upgrade --user pip
+fi
+
 if [[ -d $HOME/.zgen.zsh ]]; then
   puts 'Updating' 'zgen'
   cd $HOME/.zgen.zsh

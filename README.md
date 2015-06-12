@@ -92,7 +92,6 @@ $ ./units.zsh
 Install external packages and plugins with
 
 ```bash
-$ pip install --user --upgrade -r requirements.txt
 $ ./npm_modules.zsh
 $ ./vagrant_plugins.zsh
 ```
