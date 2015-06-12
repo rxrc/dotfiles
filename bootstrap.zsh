@@ -47,13 +47,23 @@ if [[ -d $HOME/.rbenv/plugins/ruby-build ]]; then
 fi
 
 if ! [[ -d $HOME/.rbenv/plugins/rbenv-gem-rehash ]]; then
-  puts 'Installing' 'ruby-build'
+  puts 'Installing' 'rbenv-gem-rehash'
   git clone https://github.com/sstephenson/rbenv-gem-rehash.git \
     $HOME/.rbenv/plugins/rbenv-gem-rehash
 fi
 
 if [[ -d $HOME/.rbenv/plugins/rbenv-gem-rehash ]]; then
   puts 'Installed' 'rbenv-gem-rehash'
+fi
+
+if ! [[ -d $HOME/.rbenv/plugins/rbenv-default-gems ]]; then
+  puts 'Installing' 'rbenv-default-gems'
+  git clone https://github.com/sstephenson/rbenv-default-gems.git \
+    $HOME/.rbenv/plugins/rbenv-default-gems
+fi
+
+if [[ -d $HOME/.rbenv/plugins/rbenv-default-gems ]]; then
+  puts 'Installed' 'rbenv-default-gems'
 fi
 
 if ! [[ -d $HOME/.pyenv ]]; then

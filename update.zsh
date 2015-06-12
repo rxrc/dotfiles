@@ -31,6 +31,12 @@ if [[ -d $HOME/.rbenv/plugins/rbenv-gem-rehash ]]; then
   git pull
 fi
 
+if [[ -d $HOME/.rbenv/plugins/rbenv-default-gems ]]; then
+  puts 'Updating' 'rbenv-default-gems'
+  cd $HOME/.rbenv/plugins/rbenv-default-gems
+  git pull
+fi
+
 if [[ -d $HOME/.pyenv ]]; then
   puts 'Updating' 'pyenv'
   cd $HOME/.pyenv
