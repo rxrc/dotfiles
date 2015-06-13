@@ -77,6 +77,18 @@ if [[ -d $HOME/.pyenv ]]; then
   puts 'Installed' 'pyenv'
 fi
 
+if ! [[ -d $HOME/.pyenv/plugins/pyenv-virtualenv ]]; then
+  puts 'Installing' 'pyenv-virtualenv'
+  git clone https://github.com/yyuu/pyenv-virtualenv.git \
+    $HOME/.pyenv/plugins/pyenv-virtualenv
+  cd $HOME/.pyenv/plugins/pyenv-virtualenv
+  git checkout $(git describe --abbrev=0 --tags)
+fi
+
+if [[ -d $HOME/.pyenv/plugins/pyenv-virtualenv ]]; then
+  puts 'Installed' 'pyenv-virtualenv'
+fi
+
 if ! [[ -d $HOME/.nvm ]]; then
   puts 'Installing' 'nvm'
   git clone https://github.com/creationix/nvm.git $HOME/.nvm

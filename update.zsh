@@ -49,6 +49,13 @@ if [[ -d $HOME/.pyenv ]]; then
   git checkout $(git describe --abbrev=0 --tags)
 fi
 
+if [[ -d $HOME/.pyenv/plugins/pyenv-virtualenv ]]; then
+  puts 'Updating' 'pyenv-virtualenv'
+  cd $HOME/.pyenv/plugins/pyenv-virtualenv
+  git fetch
+  git checkout $(git describe --abbrev=0 --tags)
+fi
+
 if [[ -d $HOME/.nvm ]]; then
   puts 'Updating' 'nvm'
   cd $HOME/.nvm
