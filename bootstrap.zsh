@@ -66,6 +66,16 @@ if [[ -d $HOME/.rbenv/plugins/rbenv-default-gems ]]; then
   puts 'Installed' 'rbenv-default-gems'
 fi
 
+if ! [[ -d $HOME/.rbenv/plugins/rbenv-ctags ]]; then
+  puts 'Installing' 'rbenv-ctags'
+  git clone https://github.com/tpope/rbenv-ctags.git \
+    $HOME/.rbenv/plugins/rbenv-ctags
+fi
+
+if [[ -d $HOME/.rbenv/plugins/rbenv-ctags ]]; then
+  puts 'Installed' 'rbenv-default-gems'
+fi
+
 if ! [[ -d $HOME/.pyenv ]]; then
   puts 'Installing' 'pyenv'
   git clone https://github.com/yyuu/pyenv.git $HOME/.pyenv

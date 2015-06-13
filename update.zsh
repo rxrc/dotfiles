@@ -42,6 +42,12 @@ if [[ -d $HOME/.rbenv/plugins/rbenv-default-gems ]]; then
   git pull
 fi
 
+if [[ -d $HOME/.rbenv/plugins/rbenv-ctags ]]; then
+  puts 'Updating' 'rbenv-ctags'
+  cd $HOME/.rbenv/plugins/rbenv-ctags
+  git pull
+fi
+
 if [[ -d $HOME/.pyenv ]]; then
   puts 'Updating' 'pyenv'
   cd $HOME/.pyenv
