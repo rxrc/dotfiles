@@ -8,7 +8,7 @@ function puts () {
 
 if [[ $(command -v pyenv) ]]; then
   puts 'Updating' 'pip'
-  pyenv exec pip install --upgrade --user pip
+  pyenv exec pip install --upgrade pip
 fi
 
 if [[ -d $HOME/.zgen.zsh ]]; then
