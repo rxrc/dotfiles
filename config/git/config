@@ -1,31 +1,31 @@
 [core]
-	editor = vim
+  editor = vim
 [user]
-	name = Evan Sosenko
-	email = razorx@evansosenko.com
+  name = Evan Sosenko
+  email = razorx@evansosenko.com
 [ui]
-	color = auto
+  color = auto
 [color]
-	status = auto
-	diff = auto
-	branch = auto
+  status = auto
+  diff = auto
+  branch = auto
 [github]
-	user = razor-x
+  user = razor-x
 [diff]
-	tool = vimdiff
+  tool = vimdiff
 [merge]
-	tool = vimdiff
+  tool = vimdiff
   conflictstyle = diff3
   prompt = false
 [push]
-	default = simple
+  default = simple
 [filter "local_tabs_repo_spaces"]
-	smudge = unexpand --tabs=2 --first-only
-	clean = expand --tabs=2 --initial
+  smudge = unexpand --tabs=2 --first-only
+  clean = expand --tabs=2 --initial
 [filter "local_spaces_repo_tabs"]
-	clean = unexpand --tabs=2 --first-only
-	smudge = expand --tabs=2 --initial
+  clean = unexpand --tabs=2 --first-only
+  smudge = expand --tabs=2 --initial
 [init]
-	templatedir = ~/.config/git/template
+  templatedir = ~/.config/git/template
 [alias]
-	ctags = !.git/hooks/ctags
+  ctags = !.git/hooks/ctags
