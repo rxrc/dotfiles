@@ -36,6 +36,11 @@ components:
     dst: .config/awesome/apw
     packages: [ awesome ]
 
+  - src: config/git/template/hooks
+    dst: .config/git/template/hooks
+    packages: [ ctags ]
+    fmode: 0750
+
 config_files:
   - src: bower_components/ssh-config/config
     dst: .ssh/config
