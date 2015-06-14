@@ -55,6 +55,9 @@ config_files:
   - src: config/git/ignore
     dst: .config/git/ignore
 
+  - src: dotfiles/ctags
+    dst: .ctags
+
   - src: dotfiles/gemrc
     dst: .gemrc
 
