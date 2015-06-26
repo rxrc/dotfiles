@@ -1,18 +1,18 @@
 [global_config]
   always_split_with_profile = True
-  focus = mouse
   title_transmit_bg_color = "#d33682"
+  focus = mouse
 [keybindings]
-  next_tab = <Primary><Shift>n
-  prev_tab = <Primary><Shift>p
-  split_horiz = <Primary><Shift>o
-  split_vert = <Primary><Shift>m
   go_up = <Primary><Shift>k
+  next_tab = <Primary><Shift>n
+  split_horiz = <Primary><Shift>o
+  go_prev = <Primary><Shift>braceright
+  prev_tab = <Primary><Shift>p
   go_down = <Primary><Shift>j
-  go_left = <Primary><Shift>h
+  split_vert = <Primary><Shift>m
   go_right = <Primary><Shift>l
   go_next = <Primary><Shift>braceright
-  go_prev = <Primary><Shift>braceright
+  go_left = <Primary><Shift>h
 [profiles]
   [[default]]
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
