@@ -3,8 +3,16 @@
   focus = mouse
   title_transmit_bg_color = "#d33682"
 [keybindings]
-  next_tab = <Primary><Shift>Right
-  prev_tab = <Primary><Shift>Left
+  next_tab = <Primary><Shift>n
+  prev_tab = <Primary><Shift>p
+  split_horiz = <Primary><Shift>o
+  split_vert = <Primary><Shift>m
+  go_up = <Primary><Shift>k
+  go_down = <Primary><Shift>j
+  go_left = <Primary><Shift>h
+  go_right = <Primary><Shift>l
+  go_next = <Primary><Shift>braceright
+  go_prev = <Primary><Shift>braceright
 [profiles]
   [[default]]
     font = Inconsolata-g for Powerline Medium 12
