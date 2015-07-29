@@ -20,6 +20,7 @@ command -v bower || $HOME/.npm/bin/bower $cmd
 
 echo "\n$ bundle ${cmd}\n"
 command -v bundle || gem install bundler
+[[ "$cmd" = 'update' ]] && gem update bundler
 bundle $cmd
 
 echo '\n$ curate -v\n'
