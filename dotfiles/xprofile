@@ -6,5 +6,3 @@ if (pacman -Q xkeyboard-config-chromebook &>/dev/null); then
   xset r 114
   xset r 116
 fi
-
-exec awesome

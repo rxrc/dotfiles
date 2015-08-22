@@ -121,12 +121,8 @@ config_files:
     dst: .config/zathura/zathurarc
     packages: [ zathura ]
 
-  - src: dotfiles/zprofile
-    dst: .zprofile
-    packages: [ zsh ]
-
-  - src: dotfiles/xinitrc
-    dst: .xinitrc
+  - src: dotfiles/xprofile
+    dst: .xprofile
     packages: [ xorg-server ]
 
 symlinks:
