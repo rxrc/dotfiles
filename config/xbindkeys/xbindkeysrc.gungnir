@@ -54,7 +54,7 @@
   Alt + XF86PowerOff
 
 # Bind screen locker.
-"slimlock"
+"xscreensaver-command --lock"
   m:0x8 + c:49
   Alt + grave
 
