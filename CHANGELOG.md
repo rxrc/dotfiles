@@ -1,5 +1,9 @@
 # Changelog
 
+## HEAD
+
+- Generate tmuxline and prompline snapshots via scripts.
+
 ## 1.1.0
 
 - Update vimrc in bootstrap script to use vim-plug.
