@@ -70,13 +70,17 @@ if [[ -d $HOME/.nvm ]]; then
 fi
 
 if [[ -e $HOME/.promptline.zsh ]]; then
-  puts 'Note' 'To update promptline, open vim and run:'
-  echo ":PromptlineSnapshot! ~/.promptline.zsh"
+  puts 'Updating' 'promptline'
+  vim -c "PromptlineSnapshot! ~/.promptline.zsh" -c qall!
 fi
 
 if [[ -e $HOME/.tmuxline.conf ]]; then
-  puts 'Note' 'To update tmuxline, while in a tmux session open vim and run:'
-  echo ":TmuxlineSnapshot! ~/.tmuxline.conf"
+  if [[ -n "$TMUX" ]]; then
+    puts 'Updating' 'tmuxline'
+    vim -c "TmuxlineSnapshot! ~/.tmuxline.conf" -c qall!
+  else
+    puts 'Info' 'Run in a tmux session to install tmuxline.'
+  fi
 fi
 
 exit 0

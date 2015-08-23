@@ -135,8 +135,8 @@ fi
 
 if ! [[ -e $HOME/.promptline.zsh ]]; then
   if [[ -d $HOME/.vim/plugged/promptline.vim ]]; then
-    puts 'Note' 'To install promptline, open vim and run:'
-    echo ":PromptlineSnapshot ~/.promptline.zsh"
+    puts 'Installing' 'promptline'
+    vim -c "PromptlineSnapshot ~/.promptline.zsh" -c qall!
   fi
 fi
 
@@ -146,8 +146,12 @@ fi
 
 if ! [[ -e $HOME/.tmuxline.conf ]] then
   if [[ -d $HOME/.vim/plugged/tmuxline.vim ]]; then
-    puts 'Note' 'To install tmuxline, while in a tmux session open vim and run:'
-    echo ":TmuxlineSnapshot ~/.tmuxline.conf"
+    if [[ -n "$TMUX" ]]; then
+      puts 'Installing' 'tmuxline'
+      vim -c "TmuxlineSnapshot ~/.tmuxline.conf" -c qall!
+    else
+      puts 'Info' 'Run in a tmux session to install tmuxline.'
+    fi
   fi
 fi
 
