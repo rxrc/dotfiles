@@ -1,5 +1,10 @@
 # Changelog
 
+## HEAD
+
+- Fix how ruby-build is updated.
+- Remove tmuxinator.
+
 ## 1.2.0
 
 - Generate tmuxline and prompline snapshots via scripts.
