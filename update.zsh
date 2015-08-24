@@ -26,7 +26,8 @@ fi
 if [[ -d $HOME/.rbenv/plugins/ruby-build ]]; then
   puts 'Updating' 'ruby-build'
   cd $HOME/.rbenv/plugins/ruby-build
-  git fetch
+  git checkout master
+  git pull
   git checkout $(git describe --abbrev=0 --tags)
 fi
 
