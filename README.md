@@ -36,6 +36,19 @@ These two tools are installed during the bootstrap.
 Once Ruby is setup, install the bundler gem.
 Bower should be installed manually using [npm].
 
+Note that on this branch, the install script takes care
+of everything except installing Ruby and Node.
+Thus, a full install might look like
+
+```bash
+$ ./bootstrap.zsh
+$ exit
+$ rbenv install 2.2.2
+$ nvm install stable
+$ nvm use stable
+$ ./install.zsh
+```
+
 [Bower]: http://bower.io/
 [Bundler]: http://bundler.io/
 [npm]: https://www.npmjs.com/
