@@ -102,6 +102,13 @@ Run everything above with
 $ ./install.zsh
 ```
 
+This will skip updating external packages,
+to install and update everything, run
+
+```bash
+$ ./install.zsh update
+```
+
 Additional manual configuration is documented in
 [NOTES.md](./NOTES.md).
 
