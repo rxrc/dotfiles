@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 set -e
+set -u
 
 function puts () {
   echo "\n-- [$1] $2"
@@ -146,7 +147,7 @@ fi
 
 if ! [[ -e $HOME/.tmuxline.conf ]] then
   if [[ -d $HOME/.vim/plugged/tmuxline.vim ]]; then
-    if [[ -n "$TMUX" ]]; then
+    if [[ ! -z "${TMUX:-}" ]]; then
       puts 'Installing' 'tmuxline'
       vim -c "TmuxlineSnapshot ~/.tmuxline.conf" -c qall!
     else
@@ -159,4 +160,4 @@ if [[ -e $HOME/.tmuxline.conf ]]; then
   puts 'Installed' 'tmuxline'
 fi
 
-exit 0
+exit

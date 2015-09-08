@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 set -e
+set -u
 
 if [[ "$1" == 'update' ]]; then
   cmd='update'
@@ -38,3 +39,5 @@ echo '\n$ ./units.zsh'
 
 echo '\n$ ./vagrant_plugins.zsh'
 ./vagrant_plugins.zsh
+
+exit

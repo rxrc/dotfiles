@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 set -e
+set -u
 
 function puts () {
   echo "\n-- [$1] $2"
@@ -79,7 +80,7 @@ if [[ -e $HOME/.promptline.zsh ]]; then
 fi
 
 if [[ -e $HOME/.tmuxline.conf ]]; then
-  if [[ -n "$TMUX" ]]; then
+  if [[ ! -z "${TMUX:-}" ]]; then
     puts 'Updating' 'tmuxline'
     vim -c "TmuxlineSnapshot! ~/.tmuxline.conf" -c qall!
   else
@@ -87,4 +88,4 @@ if [[ -e $HOME/.tmuxline.conf ]]; then
   fi
 fi
 
-exit 0
+exit
