@@ -124,11 +124,18 @@ Run everything above with
 $ ./install.zsh
 ```
 
-This will skip updating external packages,
-to install and update everything, run
+This will skip updating external packages.
+
+To install and update everything, run
 
 ```bash
 $ ./install.zsh update
+```
+
+To only install the configuration files and units,
+
+```bash
+$ ./install.zsh config
 ```
 
 Additional manual configuration is documented in
