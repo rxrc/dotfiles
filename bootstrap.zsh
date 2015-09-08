@@ -52,7 +52,7 @@ if [[ -d $HOME/.vim/plugged/vimrc ]]; then
 fi
 
 if ! [[ -d $HOME/.tmux/plugins/tmuxrc ]]; then
-  if [[ -n "$TMUX" ]]; then
+  if [[ ! -z "${TMUX:-}" ]]; then
     puts 'Installing' 'tmuxrc'
     curl -L https://rc.evansosenko.com/tmuxrc/install.sh | sh
     puts 'Installed' 'tmux plugins'
