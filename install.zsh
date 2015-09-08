@@ -3,7 +3,7 @@
 set -e
 set -u
 
-cmd="${1:+install}"
+cmd="${1:=install}"
 
 if [[ "$cmd" = 'config' ]]; then
   curate -v
