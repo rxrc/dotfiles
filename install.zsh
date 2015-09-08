@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 set -e
+set -u
 
 echo '$ ./bootstrap.zsh'
 ./bootstrap.zsh
@@ -19,3 +20,5 @@ echo '\n$ ./update.zsh'
 
 echo '\n$ ./units.zsh'
 ./units.zsh
+
+exit
