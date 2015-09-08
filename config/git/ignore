@@ -1,4 +1,5 @@
 .*~
 .directory
+.nvmrc
 .python-version
 .ruby-version
