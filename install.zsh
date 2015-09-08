@@ -4,6 +4,10 @@ set -e
 
 if [[ "$1" == 'update' ]]; then
   cmd='update'
+elif [[ "$1" == 'config' ]]; then
+  curate -v
+  ./units.zsh
+  exit
 else
   cmd='install'
 fi
