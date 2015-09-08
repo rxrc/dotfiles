@@ -3,14 +3,12 @@
 set -e
 set -u
 
-if [[ "$1" == 'update' ]]; then
-  cmd='update'
-elif [[ "$1" == 'config' ]]; then
+cmd="${1:+install}"
+
+if [[ "$cmd" = 'config' ]]; then
   curate -v
   ./units.zsh
   exit
-else
-  cmd='install'
 fi
 
 echo '$ ./bootstrap.zsh'
