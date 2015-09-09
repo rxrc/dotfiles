@@ -45,9 +45,9 @@ Thus, a full install might look like
 ```bash
 $ ./bootstrap.zsh
 $ exit
-$ rbenv install 2.2.2
-$ nvm install stable
-$ nvm use stable
+$ rbenv install
+$ nvm install
+$ nvm use
 $ ./install.zsh
 ```
 

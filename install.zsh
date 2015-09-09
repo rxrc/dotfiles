@@ -18,13 +18,12 @@ echo "\n$ ./npm_modules.zsh ${cmd}"
 ./npm_modules.zsh $cmd
 
 echo "\n$ bower ${cmd}\n"
-command -v bower && bower $cmd
-command -v bower || $HOME/.npm/bin/bower $cmd
+$(npm bin -g)/bower $cmd
 
 echo "\n$ bundle ${cmd}\n"
 command -v bundle || gem install bundler
 [[ "$cmd" = 'update' ]] && gem update bundler
-bundle $cmd
+rbenv exec bundle $cmd
 
 echo '\n$ curate -v\n'
 curate -v
