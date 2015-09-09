@@ -1,5 +1,16 @@
 # Manual Configuration Notes
 
+## Redshift
+
+Must add to this to `/etc/geoclue/geoclue.conf`
+
+```
+[redshift]
+allowed=true
+system=false
+users=
+```
+
 ## Qt
 
 Use `qtconfig-qt4` to customize Qt apps.
