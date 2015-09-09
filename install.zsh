@@ -13,7 +13,7 @@ echo '\n$ bundle update\n'
 bundle update
 
 echo '\n$ curate -v\n'
-curate -v
+bundle exec curate -v
 
 echo '\n$ ./update.zsh'
 ./update.zsh
