@@ -1,6 +1,6 @@
 # Changelog
 
-## HEAD
+## 1.3.0
 
 - Fix how ruby-build is updated.
 - Remove tmuxinator.
