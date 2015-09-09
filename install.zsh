@@ -26,7 +26,7 @@ command -v bundle || gem install bundler
 rbenv exec bundle $cmd
 
 echo '\n$ curate -v\n'
-curate -v
+bundle exec curate -v
 
 echo '\n$ ./update.zsh'
 ./update.zsh
