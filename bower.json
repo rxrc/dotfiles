@@ -24,6 +24,6 @@
     "ssh-config": "git@bitbucket.org:razorx/ssh-config.git",
     "systemd-user-units": "rxrc/systemd-user-units#v1.4.0",
     "tmuxinator-profiles": "git@bitbucket.org:razorx/tmuxinator-profiles.git",
-    "xresources": "rxrc/xresources#v1.0.0"
+    "xresources": "rxrc/xresources#v1.1.0"
   }
 }
