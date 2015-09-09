@@ -29,3 +29,5 @@
   templatedir = ~/.config/git/template
 [alias]
   ctags = !.git/hooks/ctags
+[url "https://github.com/"]
+  insteadOf = git://github.com/
