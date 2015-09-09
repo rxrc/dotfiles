@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 set -e
+set -u
 
 npm_modules=()
 
@@ -20,4 +21,4 @@ for module in $npm_modules; do
   fi
 done
 
-exit 0
+exit
