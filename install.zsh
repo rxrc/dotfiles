@@ -6,7 +6,7 @@ set -u
 cmd="${1:=install}"
 
 if [[ "$cmd" = 'config' ]]; then
-  curate -v
+  rbenv exec bundle exec curate -v
   ./units.zsh
   exit
 fi
@@ -26,7 +26,7 @@ command -v bundle || gem install bundler
 rbenv exec bundle $cmd
 
 echo '\n$ curate -v\n'
-bundle exec curate -v
+rbenv exec bundle exec curate -v
 
 echo '\n$ ./update.zsh'
 ./update.zsh
