@@ -16,7 +16,7 @@ npm_modules+=('gulp')
 
 for module in $npm_modules; do
   npm list -g $module || npm install -g $module
-  if [[ "$1" == 'update' ]]; then
+  if [[ "${1:-}" == 'update' ]]; then
     npm update -g $module
   fi
 done
