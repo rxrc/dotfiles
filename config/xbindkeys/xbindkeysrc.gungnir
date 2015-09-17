@@ -8,11 +8,11 @@
   XF86MonBrightnessUp
 
 # Control keyboard backlight.
-"sudo /usr/local/bin/chromeos-kbd_backlight --decrease"
+"/usr/local/bin/chromeos-kbd_backlight --decrease"
   m:0x8 + c:72
   XF86MonBrightnessDown
 
-"sudo /usr/local/bin/chromeos-kbd_backlight --increase"
+"/usr/local/bin/chromeos-kbd_backlight --increase"
   m:0x8 + c:73
   XF86MonBrightnessUp
 
