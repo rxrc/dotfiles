@@ -8,7 +8,6 @@ disabled=()
 
 command -v systemctl >/dev/null 2>&1 || exit 0
 
-enabled+=('app@nm-applet')
 enabled+=('app@unclutter')
 enabled+=('dbus')
 enabled+=('hexchat')
@@ -30,6 +29,10 @@ if [[ $(hostname) == 'Sleipnir' ]]; then
   enabled+=('deluge')
 else
   enabled+=('transmission-gtk')
+fi
+
+if (pacman -Q network-manager-applet &>/dev/null); then
+  enabled+=('app@nm-applet')
 fi
 
 if [[ -e /usr/local/bin/mntxd ]]; then
