@@ -10,7 +10,6 @@ command -v systemctl >/dev/null 2>&1 || exit 0
 
 enabled+=('app@screencloud')
 enabled+=('app@unclutter')
-enabled+=('dbus')
 enabled+=('hexchat')
 enabled+=('insync')
 enabled+=("keymap@$(hostname)")
