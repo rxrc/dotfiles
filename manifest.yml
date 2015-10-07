@@ -130,6 +130,10 @@ symlinks:
     packages: [ ranger ]
 
   - src: ~/.config/xkb/keymap/steelseries-6gv2.xkb
+    dst: .config/xkb/Sleipnir
+    packages: [ xorg-server ]
+
+  - src: ~/.config/xkb/keymap/steelseries-6gv2.xkb
     dst: .config/xkb/Mimir
     packages: [ xorg-server ]
 
