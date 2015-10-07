@@ -103,7 +103,6 @@ config_files:
 
   - src: config/xbindkeys/xbindkeysrc
     dst: .config/xbindkeys/xbindkeysrc
-    hosts: [ Gungnir, Gungnir-x60, Mimir ]
 
   - src: dotfiles/gtkrc-2.0
     dst: .gtkrc-2.0
