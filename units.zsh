@@ -20,16 +20,11 @@ enabled+=('redshift-gtk')
 enabled+=('ssh-agent')
 enabled+=('tmuxinator@default')
 enabled+=('tmuxinator@glances')
+enabled+=('transmission-gtk')
 enabled+=('urxvtd')
 enabled+=('wm.target')
 enabled+=('xinit.target')
 enabled+=('xresources')
-
-if [[ $(hostname) == 'Sleipnir' ]]; then
-  enabled+=('deluge')
-else
-  enabled+=('transmission-gtk')
-fi
 
 if (pacman -Q network-manager-applet &>/dev/null); then
   enabled+=('app@nm-applet')
