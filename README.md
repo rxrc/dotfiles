@@ -46,6 +46,7 @@ Thus, a full install might look like
 $ ./bootstrap.zsh
 $ exit
 $ rbenv install
+$ pyenv install
 $ nvm install
 $ nvm use
 $ ./install.zsh
