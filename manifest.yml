@@ -163,3 +163,8 @@ symlinks:
     dst: .config/awesome/themes/powerarrow-darker/wall.png
     hosts: [ Mimir ]
     packages: [ awesome ]
+
+  - src: ~/drive/wallpaper/wallbase/hatsune_miku/1920.1200/wallpaper-489895.jpg
+    dst: .config/awesome/themes/powerarrow-darker/wall.png
+    hosts: [ Sleipnir ]
+    packages: [ awesome ]
