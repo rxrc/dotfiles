@@ -30,10 +30,6 @@ if (pacman -Q network-manager-applet &>/dev/null); then
   enabled+=('app@nm-applet')
 fi
 
-if [[ -e /usr/local/bin/mntxd ]]; then
-  enabled+=('rbenv-ruby@mntxd')
-fi
-
 if [[ -e $HOME/.config/xbindkeys/xbindkeysrc ]]; then
   enabled+=('xbindkeys')
 fi
