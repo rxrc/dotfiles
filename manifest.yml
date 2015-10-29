@@ -164,7 +164,7 @@ symlinks:
     hosts: [ Mimir ]
     packages: [ awesome ]
 
-  - src: ~/drive/wallpaper/wallbase/hatsune_miku/1920.1200/wallpaper-489895.jpg
+  - src: ~/drive/wallpaper/wallbase/general/1920.1200/wallpaper-98843.jpg
     dst: .config/awesome/themes/powerarrow-darker/wall.png
     hosts: [ Sleipnir ]
     packages: [ awesome ]
