@@ -7,18 +7,13 @@ npm_modules=()
 
 command -v npm >/dev/null 2>&1 || exit 0
 
-npm_modules+=('npm')
-npm_modules+=('bower')
-npm_modules+=('ember-cli')
-npm_modules+=('eslint_d')
-npm_modules+=('grunt-cli')
-npm_modules+=('gulp')
+npm_modules+=('bower@^1.6.4')
+npm_modules+=('ember-cli@1.13.12')
+npm_modules+=('eslint_d@^2.3.1')
 
 for module in $npm_modules; do
-  npm list -g $module || npm install -g $module
-  if [[ "${1:-}" == 'update' ]]; then
-    npm update -g $module
-  fi
+  npm update --global npm
+  npm update --global ${module}
 done
 
 exit

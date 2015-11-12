@@ -14,11 +14,10 @@ fi
 echo '$ ./bootstrap.zsh'
 ./bootstrap.zsh
 
-echo "\n$ ./npm_modules.zsh ${cmd}"
-./npm_modules.zsh $cmd
-
-echo "\n$ bower ${cmd}\n"
-$(npm bin -g)/bower $cmd
+echo "\n $ npm install"
+npm install
+[[ "$cmd" = 'update' ]] && echo "\n $ npm run update"
+[[ "$cmd" = 'update' ]] && npm run update
 
 echo "\n$ bundle ${cmd}\n"
 command -v bundle || gem install bundler
@@ -33,6 +32,9 @@ echo '\n$ ./update.zsh'
 
 echo '\n$ ./units.zsh'
 ./units.zsh
+
+echo "\n$ ./npm_modules.zsh"
+./npm_modules.zsh
 
 echo '\n$ ./vagrant_plugins.zsh'
 ./vagrant_plugins.zsh
