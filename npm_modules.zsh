@@ -13,6 +13,7 @@ npm_modules+=('eslint_d@^2.3.1')
 
 for module in $npm_modules; do
   npm update --global npm
+  npm install --global ${module}
   npm update --global ${module}
 done
 
