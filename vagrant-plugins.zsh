@@ -2,16 +2,16 @@
 
 set -e
 
-vagrant_plugins=()
+plugins=()
 
 command -v vagrant >/dev/null 2>&1 || exit 0
 
-vagrant_plugins+=('vagrant-berkshelf')
-vagrant_plugins+=('vagrant-cachier')
-vagrant_plugins+=('vagrant-ohai')
-vagrant_plugins+=('vagrant-omnibus')
+plugins+=('vagrant-berkshelf')
+plugins+=('vagrant-cachier')
+plugins+=('vagrant-ohai')
+plugins+=('vagrant-omnibus')
 
-for plugin in $vagrant_plugins; do
+for plugin in $plugins; do
   vagrant plugin list | grep "^${plugin} (.*)$" \
     || vagrant plugin install $plugin
 done
