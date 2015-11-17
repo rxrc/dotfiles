@@ -33,10 +33,10 @@ echo '\n$ ./update.zsh'
 echo '\n$ ./units.zsh'
 ./units.zsh
 
-echo "\n$ ./npm_modules.zsh"
-./npm_modules.zsh
+echo "\n$ ./node-modules.zsh"
+./node-modules.zsh
 
-echo '\n$ ./vagrant_plugins.zsh'
-./vagrant_plugins.zsh
+echo '\n$ ./vagrant-plugins.zsh'
+./vagrant-plugins.zsh
 
 exit
