@@ -38,5 +38,7 @@ echo "\n$ ./node-modules.zsh"
 
 echo '\n$ ./vagrant-plugins.zsh'
 ./vagrant-plugins.zsh
+[[ "$cmd" = 'update' ]] && echo "\n $ vagrant plugin update"
+[[ "$cmd" = 'update' ]] && vagrant plugin update
 
 exit
