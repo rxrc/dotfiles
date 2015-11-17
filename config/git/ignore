@@ -1,5 +1,6 @@
 .*~
 .directory
+*.latexmain
 .nvmrc
 .python-version
 .ruby-version
