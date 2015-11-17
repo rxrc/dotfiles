@@ -3,16 +3,14 @@
 set -e
 set -u
 
-modules=()
+node_modules=()
 
 command -v npm >/dev/null 2>&1 || exit 0
 
-modules+=('bower@^1.6.4')
-modules+=('ember-cli@^1.13.12')
-modules+=('standard@^5.3.1')
+node_modules+=('bower@^1.6.4')
+node_modules+=('ember-cli@^1.13.12')
+node_modules+=('standard@^5.3.1')
 
-for module in $modules; do
-  npm install --global ${module}
-done
+npm install --global ${node_modules}
 
 exit
