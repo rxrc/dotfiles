@@ -159,7 +159,7 @@ symlinks:
     hosts: [ Gungnir-x60 ]
     packages: [ awesome ]
 
-  - src: ~/drive/wallpaper/wallbase/general/1200.1920/wallpaper-1445485.jpg
+  - src: ~/drive/wallpaper/sort/mimir/wallhaven-152658-vert.jpg
     dst: .config/awesome/themes/powerarrow-darker/wall.png
     hosts: [ Mimir ]
     packages: [ awesome ]
