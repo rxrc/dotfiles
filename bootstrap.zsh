@@ -29,6 +29,10 @@ fi
 if ! [[ -d $HOME/.rbenv ]]; then
   puts 'Installing' 'rbenv'
   git clone https://github.com/sstephenson/rbenv.git $HOME/.rbenv
+  cd $HOME/.rbenv
+  git checkout $(git describe --abbrev=0 --tags)
+  src/configure
+  make -C src
 fi
 
 if [[ -d $HOME/.rbenv ]]; then

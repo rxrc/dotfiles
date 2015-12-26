@@ -21,7 +21,11 @@ fi
 if [[ -d $HOME/.rbenv ]]; then
   puts 'Updating' 'rbenv'
   cd $HOME/.rbenv
+  git checkout master
   git pull
+  git checkout $(git describe --abbrev=0 --tags)
+  src/configure
+  make -C src
 fi
 
 if [[ -d $HOME/.rbenv/plugins/ruby-build ]]; then
