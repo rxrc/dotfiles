@@ -58,9 +58,6 @@ config_files:
   - src: dotfiles/ctags
     dst: .ctags
 
-  - src: dotfiles/gemrc
-    dst: .gemrc
-
   - src: dotfiles/rbenv/default-gems
     dst: .rbenv/default-gems
 
