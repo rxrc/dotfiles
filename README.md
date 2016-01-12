@@ -39,14 +39,12 @@ Bower should be installed manually using [npm].
 #### Quick Start
 
 Note that on this branch, the install script takes care
-of everything except installing Ruby and Node.
+of everything except installing Node via nvm.
 Thus, a full install might look like
 
 ```bash
 $ ./bootstrap.zsh
-$ exit
-$ rbenv install
-$ pyenv install
+$ exit # reload shell after installing zshrc
 $ nvm install
 $ nvm use
 $ ./install.zsh

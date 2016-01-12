@@ -14,6 +14,12 @@ fi
 echo '$ ./bootstrap.zsh'
 ./bootstrap.zsh
 
+rbenv install -s
+pyenv install -s
+rbenv rehash
+pyenv rehash
+rehash
+
 echo "\n $ npm install"
 npm install
 [[ "$cmd" = 'update' ]] && echo "\n $ npm run update"
