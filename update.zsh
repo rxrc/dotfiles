@@ -7,6 +7,12 @@ function puts () {
   echo "\n-- [$1] $2"
 }
 
+if [[ $(command -v gem) ]]; then
+  puts 'Updating' 'gems'
+  xargs -a dotfiles/rbenv/default-gems gem install
+  xargs -a dotfiles/rbenv/default-gems gem update
+fi
+
 if [[ $(command -v pyenv) ]]; then
   puts 'Updating' 'pip'
   pyenv exec pip install --upgrade pip
