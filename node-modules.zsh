@@ -14,6 +14,7 @@ node_modules+=('coffeelint@^1.14.2')
 node_modules+=('ember-cli@^2.3.0')
 node_modules+=('grunt-cli@^0.1.13')
 node_modules+=('gulp@^3.9.0')
+node_modules+=('sass-lint@^1.5.1')
 node_modules+=('standard@^6.0.4')
 node_modules+=('standard-format@^2.1.0')
 
