@@ -3,6 +3,7 @@
 [user]
   name = Evan Sosenko
   email = razorx@evansosenko.com
+  signingkey = 9E51232A
 [ui]
   color = auto
 [color]
