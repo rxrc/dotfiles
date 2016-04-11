@@ -94,6 +94,9 @@ config_files:
   - src: config/hangups/hangups.conf
     dst: .config/hangups/hangups.conf
 
+  - src: config/user-dirs.dirs
+    dst: .config/user-dirs.dirs
+
   - src: config/mimeapps.list
     dst: .config/mimeapps.list
 
