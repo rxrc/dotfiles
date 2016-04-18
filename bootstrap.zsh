@@ -79,7 +79,7 @@ if ! [[ -d $HOME/.rbenv/plugins/rbenv-ctags ]]; then
 fi
 
 if [[ -d $HOME/.rbenv/plugins/rbenv-ctags ]]; then
-  puts 'Installed' 'rbenv-default-gems'
+  puts 'Installed' 'rbenv-default-ctags'
 fi
 
 if ! [[ -d $HOME/.pyenv ]]; then
