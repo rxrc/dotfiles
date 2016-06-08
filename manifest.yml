@@ -49,6 +49,9 @@ config_files:
     dst: .ssh/authorized_keys
     fmode: 0600
 
+  - src: dotfiles/environment.zsh
+    dst: .environment.zsh
+
   - src: config/git/config
     dst: .config/git/config
 
