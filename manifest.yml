@@ -118,6 +118,10 @@ config_files:
     dst: .config/gtk-3.0/settings.ini
     packages: [ gtk3 ]
 
+  - src: config/sakura/sakura.conf
+    dst: .config/sakura/sakura.conf
+    packages: [ sakura ]
+
   - src: config/terminator/config
     dst: .config/terminator/config
     packages: [ terminator ]
