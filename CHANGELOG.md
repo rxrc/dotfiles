@@ -1,6 +1,6 @@
 # Changelog
 
-## HEAD
+## 1.3.1
 
 - Update config_curator to v0.4.0.
 
