@@ -20,7 +20,7 @@
   "dependencies": {
     "awesome-copycats": "rxrc/awesome-copycats#razor-x",
     "hexchat-material-design-icons": "~1.1.0",
-    "keymaps": "rxrc/keymaps#v1.0.0",
+    "keymaps": "rxrc/keymaps#v1.1.0",
     "ssh-config": "git@bitbucket.org:razorx/ssh-config.git#v1.0.1",
     "systemd-user-units": "rxrc/systemd-user-units#v2.2.0",
     "tmuxinator-profiles": "git@bitbucket.org:razorx/tmuxinator-profiles.git",
