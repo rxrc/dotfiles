@@ -1,2 +1,4 @@
 [options]
 font = Inconsolata-g for Powerline 12
+modify_other_keys = true
+dynamic_title = true
