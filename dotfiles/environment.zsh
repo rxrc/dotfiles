@@ -1,5 +1,5 @@
 # Set Base16 Shell theme.
-export BASE16_THEME=chalk
+export BASE16_THEME=tomorrow
 export BASE16_TYPE=dark
 
 # Set Vim colors explicitly.
