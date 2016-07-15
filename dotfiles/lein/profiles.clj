@@ -3,6 +3,7 @@
     :plugins [
       [lein-bikeshed "0.2.0"]
       [lein-cljfmt "0.3.0"]
+      [lein-gen "0.2.1"]
       [lein-kibit "0.1.2"]
       [lein-pprint "1.1.2"]
       [com.jakemccrary/lein-test-refresh "0.11.0"]
@@ -22,6 +23,9 @@
       :prompt (fn [ns] (str "[" ns "](\u001b[36mλ\u001b[0m)> "))
       :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]
     }
+    :generators [
+      [lein-gen/generators "0.2.1"]
+    ]
     :ultra {
       :color-scheme :solarized_dark
     }
