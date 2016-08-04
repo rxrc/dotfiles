@@ -64,6 +64,15 @@ if [[ -d $HOME/.rbenv/plugins/rbenv-ctags ]]; then
   git pull
 fi
 
+if [[ -d $HOME/.rbenv/plugins/rbenv-bundler ]]; then
+  puts 'Updating' 'rbenv-bundler'
+  cd $HOME/.rbenv/plugins/rbenv-bundler
+  git checkout master
+  git pull
+  git checkout $(git describe --abbrev=0 --tags)
+  $HOME/.rbenv/bin/rbenv bundler on
+fi
+
 if [[ -d $HOME/.pyenv ]]; then
   puts 'Updating' 'pyenv'
   cd $HOME/.pyenv
