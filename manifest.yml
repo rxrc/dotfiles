@@ -28,10 +28,6 @@ components:
     dst: .config/awesome
     packages: [ awesome ]
 
-  - src: bower_components/awesome-copycats-settings/settings
-    dst: .config/awesome/settings
-    packages: [ awesome ]
-
   - src: bower_components/apw
     dst: .config/awesome/apw
     packages: [ awesome ]
