@@ -26,8 +26,6 @@
 [filter "local_spaces_repo_tabs"]
   clean = unexpand --tabs=2 --first-only
   smudge = expand --tabs=2 --initial
-[init]
-  templatedir = ~/.config/git/template
 [alias]
   ctags = !.git/hooks/ctags
 [url "https://github.com/"]
