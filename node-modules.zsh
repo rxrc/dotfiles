@@ -12,7 +12,7 @@ node_modules+=('brunch@^2.8.2')
 node_modules+=('ember-cli@^2.7.0')
 node_modules+=('grunt-cli@^1.2.0')
 node_modules+=('gulp-cli@^1.2.2')
-node_modules+=('tern@^0.19.0')
+node_modules+=('tern@^0.20.0')
 node_modules+=('jsctags@^5.0.1')
 
 npm install --global ${node_modules}
