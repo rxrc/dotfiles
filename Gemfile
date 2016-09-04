@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'config_curator', '~> 0.4.0'
+gem 'config_curator', '~> 0.5.0'
 
 # For mntxd.
 gem 'dante', '~> 0.2.0'
