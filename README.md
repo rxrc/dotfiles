@@ -8,11 +8,11 @@ My dotfiles managed with
 - [Config Curator]
 - [zshrc]
 - [tmuxrc]
-- [vimrc]
+- [nvimrc]
 
 [Config Curator]: https://github.com/razor-x/config_curator
 [tmuxrc]: https://github.com/rxrc/tmuxrc
-[vimrc]: https://github.com/rxrc/vimrc
+[nvimrc]: https://github.com/rxrc/nvimrc
 [zshrc]: https://github.com/rxrc/zshrc
 
 ## Requirements
@@ -21,7 +21,7 @@ My dotfiles managed with
 * [Ruby] with [Bundler]
 * [Zsh]
 * [tmux (optional)][tmux]
-* [Vim (optional)][Vim]
+* [Neovim (optional)][Neovim]
 
 ### Initial Bootstrap
 
@@ -64,7 +64,7 @@ $ ./install.zsh update
 [Ruby]: https://www.ruby-lang.org/
 [ruby-build]: https://github.com/sstephenson/ruby-build
 [tmux]: http://tmux.sourceforge.net/
-[Vim]: http://www.vim.org/
+[Neovim]: https://neovim.io/
 [Zsh]: http://www.zsh.org/
 
 ## Installation and Usage

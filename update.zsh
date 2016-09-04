@@ -99,13 +99,13 @@ fi
 
 if [[ -e $HOME/.promptline.sh ]]; then
   puts 'Updating' 'promptline'
-  vim -c "PromptlineSnapshot! ~/.promptline.sh" -c qall!
+  nvim -c "PromptlineSnapshot! ~/.promptline.sh" -c qall!
 fi
 
 if [[ -e $HOME/.tmuxline.conf ]]; then
   if [[ ! -z "${TMUX:-}" ]]; then
     puts 'Updating' 'tmuxline'
-    vim -c "TmuxlineSnapshot! ~/.tmuxline.conf" -c qall!
+    nvim -c "TmuxlineSnapshot! ~/.tmuxline.conf" -c qall!
   else
     puts 'Info' 'Run in a tmux session to install tmuxline.'
   fi

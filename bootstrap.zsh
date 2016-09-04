@@ -129,13 +129,13 @@ if [[ -d $HOME/.nvm ]]; then
   puts 'Installed' 'nvm'
 fi
 
-if ! [[ -d $HOME/.vim/plugged/vimrc ]]; then
-  puts 'Installing' 'vimrc'
-  curl -L https://rc.evansosenko.com/vimrc/install.sh | sh
+if ! [[ -d $HOME/.config/nvim/plugged/nvimrc ]]; then
+  puts 'Installing' 'nvimrc'
+  curl -L https://rc.evansosenko.com/nvimrc/install.sh | sh
 fi
 
-if [[ -d $HOME/.vim/plugged/vimrc ]]; then
-  puts 'Installed' 'vimrc'
+if [[ -d $HOME/.config/nvim/plugged/nvimrc ]]; then
+  puts 'Installed' 'nvimrc'
 fi
 
 if ! [[ -d $HOME/.tmux/plugins/tmuxrc ]]; then
@@ -153,9 +153,9 @@ if [[ -d $HOME/.tmux/plugins/tmuxrc ]]; then
 fi
 
 if ! [[ -e $HOME/.promptline.sh ]]; then
-  if [[ -d $HOME/.vim/plugged/promptline.vim ]]; then
+  if [[ -d $HOME/.config/nvim/plugged/promptline.vim ]]; then
     puts 'Installing' 'promptline'
-    vim -c "PromptlineSnapshot ~/.promptline.sh" -c qall!
+    nvim -c "PromptlineSnapshot ~/.promptline.sh" -c qall!
   fi
 fi
 
@@ -164,10 +164,10 @@ if [[ -e $HOME/.promptline.sh ]]; then
 fi
 
 if ! [[ -e $HOME/.tmuxline.conf ]] then
-  if [[ -d $HOME/.vim/plugged/tmuxline.vim ]]; then
+  if [[ -d $HOME/.config/nvim/plugged/tmuxline.vim ]]; then
     if [[ ! -z "${TMUX:-}" ]]; then
       puts 'Installing' 'tmuxline'
-      vim -c "TmuxlineSnapshot ~/.tmuxline.conf" -c qall!
+      nvim -c "TmuxlineSnapshot ~/.tmuxline.conf" -c qall!
     else
       puts 'Info' 'Run in a tmux session to install tmuxline.'
     fi
