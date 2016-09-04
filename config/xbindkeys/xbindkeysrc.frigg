@@ -1,0 +1,36 @@
+# Control backlight.
+"xbacklight -dec 10"
+  m:0x10 + c:237
+  Mod2 + XF86KbdBrightnessDown
+
+"xbacklight -inc 10"
+  m:0x10 + c:238
+  Mod2 + XF86KbdBrightnessUp
+
+# Control keyboard backlight.
+"/usr/bin/kbdlight down 20"
+  m:0x18 + c:237
+  Alt+Mod2 + XF86KbdBrightnessDown
+
+"/usr/bin/kbdlight up 20"
+  m:0x18 + c:238
+  Alt+Mod2 + XF86KbdBrightnessUp
+
+# Print Screen.
+"sleep 0.2 && xdotool key Print"
+  m:0x10 + c:212
+  Mod2 + XF86LaunchB
+
+# Back and Forward.
+"sleep 0.2 && xdotool key XF86Back"
+  m:0x10 + c:232
+  Mod2 + XF86MonBrightnessDown
+
+"sleep 0.2 && xdotool key XF86Forward"
+  m:0x10 + c:233
+  Mod2 + XF86MonBrightnessUp
+
+# Bind screen locker.
+"xscreensaver-command --lock"
+  m:0x8 + c:49
+  Alt + grave
