@@ -88,9 +88,11 @@ config_files:
 
   - src: config/user-dirs.dirs
     dst: .config/user-dirs.dirs
+    packages: [ xorg-server ]
 
   - src: config/mimeapps.list
     dst: .config/mimeapps.list
+    packages: [ xorg-server ]
 
   - src: config/Xresources/default
     dst: .config/Xresources/default
