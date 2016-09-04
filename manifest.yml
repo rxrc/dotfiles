@@ -54,6 +54,7 @@ config_files:
 
   - src: dotfiles/gradle/gradle.properties
     dst: .gradle/gradle.properties
+    packages: [ gradle ]
 
   - src: dotfiles/rbenv/default-gems
     dst: .rbenv/default-gems
