@@ -147,6 +147,10 @@ symlinks:
     dst: .config/xkb/Gungnir
     packages: [ xorg-server ]
 
+  - src: ~/.config/xkb/keymap/macbookpro.xkb
+    dst: .config/xkb/Frigg
+    packages: [ xorg-server ]
+
   - src: ~/.config/xkb/keymap/x60t.xkb
     dst: .config/xkb/Gungnir-x60
     packages: [ xorg-server ]
