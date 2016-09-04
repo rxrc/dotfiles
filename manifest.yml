@@ -86,9 +86,6 @@ config_files:
     dst: .vagrant.d/Vagrantfile
     packages: [ vagrant ]
 
-  - src: config/hangups/hangups.conf
-    dst: .config/hangups/hangups.conf
-
   - src: config/user-dirs.dirs
     dst: .config/user-dirs.dirs
 
