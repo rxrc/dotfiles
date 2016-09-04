@@ -21,7 +21,7 @@
     "awesome-copycats": "rxrc/awesome-copycats#razor-x",
     "hexchat-material-design-icons": "~1.1.0",
     "keymaps": "rxrc/keymaps#v1.1.0",
-    "ssh-config": "git@bitbucket.org:razorx/ssh-config.git#v1.1.0",
+    "ssh-config": "git@bitbucket.org:razorx/ssh-config.git#v1.2.0",
     "systemd-user-units": "rxrc/systemd-user-units#v2.2.1",
     "tmuxinator-profiles": "git@bitbucket.org:razorx/tmuxinator-profiles.git",
     "xresources": "rxrc/xresources#v1.2.0"
