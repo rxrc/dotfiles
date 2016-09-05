@@ -131,10 +131,6 @@ config_files:
     packages: [ xorg-server ]
 
 symlinks:
-  - src: /usr/share/vim/vimfiles/spell
-    dst: .local/share/nvim/site
-    packages: [ neovim ]
-
   - src: ~/.config/xkb/keymap/steelseries-6gv2.xkb
     dst: .config/xkb/Sleipnir
     packages: [ xorg-server ]

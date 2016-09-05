@@ -129,6 +129,13 @@ if [[ -d $HOME/.nvm ]]; then
   puts 'Installed' 'nvm'
 fi
 
+if ! [[ -h $HOME/.local/share/nvim/site/spell ]]; then
+  mkdir -p $HOME/.local/share/nvim/site
+  if [[ -d /usr/share/vimfiles/spell ]]; then
+    ln -s /usr/share/vim/vimfiles/spell $HOME/.local/share/nvim/site/spell
+  fi
+fi
+
 if ! [[ -d $HOME/.config/nvim/plugged/nvimrc ]]; then
   puts 'Installing' 'nvimrc'
   curl -L https://rc.evansosenko.com/nvimrc/install.sh | sh
