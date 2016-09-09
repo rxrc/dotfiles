@@ -161,7 +161,17 @@ symlinks:
     packages: [ awesome ]
 
   - src: ~/drive/wallpaper/sort/frigg/wallhaven-349408-16x10.png
-    dst: .config/awesome/themes/powerarrow-darker/wall.png
+    dst: .config/awesome/themes/powerarrow-darker/wall.png-1
+    hosts: [ Frigg ]
+    packages: [ awesome ]
+
+  - src: ~/drive/wallpaper/sort/frigg/wallhaven-243289.jpg
+    dst: .config/awesome/themes/powerarrow-darker/wall.png-2
+    hosts: [ Frigg ]
+    packages: [ awesome ]
+
+  - src: ~/drive/wallpaper/sort/frigg/wallhaven-369362.jpg
+    dst: .config/awesome/themes/powerarrow-darker/wall.png-3
     hosts: [ Frigg ]
     packages: [ awesome ]
 
