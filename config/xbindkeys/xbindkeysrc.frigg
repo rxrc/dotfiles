@@ -16,6 +16,15 @@
   m:0x18 + c:238
   Alt+Mod2 + XF86KbdBrightnessUp
 
+# Toggle external monitors.
+"xrandr --output DP1-1 --left-of eDP1 --auto && xrandr --output DP1-8 --above eDP1 --auto"
+  m:0x10 + c:128
+  Mod2 + XF86LaunchA
+
+"xrandr --output DP1-1 --off && xrandr --output DP1-8 --off"
+  m:0x14 + c:128
+  Control+Mod2 + XF86LaunchA
+
 # Print Screen.
 "sleep 0.2 && xdotool key Print"
   m:0x10 + c:212
