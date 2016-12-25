@@ -25,10 +25,6 @@ enabled+=('wm.target')
 enabled+=('xinit.target')
 enabled+=('xresources')
 
-if (pacman -Q network-manager-applet &>/dev/null); then
-  enabled+=('app@nm-applet')
-fi
-
 if [[ -e $HOME/.config/xbindkeys/xbindkeysrc ]]; then
   enabled+=('xbindkeys')
 fi
