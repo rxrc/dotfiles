@@ -14,7 +14,6 @@ node_modules+=('grunt-cli@^1.2.0')
 node_modules+=('gulp-cli@^1.2.2')
 node_modules+=('tern@^0.20.0')
 node_modules+=('jsctags@^5.0.1')
-node_modules+=('yarn@^0.17.10')
 
 npm install --global ${node_modules}
 
