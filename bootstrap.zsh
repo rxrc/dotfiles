@@ -131,8 +131,8 @@ fi
 
 if ! [[ -h $HOME/.local/share/nvim/site/spell ]]; then
   mkdir -p $HOME/.local/share/nvim/site
-  if [[ -d /usr/share/vimfiles/spell ]]; then
-    ln -s /usr/share/vim/vimfiles/spell $HOME/.local/share/nvim/site/spell
+  if [[ -d /usr/share/vim/vimfiles/spell ]]; then
+    ln -s /usr/share/vim/vimfiles/spell $HOME/.local/share/nvim/site
   fi
 fi
 
