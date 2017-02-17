@@ -151,7 +151,7 @@ symlinks:
     dst: .config/xkb/Gungnir-x60
     packages: [ xorg-server ]
 
-  - src: ~/.config/awesome/rc.lua.powerarrow-darker
+  - src: ~/.config/awesome/rc.lua.template
     dst: .config/awesome/rc.lua
     packages: [ awesome ]
 
