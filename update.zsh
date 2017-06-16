@@ -105,7 +105,7 @@ fi
 if [[ -e $HOME/.tmuxline.conf ]]; then
   if [[ ! -z "${TMUX:-}" ]]; then
     puts 'Updating' 'tmuxline'
-    nvim -c "TmuxlineSnapshot! ~/.tmuxline.conf" -c qall!
+    nvim -c "Tmuxline airline" -c "TmuxlineSnapshot! ~/.tmuxline.conf" -c qall!
   else
     puts 'Info' 'Run in a tmux session to install tmuxline.'
   fi
