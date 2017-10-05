@@ -1,5 +1,6 @@
 [core]
   editor = nvim
+	pager = diff-so-fancy | less -RX --tabs=2
 [user]
   name = Evan Sosenko
   email = razorx@evansosenko.com
@@ -10,6 +11,7 @@
   status = auto
   diff = auto
   branch = auto
+	ui = true
 [github]
   user = razor-x
 [diff]
@@ -30,3 +32,17 @@
   ctags = !.git/hooks/ctags
 [url "https://github.com/"]
   insteadOf = git://github.com/
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 227
+	frag = magenta bold
+	commit = 227 bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[diff-so-fancy]
+	markEmptyLines = false
