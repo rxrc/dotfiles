@@ -33,6 +33,9 @@ components:
     packages: [ awesome ]
 
 config_files:
+  - src: dotfiles/zshenv
+    dst: .zshenv
+
   - src: bower_components/ssh-config/config
     dst: .ssh/config
 
