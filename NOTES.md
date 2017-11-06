@@ -1,5 +1,9 @@
 # Manual Configuration Notes
 
+## ScreenCloud
+
+Set local name to `%F-%T%z`.
+
 ## Redshift
 
 Must add to this to `/etc/geoclue/geoclue.conf`
