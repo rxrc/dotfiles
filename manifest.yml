@@ -13,7 +13,7 @@ components:
     packages: [ xorg-server ]
 
   - src: bower_components/tmuxinator-profiles
-    dst: .tmuxinator
+    dst: .config/tmuxinator
     packages: [ tmux ]
 
   - src: bower_components/xresources/Xresources.d
