@@ -1,6 +1,6 @@
 [core]
   editor = nvim
-	pager = diff-so-fancy | less -RX --tabs=2
+	pager = diff-so-fancy | less -+X -+F -R --tabs=2
 [user]
   name = Evan Sosenko
   email = razorx@evansosenko.com
