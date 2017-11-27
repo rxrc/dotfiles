@@ -46,6 +46,9 @@ config_files:
   - src: dotfiles/environment.zsh
     dst: .environment.zsh
 
+  - src: config/ignore
+    dst: .config/ignore
+
   - src: config/git/config
     dst: .config/git/config
 
