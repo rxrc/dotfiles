@@ -78,9 +78,6 @@ config_files:
   - src: dotfiles/rspec
     dst: .rspec
 
-  - src: dotfiles/npmrc
-    dst: .npmrc
-
   - src: config/ranger/rc.conf
     dst: .config/ranger/rc.conf
     packages: [ ranger ]
