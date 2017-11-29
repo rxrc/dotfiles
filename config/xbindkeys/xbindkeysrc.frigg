@@ -17,7 +17,7 @@
   Alt+Mod2 + XF86KbdBrightnessUp
 
 # Toggle external monitors.
-"xrandr --output DP2-8 --left-of eDP1 --auto && xrandr --output DP2-1 --above eDP1 --auto"
+"xrandr --output DP2-8 --left-of DP2-1 --primary --auto && xrandr --output DP2-1 --left-of eDP1 --auto"
   m:0x10 + c:128
   Mod2 + XF86LaunchA
 
