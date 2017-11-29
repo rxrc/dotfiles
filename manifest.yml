@@ -146,7 +146,7 @@ symlinks:
     dst: .config/xkb/Gungnir
     packages: [ xorg-server ]
 
-  - src: ~/.config/xkb/keymap/macbookpro.xkb
+  - src: ~/.config/xkb/keymap/steelseries-6gv2.xkb
     dst: .config/xkb/Frigg
     packages: [ xorg-server ]
 
