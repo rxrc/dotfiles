@@ -18,8 +18,8 @@ if [[ $(command -v gem) ]]; then
 fi
 
 if [[ $(command -v pyenv) ]]; then
-  puts 'Updating' 'pip'
-  pyenv exec pip install --upgrade pip
+  puts 'Updating' 'pip and pipenv'
+  pyenv exec pip install --upgrade pip pipenv
 fi
 
 if [[ -d $HOME/.zgen.zsh ]]; then
