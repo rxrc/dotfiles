@@ -18,12 +18,12 @@
     "bower_components"
   ],
   "dependencies": {
-    "awesome-copycats": "rxrc/awesome-copycats#v4.4.0",
+    "awesome-copycats": "rxrc/awesome-copycats#v4.5.0",
     "hexchat-material-design-icons": "~1.1.0",
     "keymaps": "rxrc/keymaps#v1.3.0",
     "ssh-config": "git@bitbucket.org:razorx/ssh-config.git#v1.4.3",
     "systemd-user-units": "rxrc/systemd-user-units#v2.2.1",
     "tmuxinator-profiles": "git@bitbucket.org:razorx/tmuxinator-profiles.git",
-    "xresources": "rxrc/xresources#v1.2.0"
+    "xresources": "rxrc/xresources#c2bf5edad4ae206c7a008dbb5d8fd014d7c8c92c"
   }
 }
