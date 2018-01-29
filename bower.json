@@ -18,7 +18,7 @@
     "bower_components"
   ],
   "dependencies": {
-    "awesome-copycats": "rxrc/awesome-copycats#v4.5.0",
+    "awesome-copycats": "rxrc/awesome-copycats#v4.5.1",
     "hexchat-material-design-icons": "~1.1.0",
     "keymaps": "rxrc/keymaps#v1.3.0",
     "ssh-config": "git@bitbucket.org:razorx/ssh-config.git#v1.4.3",
