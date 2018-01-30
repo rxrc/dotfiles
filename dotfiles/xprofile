@@ -1,3 +1,5 @@
+export NVIM_GTK_NO_HEADERBAR=1
+
 (sleep 1 && systemctl --user restart display-server.target) &
 
 if (pacman -Q xkeyboard-config-chromebook &>/dev/null); then
