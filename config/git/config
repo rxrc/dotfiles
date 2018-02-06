@@ -4,7 +4,7 @@
 [user]
   name = Evan Sosenko
   email = razorx@evansosenko.com
-  signingkey = 9E51232A
+  signingkey = 757C899CECF66FE0
 [ui]
   color = auto
 [color]
@@ -46,3 +46,5 @@
 	whitespace = red reverse
 [diff-so-fancy]
 	markEmptyLines = false
+[commit]
+  gpgsign = true
