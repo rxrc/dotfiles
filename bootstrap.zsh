@@ -159,10 +159,10 @@ if [[ -d $HOME/.tmux/plugins/tmuxrc ]]; then
   puts 'Installed' 'tmuxrc'
 fi
 
-if ! [[ -e $HOME/.promptline.sh ]]; then
+if ! [[ -e $HOME/.config/zsh/promptline.zsh ]]; then
   if [[ -d $HOME/.config/nvim/plugged/promptline.vim ]]; then
     puts 'Installing' 'promptline'
-    nvim -c "PromptlineSnapshot ~/.promptline.sh" -c qall!
+    nvim -c "PromptlineSnapshot ~/.config/zsh/promptline.zsh" -c qall!
   fi
 fi
 
