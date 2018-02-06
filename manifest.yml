@@ -168,12 +168,12 @@ symlinks:
 
   - src: ~/drive/wallpaper/sort/frigg/wallhaven-349408-16x10.png
     dst: .config/awesome/themes/powerarrow-dark/wall.png
-    hosts: [ Frigg ]
+    hosts: [ Frigg, Mimir ]
     packages: [ awesome ]
 
   - src: ~/drive/wallpaper/sort/frigg/wallhaven-579670-2560x1440.jpg
     dst: .config/awesome/themes/powerarrow-dark/wall.png-1
-    hosts: [ Frigg ]
+    hosts: [ Frigg, Mimir ]
     packages: [ awesome ]
 
   - src: ~/drive/wallpaper/sort/frigg/wallhaven-67000-16x10.jpg
@@ -189,11 +189,6 @@ symlinks:
   - src: ~/Wallpaper/wallhaven-83639-4x3.jpg
     dst: .config/awesome/themes/powerarrow-dark/wall.png
     hosts: [ Gungnir-x60 ]
-    packages: [ awesome ]
-
-  - src: ~/drive/wallpaper/sort/mimir/wallhaven-152658-vert.jpg
-    dst: .config/awesome/themes/powerarrow-dark/wall.png
-    hosts: [ Mimir ]
     packages: [ awesome ]
 
   - src: ~/drive/wallpaper/wallbase/general/1920.1200/wallpaper-98843.jpg
