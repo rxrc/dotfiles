@@ -43,6 +43,9 @@ config_files:
     dst: .ssh/authorized_keys
     fmode: 0600
 
+  - src: config/gnupg/gpg-agent.conf
+    dst: .config/gnupg/gpg-agent.conf
+
   - src: dotfiles/environment.zsh
     dst: .environment.zsh
 
