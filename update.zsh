@@ -7,10 +7,6 @@ function puts () {
   echo "\n-- [$1] $2"
 }
 
-if [[ -e $HOME/.environment.zsh ]]; then
-  source $HOME/.environment.zsh
-fi
-
 if [[ $(command -v gem) ]]; then
   puts 'Updating' 'gems'
   xargs -a dotfiles/rbenv/default-gems gem install

@@ -46,9 +46,6 @@ config_files:
   - src: config/gnupg/gpg-agent.conf
     dst: .config/gnupg/gpg-agent.conf
 
-  - src: dotfiles/environment.zsh
-    dst: .environment.zsh
-
   - src: config/ignore
     dst: .config/ignore
 
