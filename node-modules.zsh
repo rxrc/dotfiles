@@ -7,6 +7,8 @@ node_modules=()
 
 command -v npm >/dev/null 2>&1 || exit 0
 
+npm config set sign-git-tag true
+
 node_modules+=('bower@^1.8.0')
 node_modules+=('brunch@^2.8.2')
 node_modules+=('ember-cli@^2.7.0')
