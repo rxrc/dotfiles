@@ -165,17 +165,17 @@ symlinks:
 
   - src: ~/drive/wallpaper/sort/frigg/wallhaven-349408-16x10.png
     dst: .config/awesome/themes/powerarrow-dark/wall.png
-    hosts: [ Frigg, Mimir ]
-    packages: [ awesome ]
-
-  - src: ~/drive/wallpaper/sort/frigg/wallhaven-579670-2560x1440.jpg
-    dst: .config/awesome/themes/powerarrow-dark/wall.png-1
-    hosts: [ Frigg, Mimir ]
-    packages: [ awesome ]
-
-  - src: ~/drive/wallpaper/sort/frigg/wallhaven-67000-16x10.jpg
-    dst: .config/awesome/themes/powerarrow-dark/wall.png-2
     hosts: [ Frigg ]
+    packages: [ awesome ]
+
+  - src: ~/drive/wallpaper/sort/frigg/wallhaven-122103.jpg
+    dst: .config/awesome/themes/powerarrow-dark/wall.png
+    hosts: [ Frigg, Mimir ]
+    packages: [ awesome ]
+
+  - src: ~/drive/wallpaper/sort/frigg/wallhaven-95332.jpg
+    dst: .config/awesome/themes/powerarrow-dark/wall.png-2
+    hosts: [ Frigg, Mimir ]
     packages: [ awesome ]
 
   - src: ~/drive/wallpaper/sort/frigg/wallhaven-14375-2560x1440.jpg
