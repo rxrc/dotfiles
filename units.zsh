@@ -15,7 +15,6 @@ enabled+=("keymap@$(hostname)")
 enabled+=('xscreensaver')
 enabled+=('numlock')
 enabled+=('pulseaudio.socket')
-enabled+=('redshift-gtk')
 enabled+=('ssh-agent')
 enabled+=('tmuxinator@default')
 enabled+=('transmission-gtk')
@@ -26,6 +25,10 @@ enabled+=('xresources')
 
 if [[ -e $HOME/.config/xbindkeys/xbindkeysrc ]]; then
   enabled+=('xbindkeys')
+fi
+
+if [[ $(hostname) != 'Mimir' ]]; then
+  enabled+=('redshift-gtk')
 fi
 
 for unit in $enabled; do
