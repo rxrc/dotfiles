@@ -26,12 +26,12 @@ if ! [[ -e $HOME/.gemrc ]]; then
   puts 'Created' '~/.gemrc'
 fi
 
-if ! [[ -d $HOME/.zgen.zsh ]]; then
+if ! [[ -d $HOME/.config/zplug ]]; then
   puts 'Installing' 'zshrc'
   curl -L https://rc.evansosenko.com/zshrc/install.sh | sh
 fi
 
-if [[ -d $HOME/.zgen.zsh ]]; then
+if ! [[ -d $HOME/.config/zplug ]]; then
   puts 'Installed' 'zshrc'
 fi
 
