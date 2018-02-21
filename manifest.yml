@@ -62,8 +62,8 @@ config_files:
     dst: .gradle/gradle.properties
     packages: [ gradle ]
 
-  - src: dotfiles/rbenv/default-gems
-    dst: .rbenv/default-gems
+  - src: config/rbenv/default-gems
+    dst: .local/rbenv/default-gems
 
   - src: dotfiles/lein/profiles.clj
     dst: .lein/profiles.clj

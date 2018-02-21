@@ -3,9 +3,18 @@
 set -e
 set -u
 
+XDG_DATA_HOME=${XDG_DATA_HOME:-$HOME/.local/share}
+NVM_DIR=${NVM_DIR:-$XDG_DATA_HOME/nvm}
+PYENV_ROOT=${PYENV_ROOT:-$XDG_DATA_HOME/pyenv}
+RBENV_ROOT=${RBENV_ROOT:-$XDG_DATA_HOME/rbenv}
+
 function puts () {
   echo "\n-- [$1] $2"
 }
+
+if ! [[ -d $XDG_DATA_HOME ]]; then
+  mkdir -p $XDG_DATA_HOME
+fi
 
 if ! [[ -d $HOME/.cache/ssh/sockets ]]; then
   mkdir -p $HOME/.cache/ssh/sockets
@@ -26,106 +35,106 @@ if [[ -d $HOME/.zgen.zsh ]]; then
   puts 'Installed' 'zshrc'
 fi
 
-if ! [[ -d $HOME/.rbenv ]]; then
+if ! [[ -d $RBENV_ROOT ]]; then
   puts 'Installing' 'rbenv'
-  git clone https://github.com/sstephenson/rbenv.git $HOME/.rbenv
-  cp -p dotfiles/rbenv/default-gems $HOME/.rbenv
-  cd $HOME/.rbenv
+  git clone https://github.com/sstephenson/rbenv.git $RBENV_ROOT
+  cp -p config/rbenv/default-gems $RBENV_ROOT
+  cd $RBENV_ROOT
   git checkout $(git describe --abbrev=0 --tags)
   src/configure
   make -C src
 fi
 
-if [[ -d $HOME/.rbenv ]]; then
+if [[ -d $RBENV_ROOT ]]; then
   puts 'Installed' 'rbenv'
 fi
 
-if ! [[ -d $HOME/.rbenv/plugins/ruby-build ]]; then
+if ! [[ -d $RBENV_ROOT/plugins/ruby-build ]]; then
   puts 'Installing' 'ruby-build'
   git clone https://github.com/sstephenson/ruby-build.git \
-    $HOME/.rbenv/plugins/ruby-build
-  cd $HOME/.rbenv/plugins/ruby-build
+    $RBENV_ROOT/plugins/ruby-build
+  cd $RBENV_ROOT/plugins/ruby-build
   git checkout $(git describe --abbrev=0 --tags)
 fi
 
-if [[ -d $HOME/.rbenv/plugins/ruby-build ]]; then
+if [[ -d $RBENV_ROOT/plugins/ruby-build ]]; then
   puts 'Installed' 'ruby-build'
 fi
 
-if ! [[ -d $HOME/.rbenv/plugins/rbenv-gem-rehash ]]; then
+if ! [[ -d $RBENV_ROOT/plugins/rbenv-gem-rehash ]]; then
   puts 'Installing' 'rbenv-gem-rehash'
   git clone https://github.com/sstephenson/rbenv-gem-rehash.git \
-    $HOME/.rbenv/plugins/rbenv-gem-rehash
+    $RBENV_ROOT/plugins/rbenv-gem-rehash
 fi
 
-if [[ -d $HOME/.rbenv/plugins/rbenv-gem-rehash ]]; then
+if [[ -d $RBENV_ROOT/plugins/rbenv-gem-rehash ]]; then
   puts 'Installed' 'rbenv-gem-rehash'
 fi
 
-if ! [[ -d $HOME/.rbenv/plugins/rbenv-default-gems ]]; then
+if ! [[ -d $RBENV_ROOT/plugins/rbenv-default-gems ]]; then
   puts 'Installing' 'rbenv-default-gems'
   git clone https://github.com/sstephenson/rbenv-default-gems.git \
-    $HOME/.rbenv/plugins/rbenv-default-gems
+    $RBENV_ROOT/plugins/rbenv-default-gems
 fi
 
-if [[ -d $HOME/.rbenv/plugins/rbenv-default-gems ]]; then
+if [[ -d $RBENV_ROOT/plugins/rbenv-default-gems ]]; then
   puts 'Installed' 'rbenv-default-gems'
 fi
 
-if ! [[ -d $HOME/.rbenv/plugins/rbenv-ctags ]]; then
+if ! [[ -d $RBENV_ROOT/plugins/rbenv-ctags ]]; then
   puts 'Installing' 'rbenv-ctags'
   git clone https://github.com/tpope/rbenv-ctags.git \
-    $HOME/.rbenv/plugins/rbenv-ctags
+    $RBENV_ROOT/plugins/rbenv-ctags
 fi
 
-if [[ -d $HOME/.rbenv/plugins/rbenv-ctags ]]; then
+if [[ -d $RBENV_ROOT/plugins/rbenv-ctags ]]; then
   puts 'Installed' 'rbenv-default-ctags'
 fi
 
-if ! [[ -d $HOME/.rbenv/plugins/rbenv-bundler ]]; then
+if ! [[ -d $RBENV_ROOT/plugins/rbenv-bundler ]]; then
   puts 'Installing' 'rbenv-bundler'
   git clone https://github.com/carsomyr/rbenv-bundler.git \
-    $HOME/.rbenv/plugins/rbenv-bundler
-  cd $HOME/.rbenv/plugins/rbenv-bundler
+    $RBENV_ROOT/plugins/rbenv-bundler
+  cd $RBENV_ROOT/plugins/rbenv-bundler
   git checkout $(git describe --abbrev=0 --tags)
-  $HOME/.rbenv/bin/rbenv bundler on
+  $RBENV_ROOT/bin/rbenv bundler on
 fi
 
-if [[ -d $HOME/.rbenv/plugins/rbenv-bundler ]]; then
+if [[ -d $RBENV_ROOT/plugins/rbenv-bundler ]]; then
   puts 'Installed' 'rbenv-bundler'
 fi
 
-if ! [[ -d $HOME/.pyenv ]]; then
+if ! [[ -d $PYENV_ROOT ]]; then
   puts 'Installing' 'pyenv'
-  git clone https://github.com/yyuu/pyenv.git $HOME/.pyenv
-  cd $HOME/.pyenv
+  git clone https://github.com/yyuu/pyenv.git $PYENV_ROOT
+  cd $PYENV_ROOT
   git checkout $(git describe --abbrev=0 --tags)
 fi
 
-if [[ -d $HOME/.pyenv ]]; then
+if [[ -d $PYENV_ROOT ]]; then
   puts 'Installed' 'pyenv'
 fi
 
-if ! [[ -d $HOME/.pyenv/plugins/pyenv-virtualenv ]]; then
+if ! [[ -d $PYENV_ROOT/plugins/pyenv-virtualenv ]]; then
   puts 'Installing' 'pyenv-virtualenv'
   git clone https://github.com/yyuu/pyenv-virtualenv.git \
-    $HOME/.pyenv/plugins/pyenv-virtualenv
-  cd $HOME/.pyenv/plugins/pyenv-virtualenv
+    $PYENV_ROOT/plugins/pyenv-virtualenv
+  cd $PYENV_ROOT/plugins/pyenv-virtualenv
   git checkout $(git describe --abbrev=0 --tags)
 fi
 
-if [[ -d $HOME/.pyenv/plugins/pyenv-virtualenv ]]; then
+if [[ -d $PYENV_ROOT/plugins/pyenv-virtualenv ]]; then
   puts 'Installed' 'pyenv-virtualenv'
 fi
 
-if ! [[ -d $HOME/.nvm ]]; then
+if ! [[ -d $NVM_DIR ]]; then
   puts 'Installing' 'nvm'
-  git clone https://github.com/creationix/nvm.git $HOME/.nvm
-  cd $HOME/.nvm
+  git clone https://github.com/creationix/nvm.git $NVM_DIR
+  cd $NVM_DIR
   git checkout $(git describe --abbrev=0 --tags)
 fi
 
-if [[ -d $HOME/.nvm ]]; then
+if [[ -d $NVM_DIR ]]; then
   puts 'Installed' 'nvm'
 fi
 

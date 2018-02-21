@@ -3,14 +3,19 @@
 set -e
 set -u
 
+XDG_DATA_HOME=${XDG_DATA_HOME:-$HOME/.local/share}
+NVM_DIR=${NVM_DIR:-$XDG_DATA_HOME/nvm}
+PYENV_ROOT=${PYENV_ROOT:-$XDG_DATA_HOME/pyenv}
+RBENV_ROOT=${RBENV_ROOT:-$XDG_DATA_HOME/rbenv}
+
 function puts () {
   echo "\n-- [$1] $2"
 }
 
 if [[ $(command -v gem) ]]; then
   puts 'Updating' 'gems'
-  xargs -a dotfiles/rbenv/default-gems gem install
-  xargs -a dotfiles/rbenv/default-gems gem update
+  xargs -a config/rbenv/default-gems gem install
+  xargs -a config/rbenv/default-gems gem update
 fi
 
 if [[ $(command -v pyenv) ]]; then
@@ -24,9 +29,9 @@ if [[ -d $HOME/.zgen.zsh ]]; then
   git pull
 fi
 
-if [[ -d $HOME/.rbenv ]]; then
+if [[ -d $RBENV_ROOT ]]; then
   puts 'Updating' 'rbenv'
-  cd $HOME/.rbenv
+  cd $RBENV_ROOT
   git checkout master
   git pull
   git checkout $(git describe --abbrev=0 --tags)
@@ -34,60 +39,60 @@ if [[ -d $HOME/.rbenv ]]; then
   make -C src
 fi
 
-if [[ -d $HOME/.rbenv/plugins/ruby-build ]]; then
+if [[ -d $RBENV_ROOT/plugins/ruby-build ]]; then
   puts 'Updating' 'ruby-build'
-  cd $HOME/.rbenv/plugins/ruby-build
+  cd $RBENV_ROOT/plugins/ruby-build
   git checkout master
   git pull
   git checkout $(git describe --abbrev=0 --tags)
 fi
-
-if [[ -d $HOME/.rbenv/plugins/rbenv-gem-rehash ]]; then
+S
+if [[ -d $RBENV_ROOT/plugins/rbenv-gem-rehash ]]; then
   puts 'Updating' 'rbenv-gem-rehash'
-  cd $HOME/.rbenv/plugins/rbenv-gem-rehash
+  cd $RBENV_ROOT/plugins/rbenv-gem-rehash
   git pull
 fi
 
-if [[ -d $HOME/.rbenv/plugins/rbenv-default-gems ]]; then
+if [[ -d $RBENV_ROOT/plugins/rbenv-default-gems ]]; then
   puts 'Updating' 'rbenv-default-gems'
-  cd $HOME/.rbenv/plugins/rbenv-default-gems
+  cd $RBENV_ROOT/plugins/rbenv-default-gems
   git pull
 fi
 
-if [[ -d $HOME/.rbenv/plugins/rbenv-ctags ]]; then
+if [[ -d $RBENV_ROOT/plugins/rbenv-ctags ]]; then
   puts 'Updating' 'rbenv-ctags'
-  cd $HOME/.rbenv/plugins/rbenv-ctags
+  cd $RBENV_ROOT/plugins/rbenv-ctags
   git pull
 fi
 
-if [[ -d $HOME/.rbenv/plugins/rbenv-bundler ]]; then
+if [[ -d $RBENV_ROOT/plugins/rbenv-bundler ]]; then
   puts 'Updating' 'rbenv-bundler'
-  cd $HOME/.rbenv/plugins/rbenv-bundler
+  cd $RBENV_ROOT/plugins/rbenv-bundler
   git checkout master
   git pull
   git checkout $(git describe --abbrev=0 --tags)
-  $HOME/.rbenv/bin/rbenv bundler on
+  $RBENV_ROOT/bin/rbenv bundler on
 fi
 
-if [[ -d $HOME/.pyenv ]]; then
+if [[ -d $PYENV_ROOT ]]; then
   puts 'Updating' 'pyenv'
-  cd $HOME/.pyenv
+  cd $PYENV_ROOT
   git checkout master
   git pull
   git checkout $(git describe --abbrev=0 --tags)
 fi
 
-if [[ -d $HOME/.pyenv/plugins/pyenv-virtualenv ]]; then
+if [[ -d $PYENV_ROOT/plugins/pyenv-virtualenv ]]; then
   puts 'Updating' 'pyenv-virtualenv'
-  cd $HOME/.pyenv/plugins/pyenv-virtualenv
+  cd $PYENV_ROOT/plugins/pyenv-virtualenv
   git checkout master
   git pull
   git checkout $(git describe --abbrev=0 --tags)
 fi
 
-if [[ -d $HOME/.nvm ]]; then
+if [[ -d $NVM_DIR ]]; then
   puts 'Updating' 'nvm'
-  cd $HOME/.nvm
+  cd $NVM_DIR
   git checkout master
   git pull
   git checkout $(git describe --abbrev=0 --tags)
