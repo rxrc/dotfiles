@@ -46,7 +46,7 @@ if [[ -d $RBENV_ROOT/plugins/ruby-build ]]; then
   git pull
   git checkout $(git describe --abbrev=0 --tags)
 fi
-S
+
 if [[ -d $RBENV_ROOT/plugins/rbenv-gem-rehash ]]; then
   puts 'Updating' 'rbenv-gem-rehash'
   cd $RBENV_ROOT/plugins/rbenv-gem-rehash
