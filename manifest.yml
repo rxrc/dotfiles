@@ -69,8 +69,8 @@ config_files:
     dst: .lein/profiles.clj
     packages: [ leiningen ]
 
-  - src: dotfiles/bundle/config
-    dst: .bundle/config
+  - src: config/bundle/config
+    dst: .config/bundle/config
 
   - src: dotfiles/irbrc
     dst: .irbrc
