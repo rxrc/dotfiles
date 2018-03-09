@@ -1,3 +1,5 @@
+source $HOME/.config/zplug/repos/rxrc/zshrc/env.zsh
+source $HOME/.config/zsh/env.zsh
 export NVIM_GTK_NO_HEADERBAR=1
 
 (sleep 1 && systemctl --user restart display-server.target) &
