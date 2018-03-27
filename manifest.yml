@@ -58,10 +58,6 @@ config_files:
   - src: dotfiles/ctags
     dst: .ctags
 
-  - src: dotfiles/gradle/gradle.properties
-    dst: .gradle/gradle.properties
-    packages: [ gradle ]
-
   - src: config/rbenv/default-gems
     dst: .local/rbenv/default-gems
 
