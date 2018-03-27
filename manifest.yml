@@ -85,8 +85,8 @@ config_files:
   - src: dotfiles/chef/knife.rb
     dst: .chef/knife.rb
 
-  - src: dotfiles/vagrant.d/Vagrantfile
-    dst: .vagrant.d/Vagrantfile
+  - src: config/vagrant/Vagrantfile
+    dst: .config/vagrant/Vagrantfile
     packages: [ vagrant ]
 
   - src: config/user-dirs.dirs
