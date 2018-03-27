@@ -65,9 +65,6 @@ config_files:
   - src: config/bundle/config
     dst: .config/bundle/config
 
-  - src: dotfiles/irbrc
-    dst: .irbrc
-
   - src: dotfiles/rspec
     dst: .rspec
 
