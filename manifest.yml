@@ -82,8 +82,8 @@ config_files:
     dst: .config/ranger/rc.conf
     packages: [ ranger ]
 
-  - src: dotfiles/chef/knife.rb
-    dst: .chef/knife.rb
+  - src: config/chef/knife.rb
+    dst: .config/chef/knife.rb
 
   - src: config/vagrant/Vagrantfile
     dst: .config/vagrant/Vagrantfile
