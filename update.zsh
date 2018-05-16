@@ -20,7 +20,7 @@ fi
 
 if [[ $(command -v pyenv) ]]; then
   puts 'Updating' 'pip and pipenv'
-  pyenv exec pip install --upgrade pip pipenv
+  pyenv exec pip install --upgrade pip
 fi
 
 if [[ -d $HOME/.zgen.zsh ]]; then
