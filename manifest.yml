@@ -65,10 +65,6 @@ config_files:
   - src: config/bundle/config
     dst: .config/bundle/config
 
-  - src: config/httpie/config.json
-    dst: .config/httpie/config.json
-    packages: [ httpie ]
-
   - src: config/ranger/rc.conf
     dst: .config/ranger/rc.conf
     packages: [ ranger ]
