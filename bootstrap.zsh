@@ -21,6 +21,12 @@ if ! [[ -d $HOME/.cache/ssh/sockets ]]; then
   puts 'Created' '~/.cache/ssh/sockets'
 fi
 
+if ! [[ -e $HOME/.config/zsh/env.zsh ]]; then
+  mkdir -p $HOME/.config/zsh
+  touch $HOME/.config/zsh/env.zsh
+  puts 'Created' '~/.gemrc'
+fi
+
 if ! [[ -e $HOME/.gemrc ]]; then
   echo 'gem: --no-document' > $HOME/.gemrc
   puts 'Created' '~/.gemrc'
