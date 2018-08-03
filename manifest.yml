@@ -147,7 +147,7 @@ symlinks:
 
   - src: ~/drive/wallpaper/sort/frigg/wallhaven-203704.jpg
     dst: .config/awesome/themes/powerarrow-dark/wall.png
-    hosts: [ Gungnir ]
+    hosts: [ Gungnir, Mjolnir ]
     packages: [ awesome ]
 
   - src: ~/drive/wallpaper/sort/frigg/wallhaven-349408-16x10.png
