@@ -207,7 +207,7 @@ if [[ ! -z "${TMUX:-}" ]]; then
   tic $TERM.ti
   rm $TERM.ti
 else
-  puts 'Info' 'Run in a tmux session to path terminfo.'
+  puts 'Info' 'Run in a tmux session to patch terminfo.'
 fi
 
 exit
