@@ -141,6 +141,10 @@ symlinks:
     dst: .config/xkb/Gungnir-x60
     packages: [ xorg-server ]
 
+  - src: ~/.config/xkb/keymap/matebook.xkb
+    dst: .config/xkb/Mjolnir
+    packages: [ xorg-server ]
+
   - src: ~/.config/awesome/rc.lua.template
     dst: .config/awesome/rc.lua
     packages: [ awesome ]
