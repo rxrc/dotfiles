@@ -27,7 +27,7 @@ if [[ -e $HOME/.config/xbindkeys/xbindkeysrc ]]; then
 fi
 
 if [[ $(hostname) != 'Mimir' ]]; then
-  enabled+=('redshift-gtk')
+  # enabled+=('redshift-gtk')
 fi
 
 for unit in $enabled; do
