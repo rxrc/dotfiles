@@ -104,6 +104,10 @@ config_files:
     dst: .config/termite/config
     packages: [ termite ]
 
+  - src: config/kitty/kitty.conf
+    dst: .config/kitty/kitty.conf
+    packages: [ kitty ]
+
   - src: config/sakura/sakura.conf
     dst: .config/sakura/sakura.conf
     packages: [ sakura ]
