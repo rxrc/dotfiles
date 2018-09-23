@@ -8,26 +8,24 @@ disabled=()
 
 command -v systemctl >/dev/null 2>&1 || exit 0
 
+enabled+=("keymap@$(hostname)")
 enabled+=('app@screencloud')
 enabled+=('app@unclutter')
+enabled+=('geoclue-agent')
 enabled+=('insync')
-enabled+=("keymap@$(hostname)")
-enabled+=('xscreensaver')
 enabled+=('numlock')
 enabled+=('pulseaudio.socket')
+enabled+=('redshift-gtk')
 enabled+=('ssh-agent')
 enabled+=('transmission-gtk')
 enabled+=('urxvtd')
 enabled+=('wm.target')
 enabled+=('xinit.target')
 enabled+=('xresources')
+enabled+=('xscreensaver')
 
 if [[ -e $HOME/.config/xbindkeys/xbindkeysrc ]]; then
   enabled+=('xbindkeys')
-fi
-
-if [[ $(hostname) != 'Mimir' ]]; then
-  # enabled+=('redshift-gtk')
 fi
 
 for unit in $enabled; do
