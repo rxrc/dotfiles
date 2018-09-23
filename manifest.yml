@@ -4,7 +4,7 @@ defaults:
   dmode: 0750
 
 components:
-  - src: bower_components/systemd-user-units/user
+  - src: node_modules/@rxrc/systemd-user-units/user
     dst: .config/systemd/user
     packages: [ systemd ]
 
