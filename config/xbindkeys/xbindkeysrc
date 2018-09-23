@@ -9,3 +9,8 @@
 
 "xte 'keydown Control_L' 'key Tab' 'keyup Control_L'"
   b:7
+
+# Toggle touchpad.
+"xinput-toggle -r Touchpad -n"
+  m:0x18 + c:70
+  Alt+Mod2 + F4
