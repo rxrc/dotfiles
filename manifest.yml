@@ -163,12 +163,12 @@ symlinks:
     hosts: [ Frigg ]
     packages: [ awesome ]
 
-  - src: ~/drive/wallpaper/sort/frigg/wallhaven-122103.jpg
+  - src: ~/drive/wallpaper/sort/frigg/wallhaven-500094.jpg
     dst: .config/awesome/themes/powerarrow-dark/wall.png
     hosts: [ Frigg, Mimir ]
     packages: [ awesome ]
 
-  - src: ~/drive/wallpaper/sort/frigg/wallhaven-95332.jpg
+  - src: ~/drive/wallpaper/sort/frigg/wallhaven-416958.jpg
     dst: .config/awesome/themes/powerarrow-dark/wall.png-2
     hosts: [ Frigg, Mimir ]
     packages: [ awesome ]
