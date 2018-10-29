@@ -9,10 +9,10 @@
   Alt+Mod2 + F4
 
 # Control backlight.
-"xbacklight -dec 100"
+"xbacklight -dec 10"
   m:0x0 + c:72
   XF86MonBrightnessDown
 
-"xbacklight -inc 100"
+"xbacklight -inc 10"
   m:0x0 + c:73
   XF86MonBrightnessUp
