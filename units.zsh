@@ -9,7 +9,6 @@ disabled=()
 command -v systemctl >/dev/null 2>&1 || exit 0
 
 enabled+=("keymap@$(hostname)")
-enabled+=('app@screencloud')
 enabled+=('app@unclutter')
 enabled+=('app@flameshot')
 enabled+=('geoclue-agent')

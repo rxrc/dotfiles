@@ -16,3 +16,7 @@
 "xbacklight -inc 10"
   m:0x18 + c:233
   Alt+Mod2 + XF86MonBrightnessUp
+
+"flameshot gui"
+  m:0x10 + c:95
+  Mod2 + F11
