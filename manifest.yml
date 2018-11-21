@@ -153,27 +153,27 @@ symlinks:
     dst: .config/awesome/rc.lua
     packages: [ awesome ]
 
-  - src: ~/drive/wallpaper/sort/frigg/wallhaven-203704.jpg
+  - src: ~/drive/wallpaper/hosts/frigg/wallhaven-203704.jpg
     dst: .config/awesome/themes/powerarrow-dark/wall.png
     hosts: [ Gungnir, Mjolnir ]
     packages: [ awesome ]
 
-  - src: ~/drive/wallpaper/sort/frigg/wallhaven-349408-16x10.png
+  - src: ~/drive/wallpaper/hosts/frigg/wallhaven-349408-16x10.png
     dst: .config/awesome/themes/powerarrow-dark/wall.png
     hosts: [ Frigg ]
     packages: [ awesome ]
 
-  - src: ~/drive/wallpaper/sort/frigg/wallhaven-500094.jpg
+  - src: ~/drive/wallpaper/hosts/frigg/wallhaven-500094.jpg
     dst: .config/awesome/themes/powerarrow-dark/wall.png
     hosts: [ Frigg, Mimir ]
     packages: [ awesome ]
 
-  - src: ~/drive/wallpaper/sort/frigg/wallhaven-416958.jpg
+  - src: ~/drive/wallpaper/hosts/frigg/wallhaven-416958.jpg
     dst: .config/awesome/themes/powerarrow-dark/wall.png-2
     hosts: [ Frigg, Mimir ]
     packages: [ awesome ]
 
-  - src: ~/drive/wallpaper/sort/frigg/wallhaven-14375-2560x1440.jpg
+  - src: ~/drive/wallpaper/hosts/frigg/wallhaven-14375-2560x1440.jpg
     dst: .config/awesome/themes/powerarrow-dark/wall.png-3
     hosts: [ Frigg ]
     packages: [ awesome ]
