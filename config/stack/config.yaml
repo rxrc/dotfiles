@@ -1,0 +1,9 @@
+---
+local-programs-path: /home/razorx/.local/share/stack/programs
+templates:
+  params:
+    author-email: razorx@evansosenko.com
+    author-name: Evan Sosenko
+    github-username: razor-x
+    category: lib
+    copyright: 'Evan Sosenko'

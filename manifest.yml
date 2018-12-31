@@ -69,6 +69,10 @@ config_files:
     dst: .config/ranger/rc.conf
     packages: [ ranger ]
 
+  - src: config/stack/config.yaml
+    dst: .config/stack/config.yaml
+    packages: [ stack-bin ]
+
   - src: config/chef/knife.rb
     dst: .config/chef/knife.rb
 
