@@ -5,7 +5,7 @@
   },
   "private": true,
   "devDependencies": {
-    "bower": "^1.8.4"
+    "bower": "^1.8.8"
   },
   "dependencies": {
     "@rxrc/systemd-user-units": "^2.4.1"
