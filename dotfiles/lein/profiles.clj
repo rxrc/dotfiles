@@ -3,21 +3,21 @@
     :plugins [
       [lein-ancient "0.6.15"]
       [lein-bikeshed "0.5.1"]
-      [lein-cljfmt "0.6.3"]
+      [lein-cljfmt "0.6.4"]
       [lein-gen "0.2.2"]
       [lein-kibit "0.1.6"]
       [lein-pprint "1.2.0"]
       [com.jakemccrary/lein-test-refresh "0.23.0"]
-      [cider/cider-nrepl "0.18.0"]
-      [jonase/eastwood "0.3.4"]
+      [cider/cider-nrepl "0.21.1"]
+      [jonase/eastwood "0.3.5"]
       ; [venantius/ultra "0.5.2"]
       [venantius/yagni "0.1.7"]
     ]
     :dependencies [
-      [cljfmt "0.6.3"]
-      [cider/piggieback "0.3.10"]
+      [cljfmt "0.6.4"]
+      [cider/piggieback "0.4.0"]
       [org.clojure/tools.nrepl "0.2.13"]
-      [jonase/eastwood "0.3.4"
+      [jonase/eastwood "0.3.5"
        :exclusions [org.clojure/clojure]]
     ]
     :middleware [
