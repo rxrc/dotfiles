@@ -22,7 +22,6 @@ enabled+=('urxvtd')
 enabled+=('wm.target')
 enabled+=('xinit.target')
 enabled+=('xresources')
-enabled+=('xscreensaver')
 
 if [[ -e $HOME/.config/xbindkeys/xbindkeysrc ]]; then
   enabled+=('xbindkeys')
