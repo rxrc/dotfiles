@@ -10,16 +10,15 @@ My dotfiles managed with
 - [tmuxrc]
 - [nvimrc]
 
-[Config Curator]: https://github.com/razor-x/config_curator
+[Config Curator]: https://github.com/rxrc/curator
 [tmuxrc]: https://github.com/rxrc/tmuxrc
 [nvimrc]: https://github.com/rxrc/nvimrc
 [zshrc]: https://github.com/rxrc/zshrc
 
 ## Requirements
 
-* [Bower]
-* [Ruby] with [Bundler]
-* [Zsh]
+* [Zsh].
+* [Node.js] with [npm].
 * [tmux (optional)][tmux]
 * [Neovim (optional)][Neovim]
 
@@ -30,15 +29,9 @@ Note: the only requirement for the initial bootstrap is Zsh.
 Because this installs a new `.zshrc`,
 you should restart your shell before proceeding.
 
-After bootstrapping, you can choose to install Ruby
-under [rbenv] using [ruby-build].
-These two tools are installed during the bootstrap.
-Once Ruby is setup, install the bundler gem.
-Bower should be installed manually using [npm].
-
 #### Quick Start
 
-Note that on this branch, the install script takes care
+Note that the install script takes care
 of everything except installing Node via nvm.
 Thus, a full install might look like
 
@@ -57,15 +50,11 @@ $ git pull
 $ ./install.zsh update
 ```
 
-[Bower]: http://bower.io/
-[Bundler]: http://bundler.io/
-[npm]: https://www.npmjs.com/
-[rbenv]: https://github.com/sstephenson/rbenv
-[Ruby]: https://www.ruby-lang.org/
-[ruby-build]: https://github.com/sstephenson/ruby-build
-[tmux]: http://tmux.sourceforge.net/
 [Neovim]: https://neovim.io/
-[Zsh]: http://www.zsh.org/
+[Node.js]: https://nodejs.org/
+[Zsh]: https://www.zsh.org/
+[npm]: https://www.npmjs.com/
+[tmux]: http://tmux.sourceforge.net/
 
 ## Installation and Usage
 
@@ -83,11 +72,10 @@ $ ./bootstrap.zsh
 Install dependencies with
 
 ```bash
-$ bower update
-$ bundle update
+$ npm install
 ```
 
-Note that some bower dependencies on this branch
+Note that some npm dependencies on this branch
 may point to private repositories.
 You will either need to replace or remove these.
 Otherwise you can start with the minimal branch.
@@ -95,7 +83,7 @@ Otherwise you can start with the minimal branch.
 Install the dotfiles with
 
 ```bash
-$ curate
+$ npm start
 ```
 
 Update external applications with
