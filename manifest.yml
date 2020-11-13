@@ -157,7 +157,7 @@ symlinks:
     dst: .config/awesome/rc.lua
     packages: [ awesome ]
 
-  - src: ~/drive/wallpaper/hosts/mjolnir/wallhaven-76xvle.png
+  - src: ~/drive/wallpaper/hosts/mjolnir/wallhaven-380834.png
     dst: .config/awesome/themes/powerarrow-dark/wall.png
     hosts: [ Gungnir, Mjolnir ]
     packages: [ awesome ]
