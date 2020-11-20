@@ -1,6 +1,8 @@
 'use strict'
 
 const os = require('os')
+const path = require('path')
+const fs = require('fs')
 
 const host = os.hostname().toLowerCase()
 const rxrc = 'node_modules/@rxrc'
@@ -147,7 +149,7 @@ const files = [{
   pkgs: ['xorg-server']
 }]
 
-const symlinks = [{
+const symlinks = async () => [{
   src: '.config/xkb/Sleipnir',
   dst: '.config/xkb/keymap/steelseries-6gv2.xkb',
   pkgs: ['xorg-server']
@@ -177,7 +179,7 @@ const symlinks = [{
   pkgs: ['awesome']
 }, {
   src: '.config/awesome/themes/powerarrow-dark/wall.png',
-  dst: 'drive/wallpaper/hosts/mjolnir/wallhaven-380834.png',
+  dst: await randomFile('drive/wallpaper/hosts/mjolnir'),
   hosts: ['Gungnir', 'Mjolnir'],
   pkgs: ['awesome']
 }, {
@@ -212,13 +214,30 @@ const symlinks = [{
   pkgs: ['awesome']
 }]
 
-module.exports = {
+module.exports = async () => ({
   unlinks,
   directories,
   files,
-  symlinks,
+  symlinks: await symlinks(),
   targetRoot,
   ioType,
   pkgType,
   defaults
+})
+
+const randomFile = async dir => {
+  const rootDir = path.join(targetRoot, dir)
+  const files = await fs.promises.readdir(rootDir)
+  if (!files.length) throw new Error(`No files in ${rootDir}`)
+
+  const checkRandom = async () => {
+    const randomIndex = Math.floor(Math.random() * files.length)
+    const file = files[randomIndex]
+    const stats = await fs.promises.stat(path.join(rootDir, file))
+    if (stats.isFile()) return path.join(dir, file)
+    files.splice(randomIndex, 1)
+    return checkRandom()
+  }
+
+  return checkRandom()
 }

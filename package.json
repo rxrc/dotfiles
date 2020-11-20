@@ -25,6 +25,6 @@
     "@rxrc/xresources": "^2.0.1"
   },
   "devDependencies": {
-    "@rxrc/curator": "^1.0.3"
+    "@rxrc/curator": "^1.1.0"
   }
 }
