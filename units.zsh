@@ -22,6 +22,7 @@ enabled+=('urxvtd')
 enabled+=('wm.target')
 enabled+=('xinit.target')
 enabled+=('xresources')
+enabled+=('darkman')
 
 if [[ -e $HOME/.config/xbindkeys/xbindkeysrc ]]; then
   enabled+=('xbindkeys')
