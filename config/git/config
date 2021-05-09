@@ -1,6 +1,13 @@
 [core]
   editor = nvim
-	pager = diff-so-fancy | less -+X -+F -R --tabs=2
+  pager = delta --paging always
+[delta]
+  plus-style = "syntax #012800"
+  minus-style = "syntax #340001"
+  syntax-theme = Monokai Extended
+  navigate = true
+[interactive]
+  diffFilter = delta --color-only
 [user]
   name = Evan Sosenko
   email = razorx@evansosenko.com
