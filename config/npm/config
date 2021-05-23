@@ -1,0 +1,4 @@
+sign-git-tag=true
+update-notifier=false
+//registry.npmjs.org/:_authToken=${NPM_TOKEN}
+//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}

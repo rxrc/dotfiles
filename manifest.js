@@ -82,6 +82,9 @@ const files = [{
   dst: '.lein/profiles.clj',
   pkgs: ['leiningen']
 }, {
+  src: 'config/npm/config',
+  dst: '.config/npm/config'
+}, {
   src: 'config/bundle/config',
   dst: '.config/bundle/config'
 }, {
