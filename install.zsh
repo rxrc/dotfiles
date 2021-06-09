@@ -15,7 +15,7 @@ echo '$ ./bootstrap.zsh'
 ./bootstrap.zsh
 
 rbenv install -s
-pyenv install -s
+pyenv install -s "$(cat .python-version)"
 rbenv rehash
 pyenv rehash
 rehash
