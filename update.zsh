@@ -68,7 +68,7 @@ fi
 if [[ -d $RBENV_ROOT/plugins/rbenv-bundler ]]; then
   puts 'Updating' 'rbenv-bundler'
   cd $RBENV_ROOT/plugins/rbenv-bundler
-  git checkout master
+  git checkout main
   git pull
   git checkout $(git describe --abbrev=0 --tags)
   $RBENV_ROOT/bin/rbenv bundler on
