@@ -98,13 +98,6 @@ Setup systemd/User units with
 $ ./units.zsh
 ```
 
-Install external packages and plugins with
-
-```bash
-$ ./npm_modules.zsh
-$ ./vagrant_plugins.zsh
-```
-
 Run everything above with
 
 ```bash
