@@ -12,13 +12,6 @@ const targetRoot = path.resolve('.codespaces')
 const ioType = 'linux'
 const pkgType = 'noop'
 
-const defaults = {
-  dmode: '0750',
-  fmode: '0640',
-  user: 'razorx',
-  group: 'razorx'
-}
-
 const unlinks = []
 
 const directories = []
@@ -39,6 +32,5 @@ module.exports = async () => ({
   symlinks,
   targetRoot,
   ioType,
-  pkgType,
-  defaults
+  pkgType
 })
