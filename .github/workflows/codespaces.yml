@@ -43,7 +43,7 @@ jobs:
           publish_dir: .codespaces
           enable_jekyll: true
           keep_files: true
-          external_repository: razor-x/dotfiles
+          external_repository: razor-x/codespaces-dotfiles
           publish_branch: master
           user_name: ${{ secrets.GIT_USER_NAME }}
           user_email: ${{ secrets.GIT_USER_EMAIL }}
