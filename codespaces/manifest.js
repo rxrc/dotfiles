@@ -17,6 +17,9 @@ const unlinks = []
 const directories = []
 
 const files = [{
+  src: 'codespaces/bootstrap.sh',
+  dst: 'bootstrap.sh'
+}, {
   src: 'dotfiles/zshenv',
   dst: '.zshenv'
 }, {
