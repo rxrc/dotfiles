@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "curator",
-    "codespaces": "curator",
+    "codespaces": "curator codespaces/manifest.js",
     "postversion": "git push && git push --tags"
   },
   "dependencies": {

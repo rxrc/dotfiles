@@ -1,0 +1,52 @@
+---
+name: codespaces
+
+on:
+  push:
+    branches:
+      - master
+      - codespaces
+
+jobs:
+  dotfiles:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_KEY }}
+      - name: Import GPG key
+        uses: crazy-max/ghaction-import-gpg@v3
+        id: import_gpg
+        with:
+          git-user-signingkey: true
+          git-commit-gpgsign: true
+          git-committer-name: ${{ secrets.GIT_USER_NAME }}
+          git-committer-email: ${{ secrets.GIT_USER_EMAIL }}
+          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+      - name: Setup
+        uses: ./.github/actions/setup
+      - name: Build
+        run: npm run codespaces
+      - name: Publish latest
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.CODESPACES_DEPLOY_KEY }}
+          publish_dir: .codespaces
+          keep_files: true
+          external_repository: razor-x/dotfiles
+          publish_branch: master
+          user_name: ${{ secrets.GIT_USER_NAME }}
+          user_email: ${{ secrets.GIT_USER_EMAIL }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          cache: npm
+          node-version: '16'
+      - name: Install dependencies
+        shell: bash
+        run: npm ci
