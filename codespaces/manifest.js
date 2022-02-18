@@ -17,6 +17,15 @@ const unlinks = []
 const directories = []
 
 const files = [{
+  src: 'dotfiles/zshenv',
+  dst: '.zshenv'
+}, {
+  src: 'config/ignore',
+  dst: '.config/ignore'
+}, {
+  src: 'config/git/ignore',
+  dst: '.config/git/ignore'
+}, {
   src: 'codespaces/README.md',
   dst: 'README.md'
 }, {
