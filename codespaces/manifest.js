@@ -19,7 +19,7 @@ const directories = []
 const files = [{
   src: 'codespaces/bootstrap.sh',
   dst: 'bootstrap.sh',
-  fmode: 755
+  fmode: '0755'
 }, {
   src: 'dotfiles/zshenv',
   dst: '.zshenv'
