@@ -41,7 +41,7 @@ jobs:
           deploy_key: ${{ secrets.CODESPACES_DEPLOY_KEY }}
           publish_dir: .codespaces
           enable_jekyll: true
-          keep_files: true
+          keep_files: false
           external_repository: razor-x/codespaces-dotfiles
           publish_branch: master
           user_name: ${{ secrets.GIT_USER_NAME }}
