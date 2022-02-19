@@ -24,7 +24,7 @@ fi
 if ! [[ -e $HOME/.config/zsh/env.zsh ]]; then
   mkdir -p $HOME/.config/zsh
   touch $HOME/.config/zsh/env.zsh
-  puts 'Created' '~/.gemrc'
+  puts 'Created' '~/.config/zsh/env.zsh'
 fi
 
 if ! [[ -e $HOME/.gemrc ]]; then
