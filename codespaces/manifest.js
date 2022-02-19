@@ -7,7 +7,7 @@ const fs = require('fs')
 const host = 'codespaces'
 const rxrc = 'node_modules/@rxrc'
 
-const targetRoot = path.resolve('.codespaces')
+const targetRoot = path.resolve(process.cwd(), '.codespaces')
 
 const ioType = 'linux'
 const pkgType = 'noop'
