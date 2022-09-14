@@ -23,9 +23,7 @@
     "@rxrc/ssh-config": "github:rxrc/ssh-config#v2.1.0",
     "@rxrc/systemd-user-units": "^2.4.3",
     "@rxrc/tmuxinator-profiles": "github:rxrc/tmuxinator-profiles#v1.1.0",
-    "@rxrc/xresources": "^2.0.1"
-  },
-  "devDependencies": {
-    "@rxrc/curator": "^1.1.0"
+    "@rxrc/xresources": "^2.0.1",
+    "config-curator": "^2.0.0"
   }
 }
