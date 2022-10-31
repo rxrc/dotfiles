@@ -1,8 +1,6 @@
-'use strict'
-
-const os = require('os')
-const path = require('path')
-const fs = require('fs')
+import os from 'os'
+import path from 'path'
+import fs from 'fs'
 
 const host = 'codespaces'
 const rxrc = 'node_modules/@rxrc'
@@ -35,7 +33,7 @@ const files = [{
 
 const symlinks = []
 
-module.exports = async () => ({
+export default async () => ({
   unlinks,
   directories,
   files,
