@@ -34,6 +34,7 @@ fi
 
 if ! [[ -d $HOME/.config/zplug ]]; then
   puts 'Installing' 'zshrc'
+  cp dotfiles/zshenv $HOME/.zshenv
   curl -L https://rc.evansosenko.com/zshrc/install.sh | sh
 fi
 
