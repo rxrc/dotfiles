@@ -167,7 +167,7 @@ const symlinks = async () => [{
   dst: '.config/xkb/keymap/steelseries-6gv2.xkb',
   pkgs: ['xorg-server']
 }, {
-  src: '.config/xkb/Gungnir-x60',
+  src: '.config/xkb/x60',
   dst: '.config/xkb/keymap/x60t.xkb',
   pkgs: ['xorg-server']
 }, {
@@ -206,7 +206,7 @@ const symlinks = async () => [{
 }, {
   src: '.config/awesome/themes/powerarrow-dark/wall.png',
   dst: 'Wallpaper/wallhaven-83639-4x3.jpg',
-  hosts: ['pixelbook-x60'],
+  hosts: ['x60'],
   pkgs: ['awesome']
 }, {
   src: '.config/awesome/themes/powerarrow-dark/wall.png',
