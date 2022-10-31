@@ -2,6 +2,7 @@
   "name": "@rxrc/dotfiles",
   "version": "2.0.0",
   "private": true,
+  "type": "module",
   "description": "User configuration.",
   "homepage": "https://github.com/rxrc/dotfiles",
   "bugs": "https://github.com/rxrc/dotfiles/issues",
