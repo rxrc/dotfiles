@@ -1,0 +1,22 @@
+# Bind screen locker.
+"xscreensaver-command --lock"
+  m:0x8 + c:49
+  Alt + grave
+
+# Toggle touchpad.
+"xinput-toggle -r Touchpad -n"
+  m:0x18 + c:70
+  Alt+Mod2 + F4
+
+# Control backlight.
+"xbacklight -dec 10"
+  m:0x18 + c:232
+  Alt+Mod2 + XF86MonBrightnessDown
+
+"xbacklight -inc 10"
+  m:0x18 + c:233
+  Alt+Mod2 + XF86MonBrightnessUp
+
+"flameshot gui"
+  m:0x10 + c:95
+  Mod2 + F11
