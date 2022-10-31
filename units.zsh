@@ -18,11 +18,11 @@ enabled+=('pulseaudio.socket')
 enabled+=('redshift-gtk')
 enabled+=('ssh-agent')
 enabled+=('transmission-gtk')
-enabled+=('urxvtd')
 enabled+=('wm.target')
 enabled+=('xinit.target')
 enabled+=('xresources')
 enabled+=('darkman')
+enabled+=('docker-desktop')
 
 if [[ -e $HOME/.config/xbindkeys/xbindkeysrc ]]; then
   enabled+=('xbindkeys')
