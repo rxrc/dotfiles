@@ -211,4 +211,9 @@ else
   puts 'Info' 'Run in a tmux session to patch terminfo.'
 fi
 
+if [[ "${SHELL:-}" != "/bin/zsh" ]]; then
+  puts 'Change Shell' 'zsh'
+  chsh -s /bin/zsh
+fi
+
 exit
