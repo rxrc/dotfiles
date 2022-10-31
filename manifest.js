@@ -175,6 +175,10 @@ const symlinks = async () => [{
   dst: '.config/xkb/keymap/matebook.xkb',
   pkgs: ['xorg-server']
 }, {
+  src: '.config/xkb/Gungnir',
+  dst: '.config/xkb/keymap/matebook.xkb',
+  pkgs: ['xorg-server']
+}, {
   src: '.config/awesome/rc.lua',
   dst: '.config/awesome/rc.lua.template',
   pkgs: ['awesome']
