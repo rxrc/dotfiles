@@ -27,7 +27,7 @@ Use `qtconfig-qt4` to customize Qt apps.
 browser.urlbar.trimURLs = false
 ```
 
-#### Gungnir
+#### Pixelbook
 
 ```
 layout.css.devPixelsPerPx = 2

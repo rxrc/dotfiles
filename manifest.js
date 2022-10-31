@@ -159,7 +159,7 @@ const symlinks = async () => [{
   dst: '.config/xkb/keymap/steelseries-6gv2.xkb',
   pkgs: ['xorg-server']
 }, {
-  src: '.config/xkb/Gungnir',
+  src: '.config/xkb/pixelbook',
   dst: '.config/xkb/keymap/samus.xkb',
   pkgs: ['xorg-server']
 }, {
@@ -167,7 +167,7 @@ const symlinks = async () => [{
   dst: '.config/xkb/keymap/steelseries-6gv2.xkb',
   pkgs: ['xorg-server']
 }, {
-  src: '.config/xkb/Gungnir-x60',
+  src: '.config/xkb/pixelbook-x60',
   dst: '.config/xkb/keymap/x60t.xkb',
   pkgs: ['xorg-server']
 }, {
@@ -181,7 +181,7 @@ const symlinks = async () => [{
 }, {
   src: '.config/awesome/themes/powerarrow-dark/wall.png',
   dst: await randomFile('drive/wallpaper/hosts/mjolnir'),
-  hosts: ['Gungnir', 'Mjolnir'],
+  hosts: ['pixelbook', 'Mjolnir'],
   pkgs: ['awesome']
 }, {
   src: '.config/awesome/themes/powerarrow-dark/wall.png',
@@ -206,7 +206,7 @@ const symlinks = async () => [{
 }, {
   src: '.config/awesome/themes/powerarrow-dark/wall.png',
   dst: 'Wallpaper/wallhaven-83639-4x3.jpg',
-  hosts: ['Gungnir-x60'],
+  hosts: ['pixelbook-x60'],
   pkgs: ['awesome']
 }, {
   src: '.config/awesome/themes/powerarrow-dark/wall.png',
