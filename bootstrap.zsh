@@ -161,7 +161,7 @@ if [[ -d $HOME/.config/nvim/plugged/nvimrc ]]; then
   puts 'Installed' 'nvimrc'
 fi
 
-if ! [[ -d $HOME/.tmux/plugins/tmuxrc ]]; then
+if ! [[ -d $HOME/.config/tmux/plugins/tmuxrc ]]; then
   if [[ ! -z "${TMUX:-}" ]]; then
     puts 'Installing' 'tmuxrc'
     curl -L https://rc.evansosenko.com/tmuxrc/install.sh | sh
@@ -171,7 +171,7 @@ if ! [[ -d $HOME/.tmux/plugins/tmuxrc ]]; then
   fi
 fi
 
-if [[ -d $HOME/.tmux/plugins/tmuxrc ]]; then
+if [[ -d $HOME/.config/tmux/plugins/tmuxrc ]]; then
   puts 'Installed' 'tmuxrc'
 fi
 
@@ -186,11 +186,11 @@ if [[ -e $HOME/.config/zsh/promptline.zsh ]]; then
   puts 'Installed' 'promptline'
 fi
 
-if ! [[ -e $HOME/.tmuxline.conf ]] then
+if ! [[ -e $HOME/.config/tmux/tmuxline.conf ]] then
   if [[ -d $HOME/.config/nvim/plugged/tmuxline.vim ]]; then
     if [[ ! -z "${TMUX:-}" ]]; then
       puts 'Installing' 'tmuxline'
-      nvim -c "Tmuxline airline" -c "TmuxlineSnapshot! ~/.tmuxline.conf" -c qall!
+      nvim -c "Tmuxline airline" -c "TmuxlineSnapshot! ~/.config/tmux/tmuxline.conf" -c qall!
     else
       puts 'Info' 'Run in a tmux session to install tmuxline.'
     fi

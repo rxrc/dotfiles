@@ -103,10 +103,10 @@ if [[ -e $HOME/.config/zsh/promptline.zsh ]]; then
   nvim -c "PromptlineSnapshot ~/.config/zsh/promptline.zsh" -c qall!
 fi
 
-if [[ -e $HOME/.tmuxline.conf ]]; then
+if [[ -e $HOME/.config/tmux/tmuxline.conf ]]; then
   if [[ ! -z "${TMUX:-}" ]]; then
     puts 'Updating' 'tmuxline'
-    nvim -c "Tmuxline airline" -c "TmuxlineSnapshot! ~/.tmuxline.conf" -c qall!
+    nvim -c "Tmuxline airline" -c "TmuxlineSnapshot! ~/.config/tmux/tmuxline.conf" -c qall!
   else
     puts 'Info' 'Run in a tmux session to install tmuxline.'
   fi
