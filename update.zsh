@@ -98,9 +98,9 @@ if [[ -d $NVM_DIR ]]; then
   git checkout $(git describe --abbrev=0 --tags)
 fi
 
-if [[ -e $HOME/.promptline.sh ]]; then
+if [[ -e $HOME/.config/zsh/promptline.zsh ]]; then
   puts 'Updating' 'promptline'
-  nvim -c "PromptlineSnapshot! ~/.promptline.sh" -c qall!
+  nvim -c "PromptlineSnapshot ~/.config/zsh/promptline.zsh" -c qall!
 fi
 
 if [[ -e $HOME/.tmuxline.conf ]]; then
