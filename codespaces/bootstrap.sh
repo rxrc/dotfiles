@@ -12,6 +12,3 @@ sudo apt-get install -y \
   httpie \
   ripgrep \
   silversearcher-ag
-
-# curl -L https://git.io/v5XSs | sh
-# ZPLUG_PROTOCOL=HTTPS zsh
