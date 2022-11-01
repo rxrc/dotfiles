@@ -182,7 +182,7 @@ if ! [[ -e $HOME/.config/zsh/promptline.zsh ]]; then
   fi
 fi
 
-if [[ -e $HOME/.promptline.sh ]]; then
+if [[ -e $HOME/.config/zsh/promptline.zsh ]]; then
   puts 'Installed' 'promptline'
 fi
 
