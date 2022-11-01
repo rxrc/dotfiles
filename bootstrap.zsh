@@ -190,7 +190,7 @@ if ! [[ -e $HOME/.tmuxline.conf ]] then
   if [[ -d $HOME/.config/nvim/plugged/tmuxline.vim ]]; then
     if [[ ! -z "${TMUX:-}" ]]; then
       puts 'Installing' 'tmuxline'
-      nvim -c "TmuxlineSnapshot ~/.tmuxline.conf" -c qall!
+      nvim -c "Tmuxline airline" -c "TmuxlineSnapshot! ~/.tmuxline.conf" -c qall!
     else
       puts 'Info' 'Run in a tmux session to install tmuxline.'
     fi
