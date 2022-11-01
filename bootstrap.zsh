@@ -201,16 +201,6 @@ if [[ -e $HOME/.tmuxline.conf ]]; then
   puts 'Installed' 'tmuxline'
 fi
 
-# TODO: See https://github.com/neovim/neovim/wiki/FAQ#my-ctrl-h-mapping-doesnt-work
-if [[ ! -z "${TMUX:-}" ]]; then
-  puts 'Patching' 'terminfo'
-  infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
-  tic $TERM.ti
-  rm $TERM.ti
-else
-  puts 'Info' 'Run in a tmux session to patch terminfo.'
-fi
-
 if [[ "${SHELL:-}" != "/bin/zsh" ]]; then
   puts 'Change Shell' 'zsh'
   chsh -s /bin/zsh
