@@ -34,5 +34,6 @@ echo '\n$ ./update.zsh'
 
 echo '\n$ ./units.zsh'
 ./units.zsh
+./units.zsh
 
 exit
