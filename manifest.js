@@ -145,6 +145,10 @@ const files = [{
   dst: '.config/zathura/zathurarc',
   pkgs: ['zathura']
 }, {
+  src: 'config/environment.d/xsecurelock.conf',
+  dst: '.config/environment.d/xsecurelock.conf',
+  pkgs: ['xsecurelock']
+}, {
   src: 'dotfiles/xprofile',
   dst: '.xprofile',
   pkgs: ['xorg-server']
