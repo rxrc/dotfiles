@@ -2,6 +2,10 @@ source $HOME/.config/zplug/repos/rxrc/zshrc/env.zsh
 source $HOME/.config/zsh/env.zsh
 export NVIM_GTK_NO_HEADERBAR=1
 
+# Dim the screen after three minutes of inactivity.
+# Lock the screen two minutes later.
+xset s 600 60
+
 (sleep 1 && systemctl --user import-environment XDG_SESSION_ID && systemctl --user restart display-server.target) &
 
 if (pacman -Q xkeyboard-config-chromebook &>/dev/null); then
