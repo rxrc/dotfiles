@@ -159,19 +159,11 @@ const symlinks = async () => [{
   dst: '.config/xkb/keymap/steelseries-6gv2.xkb',
   pkgs: ['xorg-server']
 }, {
-  src: '.config/xkb/Mimir',
-  dst: '.config/xkb/keymap/steelseries-6gv2.xkb',
-  pkgs: ['xorg-server']
-}, {
   src: '.config/xkb/Pixelbook',
   dst: '.config/xkb/keymap/samus.xkb',
   pkgs: ['xorg-server']
 }, {
   src: '.config/xkb/Freyja',
-  dst: '.config/xkb/keymap/steelseries-6gv2.xkb',
-  pkgs: ['xorg-server']
-}, {
-  src: '.config/xkb/Frigg',
   dst: '.config/xkb/keymap/steelseries-6gv2.xkb',
   pkgs: ['xorg-server']
 }, {
@@ -194,26 +186,6 @@ const symlinks = async () => [{
   src: '.config/awesome/themes/powerarrow-dark/wall.png',
   dst: await randomFile('drive/wallpaper/hosts/mjolnir'),
   hosts: ['pixelbook', 'mjolnir', 'gungnir'],
-  pkgs: ['awesome']
-}, {
-  src: '.config/awesome/themes/powerarrow-dark/wall.png',
-  dst: 'drive/wallpaper/hosts/frigg/wallhaven-349408-16x10.png',
-  hosts: ['frigg'],
-  pkgs: ['awesome']
-}, {
-  src: '.config/awesome/themes/powerarrow-dark/wall.png',
-  dst: 'drive/wallpaper/hosts/frigg/wallhaven-500094.jpg',
-  hosts: ['frigg', 'mimir'],
-  pkgs: ['awesome']
-}, {
-  src: '.config/awesome/themes/powerarrow-dark/wall.png-2',
-  dst: 'drive/wallpaper/hosts/frigg/wallhaven-416958.jpg',
-  hosts: ['frigg', 'mimir'],
-  pkgs: ['awesome']
-}, {
-  src: '.config/awesome/themes/powerarrow-dark/wall.png-3',
-  dst: 'drive/wallpaper/hosts/frigg/wallhaven-14375-2560x1440.jpg',
-  hosts: ['frigg'],
   pkgs: ['awesome']
 }, {
   src: '.config/awesome/themes/powerarrow-dark/wall.png',
