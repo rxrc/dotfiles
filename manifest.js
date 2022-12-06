@@ -188,6 +188,15 @@ const symlinks = async () => [{
   hosts: ['pixelbook', 'mjolnir', 'gungnir'],
   pkgs: ['awesome']
 }, {
+  dst: await randomFile('drive/wallpaper/hosts/freyja'),
+  hosts: ['freyja'],
+  pkgs: ['awesome']
+}, {
+  src: '.config/awesome/themes/powerarrow-dark/wall.png-2',
+  dst: await randomFile('drive/wallpaper/hosts/freyja'),
+  hosts: ['freyja'],
+  pkgs: ['awesome']
+}, {
   src: '.config/awesome/themes/powerarrow-dark/wall.png',
   dst: 'Wallpaper/wallhaven-83639-4x3.jpg',
   hosts: ['x60'],
