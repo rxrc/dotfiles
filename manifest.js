@@ -18,6 +18,8 @@ const defaults = {
 }
 
 const unlinks = [{
+  src: '.bash_profile'
+}, {
   src: '.bash_history'
 }, {
   src: '.bash_logout'
