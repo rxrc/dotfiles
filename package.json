@@ -18,7 +18,7 @@
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
-    "@rxrc/awesome-copycats": "^5.2.0",
+    "@rxrc/awesome-copycats": "^5.5.0",
     "@rxrc/hexchat-material-design-icons": "^2.0.2",
     "@rxrc/keymaps": "^2.0.1",
     "@rxrc/ssh-config": "github:rxrc/ssh-config#v2.3.0",
