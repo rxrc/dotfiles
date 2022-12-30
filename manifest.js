@@ -25,10 +25,6 @@ const unlinks = [{
   src: '.bash_logout'
 }, {
   src: '.bashrc'
-}, {
-  src: '.bash_history'
-}, {
-
 }]
 
 const directories = [{
