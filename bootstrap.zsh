@@ -98,19 +98,6 @@ if [[ -d $RBENV_ROOT/plugins/rbenv-ctags ]]; then
   puts 'Installed' 'rbenv-default-ctags'
 fi
 
-if ! [[ -d $RBENV_ROOT/plugins/rbenv-bundler ]]; then
-  puts 'Installing' 'rbenv-bundler'
-  git clone https://github.com/carsomyr/rbenv-bundler.git \
-    $RBENV_ROOT/plugins/rbenv-bundler
-  cd $RBENV_ROOT/plugins/rbenv-bundler
-  git checkout $(git describe --abbrev=0 --tags)
-  $RBENV_ROOT/bin/rbenv bundler on
-fi
-
-if [[ -d $RBENV_ROOT/plugins/rbenv-bundler ]]; then
-  puts 'Installed' 'rbenv-bundler'
-fi
-
 if ! [[ -d $PYENV_ROOT ]]; then
   puts 'Installing' 'pyenv'
   git clone https://github.com/yyuu/pyenv.git $PYENV_ROOT
