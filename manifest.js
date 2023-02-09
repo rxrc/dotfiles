@@ -199,7 +199,7 @@ const symlinks = async () => [{
   pkgs: ['awesome']
 }, {
   src: '.config/awesome/themes/powerarrow-dark/wall.png',
-  dst: await randomFile('drive/wallpaper/hosts/freyja'),
+  dst: await randomFile('drive/wallpaper/hosts/freyja/vert'),
   hosts: ['freyja'],
   pkgs: ['awesome']
 }, {
