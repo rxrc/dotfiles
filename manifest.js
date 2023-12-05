@@ -166,7 +166,7 @@ const files = [{
 
 const symlinks = async () => [{
   src: '.config/xkb/Sleipnir',
-  dst: '.config/xkb/keymap/steelseries-6gv2.xkb',
+  dst: '.config/xkb/keymap/default.xkb',
   pkgs: ['xorg-server']
 }, {
   src: '.config/xkb/Pixelbook',
@@ -174,7 +174,7 @@ const symlinks = async () => [{
   pkgs: ['xorg-server']
 }, {
   src: '.config/xkb/Freyja',
-  dst: '.config/xkb/keymap/steelseries-6gv2.xkb',
+  dst: '.config/xkb/keymap/default.xkb',
   pkgs: ['xorg-server']
 }, {
   src: '.config/xkb/x60',
