@@ -1,11 +1,12 @@
-import os from 'os'
-import path from 'path'
-import fs from 'fs'
+import { homedir, hostname } from 'node:os'
+import { join } from 'node:path'
+import { readdir, stat } from 'node:fs/promises'
+import { start } from 'node:repl'
 
-const host = os.hostname().toLowerCase()
+const host = hostname().toLowerCase()
 const rxrc = 'node_modules/@rxrc'
 
-const targetRoot = os.homedir()
+const targetRoot = homedir()
 
 const ioType = 'linux'
 const pkgType = 'pacman'
@@ -194,17 +195,17 @@ const symlinks = async () => [{
   pkgs: ['awesome']
 }, {
   src: '.config/awesome/themes/powerarrow-dark/wall.png',
-  dst: await randomFile('drive/wallpaper/hosts/mjolnir'),
+  dst: await randomFile('drive/wallpaper/hosts/mjolnir') ?? '.config/awesome/themes/powerarrow/wall.png',
   hosts: ['pixelbook', 'mjolnir', 'gungnir'],
   pkgs: ['awesome']
 }, {
   src: '.config/awesome/themes/powerarrow-dark/wall.png',
-  dst: await randomFile('drive/wallpaper/hosts/freyja/vert'),
+  dst: await randomFile('drive/wallpaper/hosts/freyja/vert') ?? '.config/awesome/themes/powerarrow/wall.png',
   hosts: ['freyja'],
   pkgs: ['awesome']
 }, {
   src: '.config/awesome/themes/powerarrow-dark/wall.png-2',
-  dst: await randomFile('drive/wallpaper/hosts/freyja'),
+  dst: await randomFile('drive/wallpaper/hosts/freyja') ?? '.config/awesome/themes/powerarrow/wall.png',
   hosts: ['freyja'],
   pkgs: ['awesome']
 }, {
@@ -231,15 +232,19 @@ export default async () => ({
 })
 
 const randomFile = async dir => {
-  const rootDir = path.join(targetRoot, dir)
-  const files = await fs.promises.readdir(rootDir)
-  if (!files.length) throw new Error(`No files in ${rootDir}`)
+  const rootDir = join(targetRoot, dir)
+
+  const dirStat = await stat(rootDir)
+  if (!dirStat.isDirectory) return null
+
+  const files = await readdir(rootDir)
+  if (!files.length) return null
 
   const checkRandom = async () => {
     const randomIndex = Math.floor(Math.random() * files.length)
     const file = files[randomIndex]
-    const stats = await fs.promises.stat(path.join(rootDir, file))
-    if (stats.isFile()) return path.join(dir, file)
+    const stats = await stat(join(rootDir, file))
+    if (stats.isFile()) return join(dir, file)
     files.splice(randomIndex, 1)
     return checkRandom()
   }
