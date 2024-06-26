@@ -1,7 +1,6 @@
 import { homedir, hostname } from 'node:os'
 import { join } from 'node:path'
 import { readdir, stat } from 'node:fs/promises'
-import { start } from 'node:repl'
 
 const host = hostname().toLowerCase()
 const rxrc = 'node_modules/@rxrc'
@@ -234,8 +233,12 @@ export default async () => ({
 const randomFile = async dir => {
   const rootDir = join(targetRoot, dir)
 
-  const dirStat = await stat(rootDir)
-  if (!dirStat.isDirectory) return null
+  try {
+    const dirStat = await stat(rootDir)
+    if (!dirStat.isDirectory) return null
+  } catch {
+    return null
+  }
 
   const files = await readdir(rootDir)
   if (!files.length) return null
