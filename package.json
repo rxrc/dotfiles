@@ -21,7 +21,7 @@
     "@rxrc/awesome-copycats": "^5.5.1",
     "@rxrc/hexchat-material-design-icons": "^2.0.2",
     "@rxrc/keymaps": "^2.0.1",
-    "@rxrc/ssh-config": "github:rxrc/ssh-config#v2.3.0",
+    "@rxrc/ssh-config": "github:rxrc/ssh-config#v2.4.0",
     "@rxrc/systemd-user-units": "^2.5.0",
     "@rxrc/tmuxinator-profiles": "github:rxrc/tmuxinator-profiles#v1.1.0",
     "@rxrc/xresources": "^2.0.1",
