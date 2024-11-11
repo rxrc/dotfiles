@@ -212,11 +212,6 @@ const symlinks = async () => [{
   dst: 'Wallpaper/wallhaven-83639-4x3.jpg',
   hosts: ['x60'],
   pkgs: ['awesome']
-}, {
-  src: '.config/awesome/themes/powerarrow-dark/wall.png',
-  dst: 'drive/wallpaper/wallbase/general/1920.1200/wallpaper-98843.jpg',
-  hosts: ['Sleipnir'],
-  pkgs: ['awesome']
 }]
 
 export default async () => ({
