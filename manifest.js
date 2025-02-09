@@ -181,10 +181,6 @@ const symlinks = async () => [{
   dst: '.config/xkb/keymap/x60t.xkb',
   pkgs: ['xorg-server']
 }, {
-  src: '.config/xkb/Mjolnir',
-  dst: '.config/xkb/keymap/matebook.xkb',
-  pkgs: ['xorg-server']
-}, {
   src: '.config/xkb/Gungnir',
   dst: '.config/xkb/keymap/matebook.xkb',
   pkgs: ['xorg-server']
