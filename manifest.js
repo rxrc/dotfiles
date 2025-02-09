@@ -177,10 +177,6 @@ const symlinks = async () => [{
   dst: '.config/xkb/keymap/default.xkb',
   pkgs: ['xorg-server']
 }, {
-  src: '.config/xkb/x60',
-  dst: '.config/xkb/keymap/x60t.xkb',
-  pkgs: ['xorg-server']
-}, {
   src: '.config/xkb/Gungnir',
   dst: '.config/xkb/keymap/matebook.xkb',
   pkgs: ['xorg-server']
@@ -202,11 +198,6 @@ const symlinks = async () => [{
   src: '.config/awesome/themes/powerarrow-dark/wall.png-2',
   dst: await randomFile('drive/wallpaper/hosts/freyja') ?? '.config/awesome/themes/powerarrow/wall.png',
   hosts: ['freyja'],
-  pkgs: ['awesome']
-}, {
-  src: '.config/awesome/themes/powerarrow-dark/wall.png',
-  dst: 'Wallpaper/wallhaven-83639-4x3.jpg',
-  hosts: ['x60'],
   pkgs: ['awesome']
 }]
 
