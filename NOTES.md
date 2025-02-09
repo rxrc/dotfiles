@@ -26,11 +26,3 @@ Use `qtconfig-qt4` to customize Qt apps.
 ```
 browser.urlbar.trimURLs = false
 ```
-
-#### Pixelbook
-
-```
-layout.css.devPixelsPerPx = 2
-```
-
-Set this in Thunderbird too.
