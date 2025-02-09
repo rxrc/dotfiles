@@ -169,6 +169,10 @@ const symlinks = async () => [{
   dst: '.config/xkb/keymap/default.xkb',
   pkgs: ['xorg-server']
 }, {
+  src: '.config/xkb/Frigg',
+  dst: '.config/xkb/keymap/default.xkb',
+  pkgs: ['xorg-server']
+}, {
   src: '.config/xkb/Freyja',
   dst: '.config/xkb/keymap/default.xkb',
   pkgs: ['xorg-server']
