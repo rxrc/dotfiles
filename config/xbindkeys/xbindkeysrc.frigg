@@ -11,5 +11,5 @@
   b:7
 
 "flameshot gui"
-  m:0x50 + c:107
-  Mod2+Mod4 + Print
+    m:0x10 + c:118
+    Mod2 + Insert
