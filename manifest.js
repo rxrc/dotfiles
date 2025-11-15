@@ -26,6 +26,8 @@ const unlinks = [{
 }, {
   src: '.bash_logout'
 }, {
+  src: '.npm'
+}, {
   src: '.bashrc'
 }]
 
