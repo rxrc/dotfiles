@@ -86,6 +86,10 @@ const files = [{
   src: 'config/rbenv/default-gems',
   dst: '.local/rbenv/default-gems'
 }, {
+  src: 'config/aura/config.toml',
+  dst: '.config/aura/config.toml',
+  pkgs: ['aura']
+}, {
   src: 'dotfiles/lein/profiles.clj',
   dst: '.lein/profiles.clj',
   pkgs: ['leiningen']
