@@ -175,18 +175,22 @@ const files = [{
 const symlinks = async () => [{
   src: '.config/xkb/Sleipnir',
   dst: '.config/xkb/keymap/default.xkb',
+  hosts: ['sleipnir'],
   pkgs: ['xorg-server']
 }, {
   src: '.config/xkb/Frigg',
   dst: '.config/xkb/keymap/default.xkb',
+  hosts: ['frigg'],
   pkgs: ['xorg-server']
 }, {
   src: '.config/xkb/Freyja',
   dst: '.config/xkb/keymap/default.xkb',
+  hosts: ['freyja'],
   pkgs: ['xorg-server']
 }, {
   src: '.config/xkb/Gungnir',
   dst: '.config/xkb/keymap/matebook.xkb',
+  hosts: ['gungnir'],
   pkgs: ['xorg-server']
 }, {
   src: '.config/awesome/rc.lua',
