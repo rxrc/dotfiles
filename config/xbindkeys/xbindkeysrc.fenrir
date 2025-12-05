@@ -1,7 +1,7 @@
 # Bind screen locker.
 "loginctl lock-session"
-  m:0x8 + c:49
-  Alt + grave
+  m:0x50 + c:49
+  Mod2+Mod4 + grave
 
 # Tab commands on mouse left and right scroll.
 "xte 'keydown Control_L' 'keydown Shift_L' 'key Tab' 'keyup Control_L' 'keyup Shift_L'"

@@ -1,7 +1,7 @@
 # Bind screen locker.
 "loginctl lock-session"
-  m:0x8 + c:49
-  Alt + grave
+  m:0x50 + c:49
+  Mod2+Mod4 + grave
 
 # Toggle touchpad.
 "xinput-toggle -r Touchpad -n"
