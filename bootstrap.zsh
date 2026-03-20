@@ -188,9 +188,4 @@ if [[ -e $HOME/.tmuxline.conf ]]; then
   puts 'Installed' 'tmuxline'
 fi
 
-if [[ "${SHELL:-}" != "/bin/zsh" ]]; then
-  puts 'Change Shell' 'zsh'
-  chsh -s /bin/zsh
-fi
-
 exit
