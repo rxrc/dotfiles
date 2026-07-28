@@ -17,9 +17,6 @@ echo '$ ./bootstrap.zsh'
 echo "\n $ npm install"
 npm install
 
-command -v bundle || gem install bundler
-[[ "$cmd" = 'update' ]] && gem update bundler
-
 echo '\n$ npm start \n'
 npm start
 
