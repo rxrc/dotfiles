@@ -65,60 +65,6 @@ const directories = [{
 }]
 
 const files = [{
-  src: 'dotfiles/zshenv',
-  dst: '.zshenv'
-}, {
-  src: `${rxrc}/ssh-config/config`,
-  dst: '.ssh/config'
-}, {
-  src: `${rxrc}/ssh-config/authorized_keys`,
-  dst: '.ssh/authorized_keys',
-  fmode: '0600'
-}, {
-  src: 'config/gnupg/gpg-agent.conf',
-  dst: '.config/gnupg/gpg-agent.conf'
-}, {
-  src: 'config/ignore',
-  dst: '.config/ignore'
-}, {
-  src: 'config/git/config',
-  dst: '.config/git/config'
-}, {
-  src: 'config/git/ignore',
-  dst: '.config/git/ignore'
-}, {
-  src: 'config/rbenv/default-gems',
-  dst: '.local/rbenv/default-gems'
-}, {
-  src: 'config/aura/config.toml',
-  dst: '.config/aura/config.toml',
-  pkgs: ['aura']
-}, {
-  src: 'dotfiles/lein/profiles.clj',
-  dst: '.lein/profiles.clj',
-  pkgs: ['leiningen']
-}, {
-  src: 'config/npm/config',
-  dst: '.config/npm/config'
-}, {
-  src: 'config/bundle/config',
-  dst: '.config/bundle/config'
-}, {
-  src: 'config/ranger/rc.conf',
-  dst: '.config/ranger/rc.conf',
-  pkgs: ['ranger']
-}, {
-  src: 'config/stack/config.yaml',
-  dst: '.config/stack/config.yaml',
-  pkgs: ['stack-bin']
-}, {
-  src: 'config/chef/knife.rb',
-  dst: '.config/chef/knife.rb'
-}, {
-  src: 'config/vagrant/Vagrantfile',
-  dst: '.config/vagrant/Vagrantfile',
-  pkgs: ['vagrant']
-}, {
   src: 'config/user-dirs.dirs',
   dst: '.config/user-dirs.dirs',
   pkgs: ['xorg-server']
@@ -146,10 +92,6 @@ const files = [{
   src: 'config/termite/config',
   dst: '.config/termite/config',
   pkgs: ['termite']
-}, {
-  src: 'config/kitty/kitty.conf',
-  dst: '.config/kitty/kitty.conf',
-  pkgs: ['kitty']
 }, {
   src: 'config/sakura/sakura.conf',
   dst: '.config/sakura/sakura.conf',
