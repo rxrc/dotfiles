@@ -11,7 +11,6 @@ command -v systemctl >/dev/null 2>&1 || exit 0
 enabled+=("keymap@$(hostname)")
 enabled+=('app@unclutter')
 enabled+=('app@flameshot')
-enabled+=('insync')
 enabled+=('numlock')
 enabled+=('pipewire.socket')
 enabled+=('pulseaudio.socket')
