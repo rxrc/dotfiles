@@ -126,12 +126,12 @@ const symlinks = async () => [{
   pkgs: ['awesome']
 }, {
   src: '.config/awesome/themes/powerarrow-dark/wall.png',
-  dst: await randomFile('wallpaper/hosts/frigg') ?? '.config/awesome/themes/powerarrow/wall.png',
+  dst: await randomFile('wallpaper/frigg') ?? '.config/awesome/themes/powerarrow/wall.png',
   hosts: ['frigg'],
   pkgs: ['awesome']
 }, {
   src: '.config/awesome/themes/powerarrow-dark/wall.png-2',
-  dst: await randomFile('wallpaper/hosts/frigg') ?? '.config/awesome/themes/powerarrow/wall.png',
+  dst: await randomFile('wallpaper/frigg') ?? '.config/awesome/themes/powerarrow/wall.png',
   hosts: ['frigg'],
   pkgs: ['awesome']
 }, {
