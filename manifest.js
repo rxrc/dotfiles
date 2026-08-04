@@ -17,21 +17,7 @@ const defaults = {
   group: 'razorx'
 }
 
-const unlinks = [{
-  src: '.bash_profile'
-}, {
-  src: '.bash_history'
-}, {
-  src: '.bash_logout'
-}, {
-  src: '.bash_logout'
-}, {
-  src: '.cargo'
-}, {
-  src: '.npm'
-}, {
-  src: '.bashrc'
-}]
+const unlinks = []
 
 const directories = [{
   src: `${rxrc}/systemd-user-units/user`,
