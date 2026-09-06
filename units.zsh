@@ -25,6 +25,10 @@ enabled+=('darkman')
 enabled+=('docker-desktop')
 enabled+=('xss-lock')
 
+if [[ $(hostname) == 'Gungnir' ]]; then
+  enabled+=('insync')
+fi
+
 if [[ -e $HOME/.config/xbindkeys/xbindkeysrc ]]; then
   enabled+=('xbindkeys')
 fi
