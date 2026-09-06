@@ -22,7 +22,6 @@ enabled+=('wm.target')
 enabled+=('xinit.target')
 enabled+=('xresources')
 enabled+=('darkman')
-enabled+=('docker-desktop')
 enabled+=('xss-lock')
 
 if [[ $(hostname) == 'Gungnir' ]]; then
